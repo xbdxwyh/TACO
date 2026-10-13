@@ -1,7 +1,8 @@
 # TACO / MathRepairBench 仓库预备版
 
 这是单独整理的代码与纯文本数据目录，原工作区、协议和实验结果没有改动。
-尚未上传远程，代码、数据和自身模型的许可均待作者决定。
+GitHub 私有仓库为 [xbdxwyh/TACO](https://github.com/xbdxwyh/TACO)，归属 Yihao Wang 的个人账号。
+尚未公开发布；代码、数据和自身模型的许可均待作者决定。
 
 ## 内容
 

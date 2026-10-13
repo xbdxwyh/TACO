@@ -5,9 +5,10 @@ errors remain active and which task goals are still open. MathRepairBench
 provides matched correct, logical-error, execution-slip and self-corrected
 traces for studying both repair and unnecessary intervention.
 
-**Local release preparation.** Licensing is pending the authors' decision.
+**Private release preparation:** [xbdxwyh/TACO](https://github.com/xbdxwyh/TACO).
+Licensing is pending the authors' decision.
 No code, data or checkpoint license is granted by this preparation alone.
-There is no public repository URL or archived release DOI yet. External
+The repository has not been publicly released or assigned an archived release DOI. External
 models retain their upstream terms. See [release status](docs/RELEASE_STATUS.md).
 
 ## What is included

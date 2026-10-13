@@ -1,5 +1,6 @@
 cff-version: 1.2.0
-message: "This is a local release preparation. Final paper and dataset citation metadata will be added before public release."
+message: "This is a private release preparation. Final paper and dataset citation metadata will be added before public release."
+repository-code: "https://github.com/xbdxwyh/TACO"
 title: "TACO and MathRepairBench: Code and Text Data"
 type: software
 version: 0.1.0

@@ -1,7 +1,7 @@
 # Release status
 
-This folder is a local preparation for review. It has not been uploaded or
-published by the preparation workflow. There is no remote Git URL.
+This is a private preparation for review, hosted in Yihao Wang's personal
+repository: https://github.com/xbdxwyh/TACO. It has not been publicly released.
 
 The authors have not selected licenses for the code, dataset or their own
 checkpoints. Accordingly, no default LICENSE file or open-source grant has
