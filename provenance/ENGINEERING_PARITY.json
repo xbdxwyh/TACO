@@ -1,0 +1,74 @@
+{
+  "checks": [
+    {
+      "conditions": 8,
+      "item_id": "24db05b9c6afc825373a3043",
+      "max_probability_difference": 1.1961553969541683e-09,
+      "seed": 17
+    },
+    {
+      "conditions": 8,
+      "item_id": "498645b0c275335e166f4936",
+      "max_probability_difference": 1.5948744547245042e-09,
+      "seed": 17
+    },
+    {
+      "conditions": 8,
+      "item_id": "61bfd6e320ca7bbb0f7d8a18",
+      "max_probability_difference": 3.971864721667717e-09,
+      "seed": 17
+    },
+    {
+      "conditions": 8,
+      "item_id": "640b03209d193bf58f8b7226",
+      "max_probability_difference": 1.2515105618504663e-09,
+      "seed": 17
+    },
+    {
+      "conditions": 8,
+      "item_id": "24db05b9c6afc825373a3043",
+      "max_probability_difference": 1.0707659941003311e-09,
+      "seed": 29
+    },
+    {
+      "conditions": 8,
+      "item_id": "498645b0c275335e166f4936",
+      "max_probability_difference": 9.453821059324241e-10,
+      "seed": 29
+    },
+    {
+      "conditions": 8,
+      "item_id": "61bfd6e320ca7bbb0f7d8a18",
+      "max_probability_difference": 1.6061493730065018e-09,
+      "seed": 29
+    },
+    {
+      "conditions": 8,
+      "item_id": "640b03209d193bf58f8b7226",
+      "max_probability_difference": 6.302549593328877e-10,
+      "seed": 29
+    }
+  ],
+  "elapsed_seconds": 3.782,
+  "engineering_only": true,
+  "exact_fields": [
+    "accepted",
+    "attempts",
+    "final_payload",
+    "remaining_targets",
+    "declared_complete",
+    "tool_cost",
+    "tool_events",
+    "rank_model_unique_inputs",
+    "candidate_budget",
+    "initial_state",
+    "initial_targets",
+    "audited_target",
+    "audit_valid",
+    "online_judgments"
+  ],
+  "full_experiment": false,
+  "independent_final_scoring_identical": true,
+  "scope": "One function-composition family, four variants, two frozen seeds",
+  "status": "PASS"
+}

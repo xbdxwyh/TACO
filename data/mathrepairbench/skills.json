@@ -1,0 +1,227 @@
+[
+  {
+    "misconception_descriptions_zh": {
+      "partial_equation_scaling": "方程两边同除以系数时，常数项没有同步缩放",
+      "transfer_without_inverse": "移项时没有改变运算方向"
+    },
+    "misconception_ids": [
+      "partial_equation_scaling",
+      "transfer_without_inverse"
+    ],
+    "name_zh": "移项与加法逆运算",
+    "prerequisites": [
+      "integer_arithmetic"
+    ],
+    "primary_misconception_id": "transfer_without_inverse",
+    "primary_misconception_zh": "移项时没有改变运算方向",
+    "reasoning_family": "equation_equivalence",
+    "skill_id": "linear_shift"
+  },
+  {
+    "misconception_descriptions_zh": {
+      "group_transfer_sign_flip": "整体移走括号时又额外改变了括号内常数的符号",
+      "negative_scope_drop": "负号只作用于括号内第一项"
+    },
+    "misconception_ids": [
+      "group_transfer_sign_flip",
+      "negative_scope_drop"
+    ],
+    "name_zh": "负号作用域与括号展开",
+    "prerequisites": [
+      "signed_numbers",
+      "distributive_property"
+    ],
+    "primary_misconception_id": "negative_scope_drop",
+    "primary_misconception_zh": "负号只作用于括号内第一项",
+    "reasoning_family": "symbol_scope",
+    "skill_id": "negative_distribution"
+  },
+  {
+    "misconception_descriptions_zh": {
+      "drop_common_denominator_after_subtraction": "同分母分数相减后把公共分母直接丢掉",
+      "incomplete_denominator_scaling": "去分母时漏乘了一个分子项"
+    },
+    "misconception_ids": [
+      "drop_common_denominator_after_subtraction",
+      "incomplete_denominator_scaling"
+    ],
+    "name_zh": "分式方程的同乘与通分",
+    "prerequisites": [
+      "fraction_equivalence",
+      "linear_shift"
+    ],
+    "primary_misconception_id": "incomplete_denominator_scaling",
+    "primary_misconception_zh": "去分母时漏乘了一个分子项",
+    "reasoning_family": "equation_equivalence",
+    "skill_id": "fraction_denominator"
+  },
+  {
+    "misconception_descriptions_zh": {
+      "invert_one_ratio_only": "比例式变形时只倒置了一侧的比",
+      "same_side_product": "把同侧量相乘而不是交叉相乘"
+    },
+    "misconception_ids": [
+      "invert_one_ratio_only",
+      "same_side_product"
+    ],
+    "name_zh": "比例式的交叉相乘",
+    "prerequisites": [
+      "fraction_equivalence",
+      "multiplicative_inverse"
+    ],
+    "primary_misconception_id": "same_side_product",
+    "primary_misconception_zh": "把同侧量相乘而不是交叉相乘",
+    "reasoning_family": "proportional_reasoning",
+    "skill_id": "proportion_cross_product"
+  },
+  {
+    "misconception_descriptions_zh": {
+      "multiply_exponents_in_product": "同底数幂相乘时误把指数相乘",
+      "subtract_exponents_in_product": "把同底数幂相乘误套成了商的指数相减规则"
+    },
+    "misconception_ids": [
+      "multiply_exponents_in_product",
+      "subtract_exponents_in_product"
+    ],
+    "name_zh": "同底数幂相乘",
+    "prerequisites": [
+      "multiplication"
+    ],
+    "primary_misconception_id": "multiply_exponents_in_product",
+    "primary_misconception_zh": "同底数幂相乘时误把指数相乘",
+    "reasoning_family": "rule_selection",
+    "skill_id": "exponent_product"
+  },
+  {
+    "misconception_descriptions_zh": {
+      "add_exponents_in_power": "幂的乘方时误把指数相加",
+      "exponentiate_the_exponent": "把幂的乘方误理解为指数本身再做乘方"
+    },
+    "misconception_ids": [
+      "add_exponents_in_power",
+      "exponentiate_the_exponent"
+    ],
+    "name_zh": "幂的乘方",
+    "prerequisites": [
+      "exponent_product"
+    ],
+    "primary_misconception_id": "add_exponents_in_power",
+    "primary_misconception_zh": "幂的乘方时误把指数相加",
+    "reasoning_family": "rule_selection",
+    "skill_id": "power_of_power"
+  },
+  {
+    "misconception_descriptions_zh": {
+      "constant_product_not_squared": "逐项相乘时把常数项 (-a)×a 写成了 -a",
+      "square_difference_sign": "平方差展开时把负号写成正号"
+    },
+    "misconception_ids": [
+      "constant_product_not_squared",
+      "square_difference_sign"
+    ],
+    "name_zh": "平方差结构",
+    "prerequisites": [
+      "distributive_property",
+      "signed_numbers"
+    ],
+    "primary_misconception_id": "square_difference_sign",
+    "primary_misconception_zh": "平方差展开时把负号写成正号",
+    "reasoning_family": "algebraic_structure",
+    "skill_id": "difference_of_squares"
+  },
+  {
+    "misconception_descriptions_zh": {
+      "inequality_direction_not_flipped": "不等式两边除以负数时没有改变方向",
+      "negative_boundary_sign_drop": "方向已经翻转，但计算边界时又丢掉了负号"
+    },
+    "misconception_ids": [
+      "inequality_direction_not_flipped",
+      "negative_boundary_sign_drop"
+    ],
+    "name_zh": "不等式负数缩放",
+    "prerequisites": [
+      "signed_numbers",
+      "multiplicative_inverse"
+    ],
+    "primary_misconception_id": "inequality_direction_not_flipped",
+    "primary_misconception_zh": "不等式两边除以负数时没有改变方向",
+    "reasoning_family": "order_reasoning",
+    "skill_id": "inequality_negative_scale"
+  },
+  {
+    "misconception_descriptions_zh": {
+      "absolute_value_center_sign": "展开双分支后，移项时把绝对值中心的符号处理反了",
+      "absolute_value_one_branch": "绝对值方程只保留了正分支，漏掉另一个解"
+    },
+    "misconception_ids": [
+      "absolute_value_center_sign",
+      "absolute_value_one_branch"
+    ],
+    "name_zh": "绝对值方程的双分支",
+    "prerequisites": [
+      "linear_shift",
+      "signed_numbers"
+    ],
+    "primary_misconception_id": "absolute_value_one_branch",
+    "primary_misconception_zh": "绝对值方程只保留了一个分支",
+    "reasoning_family": "case_reasoning",
+    "skill_id": "absolute_value_branching"
+  },
+  {
+    "misconception_descriptions_zh": {
+      "drop_outer_function_bias": "代入内层函数后漏掉了外层函数的常数项",
+      "reverse_function_composition": "把 f(g(x)) 的复合顺序颠倒成了 g(f(x))"
+    },
+    "misconception_ids": [
+      "drop_outer_function_bias",
+      "reverse_function_composition"
+    ],
+    "name_zh": "函数复合的顺序与代入",
+    "prerequisites": [
+      "linear_substitution",
+      "distributive_property"
+    ],
+    "primary_misconception_id": "reverse_function_composition",
+    "primary_misconception_zh": "把 f(g(x)) 的复合顺序颠倒",
+    "reasoning_family": "operator_composition",
+    "skill_id": "function_composition"
+  },
+  {
+    "misconception_descriptions_zh": {
+      "unweighted_group_means": "忽略两组人数不同，直接平均了两个组均值",
+      "weighted_average_wrong_total_count": "总分计算正确，但把总体人数少算了 1"
+    },
+    "misconception_ids": [
+      "unweighted_group_means",
+      "weighted_average_wrong_total_count"
+    ],
+    "name_zh": "加权平均与总体均值",
+    "prerequisites": [
+      "multiplication",
+      "fraction_equivalence"
+    ],
+    "primary_misconception_id": "unweighted_group_means",
+    "primary_misconception_zh": "忽略组大小而直接平均两个组均值",
+    "reasoning_family": "quantitative_modeling",
+    "skill_id": "weighted_average"
+  },
+  {
+    "misconception_descriptions_zh": {
+      "divide_only_one_rhs_term": "由 2x=s+d 求 x 时只把右边第二项除以 2",
+      "elimination_side_mismatch": "左边把两式相加，右边却执行了相减"
+    },
+    "misconception_ids": [
+      "divide_only_one_rhs_term",
+      "elimination_side_mismatch"
+    ],
+    "name_zh": "二元一次方程组消元",
+    "prerequisites": [
+      "linear_shift",
+      "signed_numbers"
+    ],
+    "primary_misconception_id": "elimination_side_mismatch",
+    "primary_misconception_zh": "消元时两边没有执行同一种组合",
+    "reasoning_family": "equation_system_reasoning",
+    "skill_id": "linear_system_elimination"
+  }
+]

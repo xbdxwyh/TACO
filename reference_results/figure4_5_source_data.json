@@ -1,0 +1,652 @@
+{
+  "status": "PASS",
+  "scope": "Independent read-only audit of saved counts; no inference, candidate execution, or re-scoring.",
+  "source_sha256": {
+    "historical_workspace/work/remaining_protection_20261012.json": "ec1ec83e6e3d85845bd7340deb0a473bfde752aa6ddc1261f448bf0456e810e7",
+    "historical_workspace/work/remaining_costs_20261012.json": "74951dec2751f20c55a6a68d7bfed88da847f91652472b45518354c1b4295e3c",
+    "historical_outputs/local-prm-test-suite-v1/skywork-test-v1/SUMMARY.json": "0b5606f4ac30ce196e2ced922d90ba492c11c257e6ca94328e7ce5bbb48c8184"
+  },
+  "split": "Test",
+  "seeds": [
+    17,
+    29
+  ],
+  "aggregation": "Arithmetic mean of per-seed rates/counts-per-input. Since denominators are identical across seeds, this equals pooled numerator divided by pooled denominator. Repeated seeds do not double the independent family count.",
+  "denominators": {
+    "families": 122,
+    "all_inputs_per_seed": 488,
+    "initially_erroneous_per_seed": 244,
+    "each_protection_subset_per_seed": 122
+  },
+  "A": {
+    "fixed": "Task-trained V + learned Rank + selective Audit; only Track toggled.",
+    "rows": [
+      {
+        "variant": "correct",
+        "state": "S0",
+        "track": false,
+        "label": "Without Track",
+        "arm": "ours_verify_S0_learned_uncertain",
+        "per_seed_counts": {
+          "17": {
+            "n": 122,
+            "clean_n": 122,
+            "clean_edited": 55,
+            "clean_preserved_and_accepted": 48,
+            "clean_broken": 0,
+            "clean_refused": 32
+          },
+          "29": {
+            "n": 122,
+            "clean_n": 122,
+            "clean_edited": 55,
+            "clean_preserved_and_accepted": 46,
+            "clean_broken": 0,
+            "clean_refused": 31
+          }
+        },
+        "metrics": {
+          "Edit": {
+            "mean_percent": 45.08196721311475,
+            "display_percent": "45.08",
+            "per_seed_percent": {
+              "17": 45.08196721311475,
+              "29": 45.08196721311475
+            },
+            "pooled_numerator": 110,
+            "pooled_denominator": 244,
+            "count_field": "clean_edited"
+          },
+          "PreservedDelivery": {
+            "mean_percent": 38.52459016393443,
+            "display_percent": "38.52",
+            "per_seed_percent": {
+              "17": 39.34426229508197,
+              "29": 37.704918032786885
+            },
+            "pooled_numerator": 94,
+            "pooled_denominator": 244,
+            "count_field": "clean_preserved_and_accepted"
+          }
+        }
+      },
+      {
+        "variant": "correct",
+        "state": "S1",
+        "track": true,
+        "label": "With Track",
+        "arm": "ours_verify_S1_learned_uncertain",
+        "per_seed_counts": {
+          "17": {
+            "n": 122,
+            "clean_n": 122,
+            "clean_edited": 55,
+            "clean_preserved_and_accepted": 48,
+            "clean_broken": 0,
+            "clean_refused": 32
+          },
+          "29": {
+            "n": 122,
+            "clean_n": 122,
+            "clean_edited": 55,
+            "clean_preserved_and_accepted": 46,
+            "clean_broken": 0,
+            "clean_refused": 31
+          }
+        },
+        "metrics": {
+          "Edit": {
+            "mean_percent": 45.08196721311475,
+            "display_percent": "45.08",
+            "per_seed_percent": {
+              "17": 45.08196721311475,
+              "29": 45.08196721311475
+            },
+            "pooled_numerator": 110,
+            "pooled_denominator": 244,
+            "count_field": "clean_edited"
+          },
+          "PreservedDelivery": {
+            "mean_percent": 38.52459016393443,
+            "display_percent": "38.52",
+            "per_seed_percent": {
+              "17": 39.34426229508197,
+              "29": 37.704918032786885
+            },
+            "pooled_numerator": 94,
+            "pooled_denominator": 244,
+            "count_field": "clean_preserved_and_accepted"
+          }
+        }
+      },
+      {
+        "variant": "self_corrected",
+        "state": "S0",
+        "track": false,
+        "label": "Without Track",
+        "arm": "ours_verify_S0_learned_uncertain",
+        "per_seed_counts": {
+          "17": {
+            "n": 122,
+            "clean_n": 122,
+            "clean_edited": 106,
+            "clean_preserved_and_accepted": 10,
+            "clean_broken": 0,
+            "clean_refused": 13
+          },
+          "29": {
+            "n": 122,
+            "clean_n": 122,
+            "clean_edited": 88,
+            "clean_preserved_and_accepted": 12,
+            "clean_broken": 0,
+            "clean_refused": 30
+          }
+        },
+        "metrics": {
+          "Edit": {
+            "mean_percent": 79.50819672131148,
+            "display_percent": "79.51",
+            "per_seed_percent": {
+              "17": 86.88524590163935,
+              "29": 72.1311475409836
+            },
+            "pooled_numerator": 194,
+            "pooled_denominator": 244,
+            "count_field": "clean_edited"
+          },
+          "PreservedDelivery": {
+            "mean_percent": 9.01639344262295,
+            "display_percent": "9.02",
+            "per_seed_percent": {
+              "17": 8.19672131147541,
+              "29": 9.836065573770492
+            },
+            "pooled_numerator": 22,
+            "pooled_denominator": 244,
+            "count_field": "clean_preserved_and_accepted"
+          }
+        }
+      },
+      {
+        "variant": "self_corrected",
+        "state": "S1",
+        "track": true,
+        "label": "With Track",
+        "arm": "ours_verify_S1_learned_uncertain",
+        "per_seed_counts": {
+          "17": {
+            "n": 122,
+            "clean_n": 122,
+            "clean_edited": 28,
+            "clean_preserved_and_accepted": 93,
+            "clean_broken": 0,
+            "clean_refused": 6
+          },
+          "29": {
+            "n": 122,
+            "clean_n": 122,
+            "clean_edited": 27,
+            "clean_preserved_and_accepted": 95,
+            "clean_broken": 0,
+            "clean_refused": 5
+          }
+        },
+        "metrics": {
+          "Edit": {
+            "mean_percent": 22.540983606557376,
+            "display_percent": "22.54",
+            "per_seed_percent": {
+              "17": 22.950819672131146,
+              "29": 22.131147540983605
+            },
+            "pooled_numerator": 55,
+            "pooled_denominator": 244,
+            "count_field": "clean_edited"
+          },
+          "PreservedDelivery": {
+            "mean_percent": 77.04918032786885,
+            "display_percent": "77.05",
+            "per_seed_percent": {
+              "17": 76.22950819672131,
+              "29": 77.8688524590164
+            },
+            "pooled_numerator": 188,
+            "pooled_denominator": 244,
+            "count_field": "clean_preserved_and_accepted"
+          }
+        }
+      }
+    ],
+    "deltas": [
+      {
+        "variant": "correct",
+        "with_minus_without_pp": {
+          "Edit": 0.0,
+          "PreservedDelivery": 0.0
+        }
+      },
+      {
+        "variant": "self_corrected",
+        "with_minus_without_pp": {
+          "Edit": -56.9672131147541,
+          "PreservedDelivery": 68.0327868852459
+        }
+      }
+    ],
+    "definitions": {
+      "Edit": "At least one edit to an initially correct/self-corrected input; percentage within that subset. Not a damage rate.",
+      "PreservedDelivery": "No edit, final complete-process score passes, and system declares complete; percentage within that subset."
+    },
+    "caption": "Effect of Track on unnecessary editing and preserved delivery. The diagnostic model, learned ranker, and Audit are fixed. Results are Test means over two seeds."
+  },
+  "B": {
+    "fixed": "Task-trained V + selective Audit; Track and ranking varied.",
+    "rows": [
+      {
+        "label": "Rule",
+        "track": false,
+        "rank": "rule",
+        "arm": "ours_verify_S0_rule_uncertain",
+        "per_seed_counts": {
+          "17": {
+            "n": 488,
+            "error_n": 244,
+            "repair_success": 105,
+            "question_solves": 488,
+            "step_audit_checks": 416,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 2658,
+            "tool_calls": 3562,
+            "rank_inputs_cold": 0
+          },
+          "29": {
+            "n": 488,
+            "error_n": 244,
+            "repair_success": 106,
+            "question_solves": 488,
+            "step_audit_checks": 416,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 2665,
+            "tool_calls": 3569,
+            "rank_inputs_cold": 0
+          }
+        },
+        "per_seed_means": {
+          "17": {
+            "question_solves": 1.0,
+            "step_audit_checks": 0.8524590163934426,
+            "missing_evidence_checks": 0.0,
+            "candidate_checks": 5.44672131147541,
+            "tool_calls": 7.299180327868853,
+            "rank_inputs_cold": 0.0,
+            "repair_pct": 43.032786885245905
+          },
+          "29": {
+            "question_solves": 1.0,
+            "step_audit_checks": 0.8524590163934426,
+            "missing_evidence_checks": 0.0,
+            "candidate_checks": 5.461065573770492,
+            "tool_calls": 7.313524590163935,
+            "rank_inputs_cold": 0.0,
+            "repair_pct": 43.442622950819676
+          }
+        },
+        "means_full_precision": {
+          "question_solves": 1.0,
+          "step_audit_checks": 0.8524590163934426,
+          "missing_evidence_checks": 0.0,
+          "candidate_checks": 5.453893442622951,
+          "tool_calls": 7.306352459016393,
+          "rank_inputs_cold": 0.0,
+          "repair_pct": 43.23770491803279
+        },
+        "display_2dp": {
+          "question_solves": "1.00",
+          "step_audit_checks": "0.85",
+          "missing_evidence_checks": "0.00",
+          "candidate_checks": "5.45",
+          "tool_calls": "7.31",
+          "rank_inputs_cold": "0.00",
+          "repair_pct": "43.24"
+        },
+        "plotted_stack_full_precision": [
+          1.0,
+          0.8524590163934426,
+          5.453893442622951
+        ],
+        "original_count_sums": {
+          "n": 976,
+          "error_n": 488,
+          "repair_success": 211,
+          "question_solves": 976,
+          "step_audit_checks": 832,
+          "missing_evidence_checks": 0,
+          "candidate_checks": 5323,
+          "tool_calls": 7131,
+          "rank_inputs_cold": 0
+        }
+      },
+      {
+        "label": "Rule + Track",
+        "track": true,
+        "rank": "rule",
+        "arm": "ours_verify_S1_rule_uncertain",
+        "per_seed_counts": {
+          "17": {
+            "n": 488,
+            "error_n": 244,
+            "repair_success": 105,
+            "question_solves": 488,
+            "step_audit_checks": 416,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 2088,
+            "tool_calls": 2992,
+            "rank_inputs_cold": 0
+          },
+          "29": {
+            "n": 488,
+            "error_n": 244,
+            "repair_success": 106,
+            "question_solves": 488,
+            "step_audit_checks": 416,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 2095,
+            "tool_calls": 2999,
+            "rank_inputs_cold": 0
+          }
+        },
+        "per_seed_means": {
+          "17": {
+            "question_solves": 1.0,
+            "step_audit_checks": 0.8524590163934426,
+            "missing_evidence_checks": 0.0,
+            "candidate_checks": 4.278688524590164,
+            "tool_calls": 6.131147540983607,
+            "rank_inputs_cold": 0.0,
+            "repair_pct": 43.032786885245905
+          },
+          "29": {
+            "question_solves": 1.0,
+            "step_audit_checks": 0.8524590163934426,
+            "missing_evidence_checks": 0.0,
+            "candidate_checks": 4.293032786885246,
+            "tool_calls": 6.145491803278689,
+            "rank_inputs_cold": 0.0,
+            "repair_pct": 43.442622950819676
+          }
+        },
+        "means_full_precision": {
+          "question_solves": 1.0,
+          "step_audit_checks": 0.8524590163934426,
+          "missing_evidence_checks": 0.0,
+          "candidate_checks": 4.2858606557377055,
+          "tool_calls": 6.138319672131148,
+          "rank_inputs_cold": 0.0,
+          "repair_pct": 43.23770491803279
+        },
+        "display_2dp": {
+          "question_solves": "1.00",
+          "step_audit_checks": "0.85",
+          "missing_evidence_checks": "0.00",
+          "candidate_checks": "4.29",
+          "tool_calls": "6.14",
+          "rank_inputs_cold": "0.00",
+          "repair_pct": "43.24"
+        },
+        "plotted_stack_full_precision": [
+          1.0,
+          0.8524590163934426,
+          4.2858606557377055
+        ],
+        "original_count_sums": {
+          "n": 976,
+          "error_n": 488,
+          "repair_success": 211,
+          "question_solves": 976,
+          "step_audit_checks": 832,
+          "missing_evidence_checks": 0,
+          "candidate_checks": 4183,
+          "tool_calls": 5991,
+          "rank_inputs_cold": 0
+        }
+      },
+      {
+        "label": "Rank",
+        "track": false,
+        "rank": "learned",
+        "arm": "ours_verify_S0_learned_uncertain",
+        "per_seed_counts": {
+          "17": {
+            "n": 488,
+            "error_n": 244,
+            "repair_success": 139,
+            "question_solves": 488,
+            "step_audit_checks": 416,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 1940,
+            "tool_calls": 2844,
+            "rank_inputs_cold": 18022
+          },
+          "29": {
+            "n": 488,
+            "error_n": 244,
+            "repair_success": 136,
+            "question_solves": 488,
+            "step_audit_checks": 416,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 2022,
+            "tool_calls": 2926,
+            "rank_inputs_cold": 17867
+          }
+        },
+        "per_seed_means": {
+          "17": {
+            "question_solves": 1.0,
+            "step_audit_checks": 0.8524590163934426,
+            "missing_evidence_checks": 0.0,
+            "candidate_checks": 3.9754098360655736,
+            "tool_calls": 5.827868852459017,
+            "rank_inputs_cold": 36.93032786885246,
+            "repair_pct": 56.967213114754095
+          },
+          "29": {
+            "question_solves": 1.0,
+            "step_audit_checks": 0.8524590163934426,
+            "missing_evidence_checks": 0.0,
+            "candidate_checks": 4.14344262295082,
+            "tool_calls": 5.995901639344262,
+            "rank_inputs_cold": 36.61270491803279,
+            "repair_pct": 55.73770491803279
+          }
+        },
+        "means_full_precision": {
+          "question_solves": 1.0,
+          "step_audit_checks": 0.8524590163934426,
+          "missing_evidence_checks": 0.0,
+          "candidate_checks": 4.059426229508197,
+          "tool_calls": 5.911885245901639,
+          "rank_inputs_cold": 36.771516393442624,
+          "repair_pct": 56.35245901639344
+        },
+        "display_2dp": {
+          "question_solves": "1.00",
+          "step_audit_checks": "0.85",
+          "missing_evidence_checks": "0.00",
+          "candidate_checks": "4.06",
+          "tool_calls": "5.91",
+          "rank_inputs_cold": "36.77",
+          "repair_pct": "56.35"
+        },
+        "plotted_stack_full_precision": [
+          1.0,
+          0.8524590163934426,
+          4.059426229508197
+        ],
+        "original_count_sums": {
+          "n": 976,
+          "error_n": 488,
+          "repair_success": 275,
+          "question_solves": 976,
+          "step_audit_checks": 832,
+          "missing_evidence_checks": 0,
+          "candidate_checks": 3962,
+          "tool_calls": 5770,
+          "rank_inputs_cold": 35889
+        }
+      },
+      {
+        "label": "Rank + Track (TACO)",
+        "track": true,
+        "rank": "learned",
+        "arm": "ours_verify_S1_learned_uncertain",
+        "per_seed_counts": {
+          "17": {
+            "n": 488,
+            "error_n": 244,
+            "repair_success": 139,
+            "question_solves": 488,
+            "step_audit_checks": 416,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 1698,
+            "tool_calls": 2602,
+            "rank_inputs_cold": 14847
+          },
+          "29": {
+            "n": 488,
+            "error_n": 244,
+            "repair_success": 136,
+            "question_solves": 488,
+            "step_audit_checks": 416,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 1749,
+            "tool_calls": 2653,
+            "rank_inputs_cold": 14689
+          }
+        },
+        "per_seed_means": {
+          "17": {
+            "question_solves": 1.0,
+            "step_audit_checks": 0.8524590163934426,
+            "missing_evidence_checks": 0.0,
+            "candidate_checks": 3.4795081967213113,
+            "tool_calls": 5.331967213114754,
+            "rank_inputs_cold": 30.424180327868854,
+            "repair_pct": 56.967213114754095
+          },
+          "29": {
+            "question_solves": 1.0,
+            "step_audit_checks": 0.8524590163934426,
+            "missing_evidence_checks": 0.0,
+            "candidate_checks": 3.584016393442623,
+            "tool_calls": 5.436475409836065,
+            "rank_inputs_cold": 30.100409836065573,
+            "repair_pct": 55.73770491803279
+          }
+        },
+        "means_full_precision": {
+          "question_solves": 1.0,
+          "step_audit_checks": 0.8524590163934426,
+          "missing_evidence_checks": 0.0,
+          "candidate_checks": 3.5317622950819674,
+          "tool_calls": 5.384221311475409,
+          "rank_inputs_cold": 30.262295081967213,
+          "repair_pct": 56.35245901639344
+        },
+        "display_2dp": {
+          "question_solves": "1.00",
+          "step_audit_checks": "0.85",
+          "missing_evidence_checks": "0.00",
+          "candidate_checks": "3.53",
+          "tool_calls": "5.38",
+          "rank_inputs_cold": "30.26",
+          "repair_pct": "56.35"
+        },
+        "plotted_stack_full_precision": [
+          1.0,
+          0.8524590163934426,
+          3.5317622950819674
+        ],
+        "original_count_sums": {
+          "n": 976,
+          "error_n": 488,
+          "repair_success": 275,
+          "question_solves": 976,
+          "step_audit_checks": 832,
+          "missing_evidence_checks": 0,
+          "candidate_checks": 3447,
+          "tool_calls": 5255,
+          "rank_inputs_cold": 29536
+        }
+      }
+    ],
+    "deltas": [
+      {
+        "rank": "rule",
+        "repair_unchanged_percent": 43.23770491803279,
+        "changes": {
+          "tool_calls": {
+            "before": 7.306352459016393,
+            "after": 6.138319672131148,
+            "raw_count_before": 7131,
+            "raw_count_after": 5991,
+            "after_minus_before": -1.1680327868852451,
+            "relative_reduction_percent": 15.986537652503142,
+            "display_reduction_percent": "15.99"
+          },
+          "candidate_checks": {
+            "before": 5.453893442622951,
+            "after": 4.2858606557377055,
+            "raw_count_before": 5323,
+            "raw_count_after": 4183,
+            "after_minus_before": -1.1680327868852451,
+            "relative_reduction_percent": 21.41649445801238,
+            "display_reduction_percent": "21.42"
+          }
+        }
+      },
+      {
+        "rank": "learned",
+        "repair_unchanged_percent": 56.35245901639344,
+        "changes": {
+          "tool_calls": {
+            "before": 5.911885245901639,
+            "after": 5.384221311475409,
+            "raw_count_before": 5770,
+            "raw_count_after": 5255,
+            "after_minus_before": -0.5276639344262302,
+            "relative_reduction_percent": 8.925476603119598,
+            "display_reduction_percent": "8.93"
+          },
+          "candidate_checks": {
+            "before": 4.059426229508197,
+            "after": 3.5317622950819674,
+            "raw_count_before": 3962,
+            "raw_count_after": 3447,
+            "after_minus_before": -0.5276639344262293,
+            "relative_reduction_percent": 12.998485613326594,
+            "display_reduction_percent": "13.00"
+          },
+          "rank_inputs_cold": {
+            "before": 36.771516393442624,
+            "after": 30.262295081967213,
+            "raw_count_before": 35889,
+            "raw_count_after": 29536,
+            "after_minus_before": -6.509221311475411,
+            "relative_reduction_percent": 17.70180278079635,
+            "display_reduction_percent": "17.70"
+          }
+        }
+      }
+    ],
+    "definitions": {
+      "Calls": "Problem-context solves + original-step audits + missing-evidence checks + candidate checks, averaged over all Test inputs. Missing-evidence checks are zero in these four configurations.",
+      "RankInputs": "Candidate ranking inputs counted without cross-condition cache reuse. Not symbolic calls, model forward batches, FLOPs, or wall time. Rule rows have no learned ranker and are excluded from the ranking-workload panel.",
+      "stack_precision": "Use unrounded means for bar geometry, then round only text labels. Rounded stack labels may sum to 0.01 less/more than the rounded total.",
+      "excluded_cost": "Native PRM inference/generation, native code execution, and neural ranking compute are not included in symbolic Calls."
+    },
+    "caption": "Effect of Track on symbolic tool use and ranking workload. The diagnostic model and Audit are fixed; paired configurations attain the same repair rate. Values are Test means per input over two seeds."
+  },
+  "uncertainty_note": "These are descriptive means. No new confidence intervals or significance tests were computed.",
+  "elapsed_seconds": 0.01600000000325963
+}

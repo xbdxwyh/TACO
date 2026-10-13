@@ -1,0 +1,47 @@
+{
+  "repo": "Skywork/Skywork-o1-Open-PRM-Qwen-2.5-1.5B",
+  "revision": "98d69606595eedbdbbbf0a7d28efdcd462ba6a67",
+  "upstream_commit": "719b56b17447405e0f10e6c0360a581cf4ffa9c1",
+  "files": {
+    "added_tokens.json": {
+      "size": 605,
+      "git_blob_sha1": "482ced4679301bf287ebb310bdd1790eb4514232",
+      "sha256": null
+    },
+    "config.json": {
+      "size": 849,
+      "git_blob_sha1": "7b7e7b586c37d2ab3dcd2c7aff55da082319de06",
+      "sha256": null
+    },
+    "merges.txt": {
+      "size": 1671853,
+      "git_blob_sha1": "31349551d90c7606f325fe0f11bbb8bd5fa0d7c7",
+      "sha256": null
+    },
+    "pytorch_model.bin": {
+      "size": 3087498236,
+      "git_blob_sha1": "560da0161d26d4f7bba69d93386666f08b4b05f6",
+      "sha256": "c1de1109b83e4835855daf766ae4281bd1be38a0a4fd165820b5a3a1498d3ceb"
+    },
+    "special_tokens_map.json": {
+      "size": 644,
+      "git_blob_sha1": "db3f70265f8141da2af9432b7da0e769c8bb34c8",
+      "sha256": null
+    },
+    "tokenizer.json": {
+      "size": 7031673,
+      "git_blob_sha1": "d24314ef7f0afd1b678c2e24c767e19f24f86b0e",
+      "sha256": null
+    },
+    "tokenizer_config.json": {
+      "size": 7332,
+      "git_blob_sha1": "55895b24bd02cfdc13c75f2d562e494c263a4e18",
+      "sha256": null
+    },
+    "vocab.json": {
+      "size": 2776833,
+      "git_blob_sha1": "4783fe10ac3adce15ac8f358ef5462739852c569",
+      "sha256": null
+    }
+  }
+}

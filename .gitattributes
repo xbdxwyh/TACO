@@ -1,0 +1,3 @@
+# Preserve exact bytes: data, model and source manifests contain SHA256 hashes.
+# Automatic CRLF/LF conversion would invalidate a fresh clone's integrity checks.
+* -text

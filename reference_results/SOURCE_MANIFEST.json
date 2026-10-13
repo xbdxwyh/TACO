@@ -1,0 +1,38 @@
+[
+  {
+    "source": "paper-kbs/experiment-tables-20261012/table-data-audit.json",
+    "source_sha256": "03f898c4cdddb899e4ca5cbdc7aec91595c740deb7499147b39149e3d90100e4",
+    "release": "paper_tables.json",
+    "transformation": "Absolute source paths replaced with portable provenance labels; numeric records unchanged."
+  },
+  {
+    "source": "work/main_row_inventory_20261012.json",
+    "source_sha256": "d63eaaf0177a0ded8b512ce07317d66043c5bc8a604447bea0ee0c951a4a5f02",
+    "release": "all_component_combinations.json",
+    "transformation": "Absolute source paths replaced with portable provenance labels; numeric records unchanged."
+  },
+  {
+    "source": "work/remaining_protection_20261012.json",
+    "source_sha256": "ec1ec83e6e3d85845bd7340deb0a473bfde752aa6ddc1261f448bf0456e810e7",
+    "release": "protection.json",
+    "transformation": "Absolute source paths replaced with portable provenance labels; numeric records unchanged."
+  },
+  {
+    "source": "work/remaining_costs_20261012.json",
+    "source_sha256": "74951dec2751f20c55a6a68d7bfed88da847f91652472b45518354c1b4295e3c",
+    "release": "costs.json",
+    "transformation": "Absolute source paths replaced with portable provenance labels; numeric records unchanged."
+  },
+  {
+    "source": "work/remaining_error_types_20261012.json",
+    "source_sha256": "1eadba020a30b54206cdbc1b7b35b3043a07c94fb6526ad0e03d76a7d6b98287",
+    "release": "error_types.json",
+    "transformation": "Absolute source paths replaced with portable provenance labels; numeric records unchanged."
+  },
+  {
+    "source": "paper-kbs/figures/experimental_plots/plot_taco_analyses_data.json",
+    "source_sha256": "7ad97d98b64eda206fa1ac81b07a4dc0be0b755b779db37e85ef30bbd6a3d3f5",
+    "release": "figure4_5_source_data.json",
+    "transformation": "Absolute source paths replaced with portable provenance labels; numeric records unchanged."
+  }
+]

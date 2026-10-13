@@ -1,0 +1,25 @@
+# Reproducibility outputs, temporary data and external model weights
+outputs/
+generated/
+models/
+.cache/
+*.log
+*.tmp
+*.partial
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+# Small first-party checkpoints in checkpoints/ are intentional release files.

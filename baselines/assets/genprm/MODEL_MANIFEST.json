@@ -1,0 +1,37 @@
+{
+  "repo": "GenPRM/GenPRM-1.5B",
+  "revision": "a0fa69768f4524257e1730fec639aa7781c7fa82",
+  "upstream_commit": "a08da3f6b636be370e0d53f9bdbdc455cdece939",
+  "files": {
+    "config.json": {
+      "size": 809,
+      "git_blob_sha1": "8f793084e0f985aafcdb29024fb3c7d1459aa48c",
+      "sha256": null
+    },
+    "generation_config.json": {
+      "size": 181,
+      "git_blob_sha1": "c02e4cea6f0d6a72fd8085c9da6d655c95689362",
+      "sha256": null
+    },
+    "model.safetensors": {
+      "size": 3554214752,
+      "git_blob_sha1": "f30bc450eb40433d59372076fb129cb61e7e7f8c",
+      "sha256": "e5e2e5157b95cda69798857551acffddf03137e48a62ba81d41182ff1e85a601"
+    },
+    "special_tokens_map.json": {
+      "size": 473,
+      "git_blob_sha1": "6bd9d66021dd663b22e84f26c1788e26a88cc22e",
+      "sha256": null
+    },
+    "tokenizer.json": {
+      "size": 11422970,
+      "git_blob_sha1": "dc1953ef221005a7d58ae5bf737d693f393ca40c",
+      "sha256": "a69acec4e98f98777b2cf45d384dd34efb45f65a75ce02b13ffbb15f318ac1ff"
+    },
+    "tokenizer_config.json": {
+      "size": 6924,
+      "git_blob_sha1": "cff6cea88e23a22ea49ca0d1b4564b6589afa340",
+      "sha256": null
+    }
+  }
+}

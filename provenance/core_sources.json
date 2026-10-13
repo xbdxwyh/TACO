@@ -1,0 +1,67 @@
+{
+  "math12_syntax_v2.py": {
+    "source_sha256": "9631a4c80890539c5ac839d5438195c0854ab0b031ff430bb68a672aa483f5df",
+    "packaged_sha256": "9631a4c80890539c5ac839d5438195c0854ab0b031ff430bb68a672aa483f5df",
+    "changes": "package-relative internal imports and LF line endings only"
+  },
+  "math12_exact_v2.py": {
+    "source_sha256": "9bdcb137374a3b11b2fd3dbdcd1b4b2d7e4e25979c188229f6cb057ce8a4944e",
+    "packaged_sha256": "9f7599b49be798de819fb74ccd524ed788adf2f42244ea54a6aa5b1ecd9e1f4d",
+    "changes": "package-relative internal imports and LF line endings only"
+  },
+  "math12_reference_v2.py": {
+    "source_sha256": "6441c40d9b8eb8261c62e954c41cc999c5784b3e3bbba9f159ca0c74b129fe3f",
+    "packaged_sha256": "4d2df2ee3622aca3bd21a12d0274b9cf8151cf326a08c26642ff8590a2eb4a4f",
+    "changes": "package-relative internal imports and LF line endings only"
+  },
+  "math12_state_v2.py": {
+    "source_sha256": "54534b84a3ce32c65e69c65cc45458cb159c0127260844873185fa9776ece52b",
+    "packaged_sha256": "f0dbd3574952efb09cc6361a53f9293a13a5315e998d508fd0040d62b1ea3c6b",
+    "changes": "package-relative internal imports and LF line endings only"
+  },
+  "math12_actions_v1.py": {
+    "source_sha256": "64cf72b2aa3c32e5ee4d5b4988f2d244df9a5ec43a1180454c1fc42826033850",
+    "packaged_sha256": "7a72c1adb10e722a07a3fb1636ce1fe5350a319a343401a59387b8c6ce3a3e19",
+    "changes": "package-relative internal imports and LF line endings only"
+  },
+  "math12_actions_v2.py": {
+    "source_sha256": "8536503b15ef95d75c99bc9403b7998bd2c35083f0c0655395a8ea9577e8f54d",
+    "packaged_sha256": "ff387a1912d4845a6033423cf0e79e23a0ab3c97c554366498119b54ec75fb2d",
+    "changes": "package-relative internal imports and LF line endings only"
+  },
+  "math12_model_v1.py": {
+    "source_sha256": "24c9170f61908e0eeb1cee38eb1226e6ac27f71c083b93b0e1dd15e103015d12",
+    "packaged_sha256": "684b91d76d0aecb3ad58f76880b98cfed59c4105ae3085730957d8eadddbb5ef",
+    "changes": "package-relative internal imports and LF line endings only"
+  },
+  "math12_io_v1.py": {
+    "source_sha256": "1318fac92da69c2875aa97944987551b5772e1dde75120f4be0ea62eacee5a1e",
+    "packaged_sha256": "50cef44964cdcbe71ef59bbae1a9d06c86c50e3930a463848c9f1b9059345a7e",
+    "changes": "package-relative internal imports and LF line endings only"
+  },
+  "math12_policy_v1.py": {
+    "source_sha256": "b7047d3da8ac6135a3992badf37c7efe3ddcb67b069c866cca968c55b997cbd9",
+    "packaged_sha256": "1781aa9be02a31c08e1eacafc2fdef49c4dcc816079af38576289e71623efbc8",
+    "changes": "package-relative internal imports and LF line endings only"
+  },
+  "math12_obligation_policy_v1.py": {
+    "source_sha256": "94e1650432f1c7488b66f7ad65f5aa33b0045a5001ba12681a1120b0b95fdc4c",
+    "packaged_sha256": "a3722c2d384051b62b578000ff0649bc7c7c693f0baaf0d5248bf3c87629de6d",
+    "changes": "package-relative internal imports and LF line endings only"
+  },
+  "math12_step_goal_policy_v1.py": {
+    "source_sha256": "4597ae74b4da7abe8889ecfde0c2308fae7e1dddead8f2912148dd93dd4ccdf0",
+    "packaged_sha256": "d348524f6c4c54e675454c05693c9a8308df948f92d54f4f4a87b740087e788a",
+    "changes": "package-relative internal imports and LF line endings only"
+  },
+  "math12_final_policy_v1.py": {
+    "source_sha256": "daed048470468b2889fdfd677577e24d3688a3ba5f4126ff0dd2b85085c35adf",
+    "packaged_sha256": "2aa7cadc7a35ee618c901fc4080ae7d94655801982f0ff0cd18110b4f7cb3d5b",
+    "changes": "package-relative internal imports and LF line endings only"
+  },
+  "math12_score_v1.py": {
+    "source_sha256": "b96b81ed8b9742045c90423cecd1819a57152cb49b3a7f0bec98d87708e3a89f",
+    "packaged_sha256": "96f51bffcb6d231a7a0930b2c53e62d248b6d990f77e1708d573c82f1f26acd2",
+    "changes": "package-relative internal imports and LF line endings only"
+  }
+}

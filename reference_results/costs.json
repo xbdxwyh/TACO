@@ -1,0 +1,3936 @@
+{
+  "scope": "Saved-record formatting only; bounded 45s, no inference/re-scoring, no paper edits",
+  "source_sha256": {
+    "historical_workspace/paper-main-results-test-v2/NUMBERS_AND_SOURCES.json": "54d4271e941d5feb2d095b67b03fc76d52defbb196c5a824fc1cbf70f57fb5be",
+    "historical_workspace/work/experiment_tables_native_costs_20261012.json": "46a5a25ef2873d4d29f28bdcf1978722c0b98d87eae0e889406387f1ee6fa0e3",
+    "historical_outputs/local-prm-test-suite-v1/thinkprm-test-v1/SUMMARY.json": "769d92d2e2e36007f5e7db9e388536585b9723eb6da396d8ed6096a858b903fd",
+    "historical_outputs/local-prm-test-suite-v1/skywork-test-v1/SUMMARY.json": "0b5606f4ac30ce196e2ced922d90ba492c11c257e6ca94328e7ce5bbb48c8184",
+    "historical_outputs/local-prm-test-suite-v1/spare-test-v1/SUMMARY.json": "c76d0cbbc7f5fbd7bca32db5db24fe91ebb33d6788de59e84cffe81adcb3cea8",
+    "historical_outputs/genprm-math12-test-v1-full/SUMMARY.json": "61d92b76e774f5e2f37f3c36d9f14c8430cad67fc3fec1bc9bdef02350553c8c",
+    "historical_outputs/math12-cloud-test-suite-v1/qwen-test-v1/SUMMARY.json": "02d203c7ff7dd65b0ee28e1d6f5a695e134e1d9313fca171f3d7e0b12f20337e",
+    "historical_outputs/math12-cloud-test-suite-v1/pddl-test-v1/SUMMARY.json": "75600fe81ee194431ab905526743dba1c6ac2617857a34b1fea437bf93ac8b6f",
+    "historical_outputs/math12-cloud-test-suite-v1/shepherd-test-v1/SUMMARY.json": "9e4af9c6c8cdd6c9854dc2294a1504fba57bb249acc3af39c2e0e3e9653c9d39",
+    "historical_outputs/math12-final-confirm-v1-full/SUMMARY.json": "dd24607f539d2b499a5d43b7a51bb84a7088bb43ca1417e28d11bb808d002bc9",
+    "historical_outputs/shepherd-math12-cloud-v1-full/SUMMARY.json": "36eceee2ee1a51dc2a5b504d60578cfc6c3cb03bf5994c4b4dc1e4803069c95e",
+    "historical_outputs/genprm-math12-repair-v2-full/SUMMARY.json": "311850e2bf876e9f8a50b49c03df59d3f1e71cdccd28df46479e59b6ea9fee8b",
+    "historical_outputs/thinkprm-math12-endtoend-v2-full/SUMMARY.json": "c509db647192374603759ea3c9c6fadd0066400f9186cae3a205ef7948a85db5",
+    "historical_outputs/skywork-math12-endtoend-v1-full/SUMMARY.json": "2ed5cba02d2a5d9d7ba65b8264796e14857a16788e982ad10e6447da027880d7",
+    "historical_outputs/spare-math12-endtoend-v1-full/SUMMARY.json": "30c269b2b8c1efc1d11e5fedaf93686a62b83e0ed664da7773bea97272852169",
+    "historical_outputs/qwen-math12-cloud-v1-full/SUMMARY.json": "85dd7e57e00cf04132d448622187ee85919badf204b89995e05b4e45ae484c2b",
+    "historical_outputs/pddl-math12-cloud-v1-full/SUMMARY.json": "f3c514ebf1b5e4e7426bb738d343029b74758daf9638e51a029d2b5553ce07fb"
+  },
+  "field_definitions": {
+    "question_solves": "problem-context symbolic solving",
+    "step_audit_checks": "original-step verification",
+    "missing_evidence_checks": "missing diagnostic evidence checks",
+    "candidate_checks": "candidate mathematical verification",
+    "tool_calls": "sum of previous four",
+    "rank_inputs_cold": "candidate ranking inputs absent cross-condition cache reuse, not forward passes"
+  },
+  "primary": {
+    "Test": [
+      {
+        "model": "ours",
+        "name": "TACO (task-trained V)",
+        "split": "Test",
+        "arm": "ours_verify_S1_learned_uncertain",
+        "type": "V + Track + Rank",
+        "track": true,
+        "rank": "learned",
+        "audit": "uncertain",
+        "means": {
+          "question_solves": 1.0,
+          "step_audit_checks": 0.8524590163934426,
+          "missing_evidence_checks": 0.0,
+          "candidate_checks": 3.5317622950819674,
+          "tool_calls": 5.38422131147541,
+          "rank_inputs_cold": 30.262295081967213
+        },
+        "repair_pct": 56.35245901639344,
+        "fa_pct": 1.2295081967213115,
+        "seed_counts": {
+          "17": {
+            "n": 488,
+            "error_n": 244,
+            "repair_success": 139,
+            "false_accept": 7,
+            "question_solves": 488,
+            "step_audit_checks": 416,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 1698,
+            "tool_calls": 2602,
+            "rank_inputs_cold": 14847
+          },
+          "29": {
+            "n": 488,
+            "error_n": 244,
+            "repair_success": 136,
+            "false_accept": 5,
+            "question_solves": 488,
+            "step_audit_checks": 416,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 1749,
+            "tool_calls": 2653,
+            "rank_inputs_cold": 14689
+          }
+        },
+        "source": "historical_outputs/local-prm-test-suite-v1/skywork-test-v1/SUMMARY.json",
+        "source_sha256": "0b5606f4ac30ce196e2ced922d90ba492c11c257e6ca94328e7ce5bbb48c8184",
+        "source_json_paths": [
+          "panels.ours_verify_S1_learned_uncertain/seed17.overall",
+          "panels.ours_verify_S1_learned_uncertain/seed29.overall"
+        ]
+      },
+      {
+        "model": "shepherd",
+        "name": "Math-Shepherd",
+        "split": "Test",
+        "arm": "shepherd_verify_S1_learned_uncertain",
+        "type": "PRM + Track + Rank",
+        "track": true,
+        "rank": "learned",
+        "audit": "uncertain",
+        "means": {
+          "question_solves": 1.0,
+          "step_audit_checks": 0.47950819672131145,
+          "missing_evidence_checks": 0.0,
+          "candidate_checks": 4.869877049180328,
+          "tool_calls": 6.349385245901639,
+          "rank_inputs_cold": 71.51229508196721
+        },
+        "repair_pct": 50.614754098360656,
+        "fa_pct": 3.790983606557377,
+        "seed_counts": {
+          "17": {
+            "n": 488,
+            "error_n": 244,
+            "repair_success": 121,
+            "false_accept": 20,
+            "question_solves": 488,
+            "step_audit_checks": 234,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 2360,
+            "tool_calls": 3082,
+            "rank_inputs_cold": 34898
+          },
+          "29": {
+            "n": 488,
+            "error_n": 244,
+            "repair_success": 126,
+            "false_accept": 17,
+            "question_solves": 488,
+            "step_audit_checks": 234,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 2393,
+            "tool_calls": 3115,
+            "rank_inputs_cold": 34898
+          }
+        },
+        "source": "historical_outputs/math12-cloud-test-suite-v1/shepherd-test-v1/SUMMARY.json",
+        "source_sha256": "9e4af9c6c8cdd6c9854dc2294a1504fba57bb249acc3af39c2e0e3e9653c9d39",
+        "source_json_paths": [
+          "panels.shepherd_verify_S1_learned_uncertain/seed17.overall",
+          "panels.shepherd_verify_S1_learned_uncertain/seed29.overall"
+        ]
+      },
+      {
+        "model": "skywork",
+        "name": "Skywork-PRM",
+        "split": "Test",
+        "arm": "skywork_verify_S1_learned_uncertain",
+        "type": "PRM + Track + Rank",
+        "track": true,
+        "rank": "learned",
+        "audit": "uncertain",
+        "means": {
+          "question_solves": 1.0,
+          "step_audit_checks": 0.555327868852459,
+          "missing_evidence_checks": 0.0,
+          "candidate_checks": 5.273565573770492,
+          "tool_calls": 6.828893442622951,
+          "rank_inputs_cold": 67.75
+        },
+        "repair_pct": 56.967213114754095,
+        "fa_pct": 0.6147540983606558,
+        "seed_counts": {
+          "17": {
+            "n": 488,
+            "error_n": 244,
+            "repair_success": 137,
+            "false_accept": 3,
+            "question_solves": 488,
+            "step_audit_checks": 271,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 2557,
+            "tool_calls": 3316,
+            "rank_inputs_cold": 33062
+          },
+          "29": {
+            "n": 488,
+            "error_n": 244,
+            "repair_success": 141,
+            "false_accept": 3,
+            "question_solves": 488,
+            "step_audit_checks": 271,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 2590,
+            "tool_calls": 3349,
+            "rank_inputs_cold": 33062
+          }
+        },
+        "source": "historical_outputs/local-prm-test-suite-v1/skywork-test-v1/SUMMARY.json",
+        "source_sha256": "0b5606f4ac30ce196e2ced922d90ba492c11c257e6ca94328e7ce5bbb48c8184",
+        "source_json_paths": [
+          "panels.skywork_verify_S1_learned_uncertain/seed17.overall",
+          "panels.skywork_verify_S1_learned_uncertain/seed29.overall"
+        ]
+      },
+      {
+        "model": "qwen",
+        "name": "Qwen-PRM",
+        "split": "Test",
+        "arm": "qwen09_verify_S1_learned_uncertain",
+        "type": "PRM + Track + Rank",
+        "track": true,
+        "rank": "learned",
+        "audit": "uncertain",
+        "means": {
+          "question_solves": 1.0,
+          "step_audit_checks": 0.5307377049180327,
+          "missing_evidence_checks": 0.0,
+          "candidate_checks": 3.2725409836065573,
+          "tool_calls": 4.80327868852459,
+          "rank_inputs_cold": 43.256147540983605
+        },
+        "repair_pct": 37.704918032786885,
+        "fa_pct": 12.5,
+        "seed_counts": {
+          "17": {
+            "n": 488,
+            "error_n": 244,
+            "repair_success": 91,
+            "false_accept": 62,
+            "question_solves": 488,
+            "step_audit_checks": 259,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 1570,
+            "tool_calls": 2317,
+            "rank_inputs_cold": 21109
+          },
+          "29": {
+            "n": 488,
+            "error_n": 244,
+            "repair_success": 93,
+            "false_accept": 60,
+            "question_solves": 488,
+            "step_audit_checks": 259,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 1624,
+            "tool_calls": 2371,
+            "rank_inputs_cold": 21109
+          }
+        },
+        "source": "historical_outputs/math12-cloud-test-suite-v1/qwen-test-v1/SUMMARY.json",
+        "source_sha256": "02d203c7ff7dd65b0ee28e1d6f5a695e134e1d9313fca171f3d7e0b12f20337e",
+        "source_json_paths": [
+          "panels.qwen09_verify_S1_learned_uncertain/seed17.overall",
+          "panels.qwen09_verify_S1_learned_uncertain/seed29.overall"
+        ]
+      },
+      {
+        "model": "spare",
+        "name": "SPARE",
+        "split": "Test",
+        "arm": "spare_verify_S1_learned_uncertain",
+        "type": "PRM + Track + Rank",
+        "track": true,
+        "rank": "learned",
+        "audit": "uncertain",
+        "means": {
+          "question_solves": 1.0,
+          "step_audit_checks": 0.8954918032786885,
+          "missing_evidence_checks": 0.0,
+          "candidate_checks": 3.889344262295082,
+          "tool_calls": 5.784836065573771,
+          "rank_inputs_cold": 38.55122950819672
+        },
+        "repair_pct": 32.377049180327866,
+        "fa_pct": 15.061475409836065,
+        "seed_counts": {
+          "17": {
+            "n": 488,
+            "error_n": 244,
+            "repair_success": 77,
+            "false_accept": 76,
+            "question_solves": 488,
+            "step_audit_checks": 437,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 1876,
+            "tool_calls": 2801,
+            "rank_inputs_cold": 18813
+          },
+          "29": {
+            "n": 488,
+            "error_n": 244,
+            "repair_success": 81,
+            "false_accept": 71,
+            "question_solves": 488,
+            "step_audit_checks": 437,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 1920,
+            "tool_calls": 2845,
+            "rank_inputs_cold": 18813
+          }
+        },
+        "source": "historical_outputs/local-prm-test-suite-v1/spare-test-v1/SUMMARY.json",
+        "source_sha256": "c76d0cbbc7f5fbd7bca32db5db24fe91ebb33d6788de59e84cffe81adcb3cea8",
+        "source_json_paths": [
+          "panels.spare_verify_S1_learned_uncertain/seed17.overall",
+          "panels.spare_verify_S1_learned_uncertain/seed29.overall"
+        ]
+      },
+      {
+        "model": "pddl",
+        "name": "PDDL2PRM",
+        "split": "Test",
+        "arm": "pddl09_verify_S1_learned_uncertain",
+        "type": "PRM + Track + Rank",
+        "track": true,
+        "rank": "learned",
+        "audit": "uncertain",
+        "means": {
+          "question_solves": 1.0,
+          "step_audit_checks": 0.5655737704918032,
+          "missing_evidence_checks": 0.0,
+          "candidate_checks": 3.194672131147541,
+          "tool_calls": 4.760245901639344,
+          "rank_inputs_cold": 41.44877049180328
+        },
+        "repair_pct": 39.959016393442624,
+        "fa_pct": 11.577868852459016,
+        "seed_counts": {
+          "17": {
+            "n": 488,
+            "error_n": 244,
+            "repair_success": 99,
+            "false_accept": 59,
+            "question_solves": 488,
+            "step_audit_checks": 276,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 1532,
+            "tool_calls": 2296,
+            "rank_inputs_cold": 20227
+          },
+          "29": {
+            "n": 488,
+            "error_n": 244,
+            "repair_success": 96,
+            "false_accept": 54,
+            "question_solves": 488,
+            "step_audit_checks": 276,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 1586,
+            "tool_calls": 2350,
+            "rank_inputs_cold": 20227
+          }
+        },
+        "source": "historical_outputs/math12-cloud-test-suite-v1/pddl-test-v1/SUMMARY.json",
+        "source_sha256": "75600fe81ee194431ab905526743dba1c6ac2617857a34b1fea437bf93ac8b6f",
+        "source_json_paths": [
+          "panels.pddl09_verify_S1_learned_uncertain/seed17.overall",
+          "panels.pddl09_verify_S1_learned_uncertain/seed29.overall"
+        ]
+      },
+      {
+        "model": "genprm",
+        "name": "GenPRM",
+        "split": "Test",
+        "arm": "genprm_verify_S1_learned_uncertain",
+        "type": "PRM + Track + Rank",
+        "track": true,
+        "rank": "learned",
+        "audit": "uncertain",
+        "means": {
+          "question_solves": 1.0,
+          "step_audit_checks": 0.5778688524590164,
+          "missing_evidence_checks": 0.02663934426229508,
+          "candidate_checks": 4.19672131147541,
+          "tool_calls": 5.801229508196721,
+          "rank_inputs_cold": 59.59426229508197
+        },
+        "repair_pct": 45.69672131147541,
+        "fa_pct": 6.045081967213115,
+        "seed_counts": {
+          "17": {
+            "n": 488,
+            "error_n": 244,
+            "repair_success": 112,
+            "false_accept": 29,
+            "question_solves": 488,
+            "step_audit_checks": 282,
+            "missing_evidence_checks": 13,
+            "candidate_checks": 2039,
+            "tool_calls": 2822,
+            "rank_inputs_cold": 29082
+          },
+          "29": {
+            "n": 488,
+            "error_n": 244,
+            "repair_success": 111,
+            "false_accept": 30,
+            "question_solves": 488,
+            "step_audit_checks": 282,
+            "missing_evidence_checks": 13,
+            "candidate_checks": 2057,
+            "tool_calls": 2840,
+            "rank_inputs_cold": 29082
+          }
+        },
+        "source": "historical_outputs/genprm-math12-test-v1-full/SUMMARY.json",
+        "source_sha256": "61d92b76e774f5e2f37f3c36d9f14c8430cad67fc3fec1bc9bdef02350553c8c",
+        "source_json_paths": [
+          "panels.genprm_verify_S1_learned_uncertain/seed17.overall",
+          "panels.genprm_verify_S1_learned_uncertain/seed29.overall"
+        ]
+      },
+      {
+        "model": "thinkprm",
+        "name": "ThinkPRM",
+        "split": "Test",
+        "arm": "thinkprm_verify_S1_learned_uncertain",
+        "type": "PRM + Track + Rank",
+        "track": true,
+        "rank": "learned",
+        "audit": "uncertain",
+        "means": {
+          "question_solves": 1.0,
+          "step_audit_checks": 0.7254098360655737,
+          "missing_evidence_checks": 1.5081967213114753,
+          "candidate_checks": 2.314549180327869,
+          "tool_calls": 5.548155737704918,
+          "rank_inputs_cold": 32.092213114754095
+        },
+        "repair_pct": 51.4344262295082,
+        "fa_pct": 0.819672131147541,
+        "seed_counts": {
+          "17": {
+            "n": 488,
+            "error_n": 244,
+            "repair_success": 127,
+            "false_accept": 4,
+            "question_solves": 488,
+            "step_audit_checks": 354,
+            "missing_evidence_checks": 736,
+            "candidate_checks": 1120,
+            "tool_calls": 2698,
+            "rank_inputs_cold": 15661
+          },
+          "29": {
+            "n": 488,
+            "error_n": 244,
+            "repair_success": 124,
+            "false_accept": 4,
+            "question_solves": 488,
+            "step_audit_checks": 354,
+            "missing_evidence_checks": 736,
+            "candidate_checks": 1139,
+            "tool_calls": 2717,
+            "rank_inputs_cold": 15661
+          }
+        },
+        "source": "historical_outputs/local-prm-test-suite-v1/thinkprm-test-v1/SUMMARY.json",
+        "source_sha256": "769d92d2e2e36007f5e7db9e388536585b9723eb6da396d8ed6096a858b903fd",
+        "source_json_paths": [
+          "panels.thinkprm_verify_S1_learned_uncertain/seed17.overall",
+          "panels.thinkprm_verify_S1_learned_uncertain/seed29.overall"
+        ]
+      }
+    ],
+    "Val": [
+      {
+        "model": "ours",
+        "name": "TACO (task-trained V)",
+        "split": "Val",
+        "arm": "ours_verify_S1_learned_uncertain",
+        "type": "V + Track + Rank",
+        "track": true,
+        "rank": "learned",
+        "audit": "uncertain",
+        "means": {
+          "question_solves": 1.0,
+          "step_audit_checks": 0.8168604651162791,
+          "missing_evidence_checks": 0.0,
+          "candidate_checks": 3.570736434108527,
+          "tool_calls": 5.387596899224806,
+          "rank_inputs_cold": 31.68701550387597
+        },
+        "repair_pct": 58.52713178294574,
+        "fa_pct": 1.1627906976744187,
+        "seed_counts": {
+          "17": {
+            "n": 516,
+            "error_n": 258,
+            "repair_success": 157,
+            "false_accept": 8,
+            "question_solves": 516,
+            "step_audit_checks": 420,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 1808,
+            "tool_calls": 2744,
+            "rank_inputs_cold": 16435
+          },
+          "29": {
+            "n": 516,
+            "error_n": 258,
+            "repair_success": 145,
+            "false_accept": 4,
+            "question_solves": 516,
+            "step_audit_checks": 423,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 1877,
+            "tool_calls": 2816,
+            "rank_inputs_cold": 16266
+          }
+        },
+        "source": "historical_outputs/shepherd-math12-cloud-v1-full/SUMMARY.json",
+        "source_sha256": "36eceee2ee1a51dc2a5b504d60578cfc6c3cb03bf5994c4b4dc1e4803069c95e",
+        "source_json_paths": [
+          "panels.ours_verify_S1_learned_uncertain/seed17.overall",
+          "panels.ours_verify_S1_learned_uncertain/seed29.overall"
+        ]
+      },
+      {
+        "model": "shepherd",
+        "name": "Math-Shepherd",
+        "split": "Val",
+        "arm": "shepherd_verify_S1_learned_uncertain",
+        "type": "PRM + Track + Rank",
+        "track": true,
+        "rank": "learned",
+        "audit": "uncertain",
+        "means": {
+          "question_solves": 1.0,
+          "step_audit_checks": 0.49224806201550386,
+          "missing_evidence_checks": 0.0,
+          "candidate_checks": 4.751937984496124,
+          "tool_calls": 6.244186046511628,
+          "rank_inputs_cold": 66.54651162790698
+        },
+        "repair_pct": 54.263565891472865,
+        "fa_pct": 3.7790697674418605,
+        "seed_counts": {
+          "17": {
+            "n": 516,
+            "error_n": 258,
+            "repair_success": 141,
+            "false_accept": 19,
+            "question_solves": 516,
+            "step_audit_checks": 254,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 2397,
+            "tool_calls": 3167,
+            "rank_inputs_cold": 34338
+          },
+          "29": {
+            "n": 516,
+            "error_n": 258,
+            "repair_success": 139,
+            "false_accept": 20,
+            "question_solves": 516,
+            "step_audit_checks": 254,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 2507,
+            "tool_calls": 3277,
+            "rank_inputs_cold": 34338
+          }
+        },
+        "source": "historical_outputs/shepherd-math12-cloud-v1-full/SUMMARY.json",
+        "source_sha256": "36eceee2ee1a51dc2a5b504d60578cfc6c3cb03bf5994c4b4dc1e4803069c95e",
+        "source_json_paths": [
+          "panels.shepherd_verify_S1_learned_uncertain/seed17.overall",
+          "panels.shepherd_verify_S1_learned_uncertain/seed29.overall"
+        ]
+      },
+      {
+        "model": "skywork",
+        "name": "Skywork-PRM",
+        "split": "Val",
+        "arm": "skywork_verify_S1_learned_uncertain",
+        "type": "PRM + Track + Rank",
+        "track": true,
+        "rank": "learned",
+        "audit": "uncertain",
+        "means": {
+          "question_solves": 1.0,
+          "step_audit_checks": 0.5833333333333334,
+          "missing_evidence_checks": 0.0,
+          "candidate_checks": 5.138565891472868,
+          "tool_calls": 6.721899224806202,
+          "rank_inputs_cold": 65.15697674418605
+        },
+        "repair_pct": 59.10852713178294,
+        "fa_pct": 0.872093023255814,
+        "seed_counts": {
+          "17": {
+            "n": 516,
+            "error_n": 258,
+            "repair_success": 155,
+            "false_accept": 4,
+            "question_solves": 516,
+            "step_audit_checks": 301,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 2594,
+            "tool_calls": 3411,
+            "rank_inputs_cold": 33621
+          },
+          "29": {
+            "n": 516,
+            "error_n": 258,
+            "repair_success": 150,
+            "false_accept": 5,
+            "question_solves": 516,
+            "step_audit_checks": 301,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 2709,
+            "tool_calls": 3526,
+            "rank_inputs_cold": 33621
+          }
+        },
+        "source": "historical_outputs/shepherd-math12-cloud-v1-full/SUMMARY.json",
+        "source_sha256": "36eceee2ee1a51dc2a5b504d60578cfc6c3cb03bf5994c4b4dc1e4803069c95e",
+        "source_json_paths": [
+          "panels.skywork_verify_S1_learned_uncertain/seed17.overall",
+          "panels.skywork_verify_S1_learned_uncertain/seed29.overall"
+        ]
+      },
+      {
+        "model": "qwen",
+        "name": "Qwen-PRM",
+        "split": "Val",
+        "arm": "qwen_threshold_both_0.9",
+        "type": "PRM + Track + Rank",
+        "track": true,
+        "rank": "learned",
+        "audit": "uncertain",
+        "means": {
+          "question_solves": 1.0,
+          "step_audit_checks": 0.5232558139534884,
+          "missing_evidence_checks": 0.0,
+          "candidate_checks": 3.183139534883721,
+          "tool_calls": 4.7063953488372094,
+          "rank_inputs_cold": 41.75581395348837
+        },
+        "repair_pct": 35.27131782945737,
+        "fa_pct": 15.60077519379845,
+        "seed_counts": {
+          "17": {
+            "n": 516,
+            "error_n": 258,
+            "repair_success": 86,
+            "false_accept": 84,
+            "question_solves": 516,
+            "step_audit_checks": 270,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 1605,
+            "tool_calls": 2391,
+            "rank_inputs_cold": 21546
+          },
+          "29": {
+            "n": 516,
+            "error_n": 258,
+            "repair_success": 96,
+            "false_accept": 77,
+            "question_solves": 516,
+            "step_audit_checks": 270,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 1680,
+            "tool_calls": 2466,
+            "rank_inputs_cold": 21546
+          }
+        },
+        "source": "historical_outputs/shepherd-math12-cloud-v1-full/SUMMARY.json",
+        "source_sha256": "36eceee2ee1a51dc2a5b504d60578cfc6c3cb03bf5994c4b4dc1e4803069c95e",
+        "source_json_paths": [
+          "panels.qwen_threshold_both_0.9/seed17.overall",
+          "panels.qwen_threshold_both_0.9/seed29.overall"
+        ]
+      },
+      {
+        "model": "spare",
+        "name": "SPARE",
+        "split": "Val",
+        "arm": "spare_verify_S1_learned_uncertain",
+        "type": "PRM + Track + Rank",
+        "track": true,
+        "rank": "learned",
+        "audit": "uncertain",
+        "means": {
+          "question_solves": 1.0,
+          "step_audit_checks": 0.9147286821705426,
+          "missing_evidence_checks": 0.0,
+          "candidate_checks": 3.6550387596899223,
+          "tool_calls": 5.569767441860465,
+          "rank_inputs_cold": 34.39341085271318
+        },
+        "repair_pct": 30.03875968992248,
+        "fa_pct": 18.7984496124031,
+        "seed_counts": {
+          "17": {
+            "n": 516,
+            "error_n": 258,
+            "repair_success": 79,
+            "false_accept": 98,
+            "question_solves": 516,
+            "step_audit_checks": 472,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 1843,
+            "tool_calls": 2831,
+            "rank_inputs_cold": 17747
+          },
+          "29": {
+            "n": 516,
+            "error_n": 258,
+            "repair_success": 76,
+            "false_accept": 96,
+            "question_solves": 516,
+            "step_audit_checks": 472,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 1929,
+            "tool_calls": 2917,
+            "rank_inputs_cold": 17747
+          }
+        },
+        "source": "historical_outputs/shepherd-math12-cloud-v1-full/SUMMARY.json",
+        "source_sha256": "36eceee2ee1a51dc2a5b504d60578cfc6c3cb03bf5994c4b4dc1e4803069c95e",
+        "source_json_paths": [
+          "panels.spare_verify_S1_learned_uncertain/seed17.overall",
+          "panels.spare_verify_S1_learned_uncertain/seed29.overall"
+        ]
+      },
+      {
+        "model": "pddl",
+        "name": "PDDL2PRM",
+        "split": "Val",
+        "arm": "pddl09_verify_S1_learned_uncertain",
+        "type": "PRM + Track + Rank",
+        "track": true,
+        "rank": "learned",
+        "audit": "uncertain",
+        "means": {
+          "question_solves": 1.0,
+          "step_audit_checks": 0.5387596899224806,
+          "missing_evidence_checks": 0.0,
+          "candidate_checks": 3.2286821705426356,
+          "tool_calls": 4.767441860465116,
+          "rank_inputs_cold": 41.815891472868216
+        },
+        "repair_pct": 38.565891472868216,
+        "fa_pct": 14.050387596899224,
+        "seed_counts": {
+          "17": {
+            "n": 516,
+            "error_n": 258,
+            "repair_success": 96,
+            "false_accept": 74,
+            "question_solves": 516,
+            "step_audit_checks": 278,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 1632,
+            "tool_calls": 2426,
+            "rank_inputs_cold": 21577
+          },
+          "29": {
+            "n": 516,
+            "error_n": 258,
+            "repair_success": 103,
+            "false_accept": 71,
+            "question_solves": 516,
+            "step_audit_checks": 278,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 1700,
+            "tool_calls": 2494,
+            "rank_inputs_cold": 21577
+          }
+        },
+        "source": "historical_outputs/shepherd-math12-cloud-v1-full/SUMMARY.json",
+        "source_sha256": "36eceee2ee1a51dc2a5b504d60578cfc6c3cb03bf5994c4b4dc1e4803069c95e",
+        "source_json_paths": [
+          "panels.pddl09_verify_S1_learned_uncertain/seed17.overall",
+          "panels.pddl09_verify_S1_learned_uncertain/seed29.overall"
+        ]
+      },
+      {
+        "model": "genprm",
+        "name": "GenPRM",
+        "split": "Val",
+        "arm": "genprm_verify_S1_learned_uncertain",
+        "type": "PRM + Track + Rank",
+        "track": true,
+        "rank": "learned",
+        "audit": "uncertain",
+        "means": {
+          "question_solves": 1.0,
+          "step_audit_checks": 0.6027131782945736,
+          "missing_evidence_checks": 0.027131782945736434,
+          "candidate_checks": 4.153100775193798,
+          "tool_calls": 5.782945736434108,
+          "rank_inputs_cold": 55.116279069767444
+        },
+        "repair_pct": 50.0,
+        "fa_pct": 6.686046511627907,
+        "seed_counts": {
+          "17": {
+            "n": 516,
+            "error_n": 258,
+            "repair_success": 134,
+            "false_accept": 35,
+            "question_solves": 516,
+            "step_audit_checks": 311,
+            "missing_evidence_checks": 14,
+            "candidate_checks": 2082,
+            "tool_calls": 2923,
+            "rank_inputs_cold": 28440
+          },
+          "29": {
+            "n": 516,
+            "error_n": 258,
+            "repair_success": 124,
+            "false_accept": 34,
+            "question_solves": 516,
+            "step_audit_checks": 311,
+            "missing_evidence_checks": 14,
+            "candidate_checks": 2204,
+            "tool_calls": 3045,
+            "rank_inputs_cold": 28440
+          }
+        },
+        "source": "historical_outputs/genprm-math12-repair-v2-full/SUMMARY.json",
+        "source_sha256": "311850e2bf876e9f8a50b49c03df59d3f1e71cdccd28df46479e59b6ea9fee8b",
+        "source_json_paths": [
+          "panels.genprm_verify_S1_learned_uncertain/seed17.overall",
+          "panels.genprm_verify_S1_learned_uncertain/seed29.overall"
+        ]
+      },
+      {
+        "model": "thinkprm",
+        "name": "ThinkPRM",
+        "split": "Val",
+        "arm": "thinkprm_verify_S1_learned_uncertain",
+        "type": "PRM + Track + Rank",
+        "track": true,
+        "rank": "learned",
+        "audit": "uncertain",
+        "means": {
+          "question_solves": 1.0,
+          "step_audit_checks": 0.7422480620155039,
+          "missing_evidence_checks": 1.503875968992248,
+          "candidate_checks": 2.239341085271318,
+          "tool_calls": 5.4854651162790695,
+          "rank_inputs_cold": 28.0968992248062
+        },
+        "repair_pct": 52.325581395348834,
+        "fa_pct": 1.2596899224806202,
+        "seed_counts": {
+          "17": {
+            "n": 516,
+            "error_n": 258,
+            "repair_success": 140,
+            "false_accept": 7,
+            "question_solves": 516,
+            "step_audit_checks": 383,
+            "missing_evidence_checks": 776,
+            "candidate_checks": 1118,
+            "tool_calls": 2793,
+            "rank_inputs_cold": 14498
+          },
+          "29": {
+            "n": 516,
+            "error_n": 258,
+            "repair_success": 130,
+            "false_accept": 6,
+            "question_solves": 516,
+            "step_audit_checks": 383,
+            "missing_evidence_checks": 776,
+            "candidate_checks": 1193,
+            "tool_calls": 2868,
+            "rank_inputs_cold": 14498
+          }
+        },
+        "source": "historical_outputs/shepherd-math12-cloud-v1-full/SUMMARY.json",
+        "source_sha256": "36eceee2ee1a51dc2a5b504d60578cfc6c3cb03bf5994c4b4dc1e4803069c95e",
+        "source_json_paths": [
+          "panels.thinkprm_verify_S1_learned_uncertain/seed17.overall",
+          "panels.thinkprm_verify_S1_learned_uncertain/seed29.overall"
+        ]
+      }
+    ]
+  },
+  "internal": {
+    "Test": [
+      {
+        "model": "ours",
+        "name": "TACO (task-trained V)",
+        "split": "Test",
+        "arm": "ours_verify_S0_rule_none",
+        "type": "V + Rule",
+        "track": false,
+        "rank": "rule",
+        "audit": "none",
+        "means": {
+          "question_solves": 0.8688524590163934,
+          "step_audit_checks": 0.0,
+          "missing_evidence_checks": 0.0,
+          "candidate_checks": 5.642418032786885,
+          "tool_calls": 6.511270491803279,
+          "rank_inputs_cold": 0.0
+        },
+        "repair_pct": 23.770491803278688,
+        "fa_pct": 10.96311475409836,
+        "seed_counts": {
+          "17": {
+            "n": 488,
+            "error_n": 244,
+            "repair_success": 62,
+            "false_accept": 50,
+            "question_solves": 424,
+            "step_audit_checks": 0,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 2758,
+            "tool_calls": 3182,
+            "rank_inputs_cold": 0
+          },
+          "29": {
+            "n": 488,
+            "error_n": 244,
+            "repair_success": 54,
+            "false_accept": 57,
+            "question_solves": 424,
+            "step_audit_checks": 0,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 2749,
+            "tool_calls": 3173,
+            "rank_inputs_cold": 0
+          }
+        },
+        "source": "historical_outputs/local-prm-test-suite-v1/skywork-test-v1/SUMMARY.json",
+        "source_sha256": "0b5606f4ac30ce196e2ced922d90ba492c11c257e6ca94328e7ce5bbb48c8184",
+        "source_json_paths": [
+          "panels.ours_verify_S0_rule_none/seed17.overall",
+          "panels.ours_verify_S0_rule_none/seed29.overall"
+        ]
+      },
+      {
+        "model": "ours",
+        "name": "TACO (task-trained V)",
+        "split": "Test",
+        "arm": "ours_verify_S0_rule_uncertain",
+        "type": "V + Rule",
+        "track": false,
+        "rank": "rule",
+        "audit": "uncertain",
+        "means": {
+          "question_solves": 1.0,
+          "step_audit_checks": 0.8524590163934426,
+          "missing_evidence_checks": 0.0,
+          "candidate_checks": 5.453893442622951,
+          "tool_calls": 7.306352459016393,
+          "rank_inputs_cold": 0.0
+        },
+        "repair_pct": 43.23770491803279,
+        "fa_pct": 0.3073770491803279,
+        "seed_counts": {
+          "17": {
+            "n": 488,
+            "error_n": 244,
+            "repair_success": 105,
+            "false_accept": 2,
+            "question_solves": 488,
+            "step_audit_checks": 416,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 2658,
+            "tool_calls": 3562,
+            "rank_inputs_cold": 0
+          },
+          "29": {
+            "n": 488,
+            "error_n": 244,
+            "repair_success": 106,
+            "false_accept": 1,
+            "question_solves": 488,
+            "step_audit_checks": 416,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 2665,
+            "tool_calls": 3569,
+            "rank_inputs_cold": 0
+          }
+        },
+        "source": "historical_outputs/local-prm-test-suite-v1/skywork-test-v1/SUMMARY.json",
+        "source_sha256": "0b5606f4ac30ce196e2ced922d90ba492c11c257e6ca94328e7ce5bbb48c8184",
+        "source_json_paths": [
+          "panels.ours_verify_S0_rule_uncertain/seed17.overall",
+          "panels.ours_verify_S0_rule_uncertain/seed29.overall"
+        ]
+      },
+      {
+        "model": "ours",
+        "name": "TACO (task-trained V)",
+        "split": "Test",
+        "arm": "ours_verify_S0_learned_none",
+        "type": "V + Rank",
+        "track": false,
+        "rank": "learned",
+        "audit": "none",
+        "means": {
+          "question_solves": 0.8688524590163934,
+          "step_audit_checks": 0.0,
+          "missing_evidence_checks": 0.0,
+          "candidate_checks": 4.133196721311475,
+          "tool_calls": 5.002049180327869,
+          "rank_inputs_cold": 31.30327868852459
+        },
+        "repair_pct": 35.450819672131146,
+        "fa_pct": 13.729508196721312,
+        "seed_counts": {
+          "17": {
+            "n": 488,
+            "error_n": 244,
+            "repair_success": 93,
+            "false_accept": 63,
+            "question_solves": 424,
+            "step_audit_checks": 0,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 1984,
+            "tool_calls": 2408,
+            "rank_inputs_cold": 15506
+          },
+          "29": {
+            "n": 488,
+            "error_n": 244,
+            "repair_success": 80,
+            "false_accept": 71,
+            "question_solves": 424,
+            "step_audit_checks": 0,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 2050,
+            "tool_calls": 2474,
+            "rank_inputs_cold": 15046
+          }
+        },
+        "source": "historical_outputs/local-prm-test-suite-v1/skywork-test-v1/SUMMARY.json",
+        "source_sha256": "0b5606f4ac30ce196e2ced922d90ba492c11c257e6ca94328e7ce5bbb48c8184",
+        "source_json_paths": [
+          "panels.ours_verify_S0_learned_none/seed17.overall",
+          "panels.ours_verify_S0_learned_none/seed29.overall"
+        ]
+      },
+      {
+        "model": "ours",
+        "name": "TACO (task-trained V)",
+        "split": "Test",
+        "arm": "ours_verify_S0_learned_uncertain",
+        "type": "V + Rank",
+        "track": false,
+        "rank": "learned",
+        "audit": "uncertain",
+        "means": {
+          "question_solves": 1.0,
+          "step_audit_checks": 0.8524590163934426,
+          "missing_evidence_checks": 0.0,
+          "candidate_checks": 4.059426229508197,
+          "tool_calls": 5.911885245901639,
+          "rank_inputs_cold": 36.771516393442624
+        },
+        "repair_pct": 56.35245901639344,
+        "fa_pct": 0.4098360655737705,
+        "seed_counts": {
+          "17": {
+            "n": 488,
+            "error_n": 244,
+            "repair_success": 139,
+            "false_accept": 3,
+            "question_solves": 488,
+            "step_audit_checks": 416,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 1940,
+            "tool_calls": 2844,
+            "rank_inputs_cold": 18022
+          },
+          "29": {
+            "n": 488,
+            "error_n": 244,
+            "repair_success": 136,
+            "false_accept": 1,
+            "question_solves": 488,
+            "step_audit_checks": 416,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 2022,
+            "tool_calls": 2926,
+            "rank_inputs_cold": 17867
+          }
+        },
+        "source": "historical_outputs/local-prm-test-suite-v1/skywork-test-v1/SUMMARY.json",
+        "source_sha256": "0b5606f4ac30ce196e2ced922d90ba492c11c257e6ca94328e7ce5bbb48c8184",
+        "source_json_paths": [
+          "panels.ours_verify_S0_learned_uncertain/seed17.overall",
+          "panels.ours_verify_S0_learned_uncertain/seed29.overall"
+        ]
+      },
+      {
+        "model": "ours",
+        "name": "TACO (task-trained V)",
+        "split": "Test",
+        "arm": "ours_verify_S1_rule_none",
+        "type": "V + Track + Rule",
+        "track": true,
+        "rank": "rule",
+        "audit": "none",
+        "means": {
+          "question_solves": 0.6987704918032787,
+          "step_audit_checks": 0.0,
+          "missing_evidence_checks": 0.0,
+          "candidate_checks": 4.25,
+          "tool_calls": 4.948770491803279,
+          "rank_inputs_cold": 0.0
+        },
+        "repair_pct": 23.770491803278688,
+        "fa_pct": 13.012295081967213,
+        "seed_counts": {
+          "17": {
+            "n": 488,
+            "error_n": 244,
+            "repair_success": 62,
+            "false_accept": 60,
+            "question_solves": 341,
+            "step_audit_checks": 0,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 2079,
+            "tool_calls": 2420,
+            "rank_inputs_cold": 0
+          },
+          "29": {
+            "n": 488,
+            "error_n": 244,
+            "repair_success": 54,
+            "false_accept": 67,
+            "question_solves": 341,
+            "step_audit_checks": 0,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 2069,
+            "tool_calls": 2410,
+            "rank_inputs_cold": 0
+          }
+        },
+        "source": "historical_outputs/local-prm-test-suite-v1/skywork-test-v1/SUMMARY.json",
+        "source_sha256": "0b5606f4ac30ce196e2ced922d90ba492c11c257e6ca94328e7ce5bbb48c8184",
+        "source_json_paths": [
+          "panels.ours_verify_S1_rule_none/seed17.overall",
+          "panels.ours_verify_S1_rule_none/seed29.overall"
+        ]
+      },
+      {
+        "model": "ours",
+        "name": "TACO (task-trained V)",
+        "split": "Test",
+        "arm": "ours_verify_S1_rule_uncertain",
+        "type": "V + Track + Rule",
+        "track": true,
+        "rank": "rule",
+        "audit": "uncertain",
+        "means": {
+          "question_solves": 1.0,
+          "step_audit_checks": 0.8524590163934426,
+          "missing_evidence_checks": 0.0,
+          "candidate_checks": 4.285860655737705,
+          "tool_calls": 6.138319672131147,
+          "rank_inputs_cold": 0.0
+        },
+        "repair_pct": 43.23770491803279,
+        "fa_pct": 0.5122950819672131,
+        "seed_counts": {
+          "17": {
+            "n": 488,
+            "error_n": 244,
+            "repair_success": 105,
+            "false_accept": 3,
+            "question_solves": 488,
+            "step_audit_checks": 416,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 2088,
+            "tool_calls": 2992,
+            "rank_inputs_cold": 0
+          },
+          "29": {
+            "n": 488,
+            "error_n": 244,
+            "repair_success": 106,
+            "false_accept": 2,
+            "question_solves": 488,
+            "step_audit_checks": 416,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 2095,
+            "tool_calls": 2999,
+            "rank_inputs_cold": 0
+          }
+        },
+        "source": "historical_outputs/local-prm-test-suite-v1/skywork-test-v1/SUMMARY.json",
+        "source_sha256": "0b5606f4ac30ce196e2ced922d90ba492c11c257e6ca94328e7ce5bbb48c8184",
+        "source_json_paths": [
+          "panels.ours_verify_S1_rule_uncertain/seed17.overall",
+          "panels.ours_verify_S1_rule_uncertain/seed29.overall"
+        ]
+      },
+      {
+        "model": "ours",
+        "name": "TACO (task-trained V)",
+        "split": "Test",
+        "arm": "ours_verify_S1_learned_none",
+        "type": "V + Track + Rank",
+        "track": true,
+        "rank": "learned",
+        "audit": "none",
+        "means": {
+          "question_solves": 0.6987704918032787,
+          "step_audit_checks": 0.0,
+          "missing_evidence_checks": 0.0,
+          "candidate_checks": 3.494877049180328,
+          "tool_calls": 4.193647540983607,
+          "rank_inputs_cold": 24.79405737704918
+        },
+        "repair_pct": 35.450819672131146,
+        "fa_pct": 16.188524590163933,
+        "seed_counts": {
+          "17": {
+            "n": 488,
+            "error_n": 244,
+            "repair_success": 93,
+            "false_accept": 75,
+            "question_solves": 341,
+            "step_audit_checks": 0,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 1690,
+            "tool_calls": 2031,
+            "rank_inputs_cold": 12331
+          },
+          "29": {
+            "n": 488,
+            "error_n": 244,
+            "repair_success": 80,
+            "false_accept": 83,
+            "question_solves": 341,
+            "step_audit_checks": 0,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 1721,
+            "tool_calls": 2062,
+            "rank_inputs_cold": 11868
+          }
+        },
+        "source": "historical_outputs/local-prm-test-suite-v1/skywork-test-v1/SUMMARY.json",
+        "source_sha256": "0b5606f4ac30ce196e2ced922d90ba492c11c257e6ca94328e7ce5bbb48c8184",
+        "source_json_paths": [
+          "panels.ours_verify_S1_learned_none/seed17.overall",
+          "panels.ours_verify_S1_learned_none/seed29.overall"
+        ]
+      },
+      {
+        "model": "ours",
+        "name": "TACO (task-trained V)",
+        "split": "Test",
+        "arm": "ours_verify_S1_learned_uncertain",
+        "type": "V + Track + Rank",
+        "track": true,
+        "rank": "learned",
+        "audit": "uncertain",
+        "means": {
+          "question_solves": 1.0,
+          "step_audit_checks": 0.8524590163934426,
+          "missing_evidence_checks": 0.0,
+          "candidate_checks": 3.5317622950819674,
+          "tool_calls": 5.38422131147541,
+          "rank_inputs_cold": 30.262295081967213
+        },
+        "repair_pct": 56.35245901639344,
+        "fa_pct": 1.2295081967213115,
+        "seed_counts": {
+          "17": {
+            "n": 488,
+            "error_n": 244,
+            "repair_success": 139,
+            "false_accept": 7,
+            "question_solves": 488,
+            "step_audit_checks": 416,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 1698,
+            "tool_calls": 2602,
+            "rank_inputs_cold": 14847
+          },
+          "29": {
+            "n": 488,
+            "error_n": 244,
+            "repair_success": 136,
+            "false_accept": 5,
+            "question_solves": 488,
+            "step_audit_checks": 416,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 1749,
+            "tool_calls": 2653,
+            "rank_inputs_cold": 14689
+          }
+        },
+        "source": "historical_outputs/local-prm-test-suite-v1/skywork-test-v1/SUMMARY.json",
+        "source_sha256": "0b5606f4ac30ce196e2ced922d90ba492c11c257e6ca94328e7ce5bbb48c8184",
+        "source_json_paths": [
+          "panels.ours_verify_S1_learned_uncertain/seed17.overall",
+          "panels.ours_verify_S1_learned_uncertain/seed29.overall"
+        ]
+      }
+    ],
+    "Val": [
+      {
+        "model": "ours",
+        "name": "TACO (task-trained V)",
+        "split": "Val",
+        "arm": "ours_verify_S0_rule_none",
+        "type": "V + Rule",
+        "track": false,
+        "rank": "rule",
+        "audit": "none",
+        "means": {
+          "question_solves": 0.8827519379844961,
+          "step_audit_checks": 0.0,
+          "missing_evidence_checks": 0.0,
+          "candidate_checks": 5.7771317829457365,
+          "tool_calls": 6.659883720930233,
+          "rank_inputs_cold": 0.0
+        },
+        "repair_pct": 22.868217054263567,
+        "fa_pct": 12.693798449612403,
+        "seed_counts": {
+          "17": {
+            "n": 516,
+            "error_n": 258,
+            "repair_success": 61,
+            "false_accept": 63,
+            "question_solves": 456,
+            "step_audit_checks": 0,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 2991,
+            "tool_calls": 3447,
+            "rank_inputs_cold": 0
+          },
+          "29": {
+            "n": 516,
+            "error_n": 258,
+            "repair_success": 57,
+            "false_accept": 68,
+            "question_solves": 455,
+            "step_audit_checks": 0,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 2971,
+            "tool_calls": 3426,
+            "rank_inputs_cold": 0
+          }
+        },
+        "source": "historical_outputs/shepherd-math12-cloud-v1-full/SUMMARY.json",
+        "source_sha256": "36eceee2ee1a51dc2a5b504d60578cfc6c3cb03bf5994c4b4dc1e4803069c95e",
+        "source_json_paths": [
+          "panels.ours_verify_S0_rule_none/seed17.overall",
+          "panels.ours_verify_S0_rule_none/seed29.overall"
+        ]
+      },
+      {
+        "model": "ours",
+        "name": "TACO (task-trained V)",
+        "split": "Val",
+        "arm": "ours_verify_S0_rule_uncertain",
+        "type": "V + Rule",
+        "track": false,
+        "rank": "rule",
+        "audit": "uncertain",
+        "means": {
+          "question_solves": 1.0,
+          "step_audit_checks": 0.8168604651162791,
+          "missing_evidence_checks": 0.0,
+          "candidate_checks": 5.653100775193798,
+          "tool_calls": 7.469961240310077,
+          "rank_inputs_cold": 0.0
+        },
+        "repair_pct": 44.57364341085271,
+        "fa_pct": 0.09689922480620156,
+        "seed_counts": {
+          "17": {
+            "n": 516,
+            "error_n": 258,
+            "repair_success": 114,
+            "false_accept": 1,
+            "question_solves": 516,
+            "step_audit_checks": 420,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 2923,
+            "tool_calls": 3859,
+            "rank_inputs_cold": 0
+          },
+          "29": {
+            "n": 516,
+            "error_n": 258,
+            "repair_success": 116,
+            "false_accept": 0,
+            "question_solves": 516,
+            "step_audit_checks": 423,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 2911,
+            "tool_calls": 3850,
+            "rank_inputs_cold": 0
+          }
+        },
+        "source": "historical_outputs/shepherd-math12-cloud-v1-full/SUMMARY.json",
+        "source_sha256": "36eceee2ee1a51dc2a5b504d60578cfc6c3cb03bf5994c4b4dc1e4803069c95e",
+        "source_json_paths": [
+          "panels.ours_verify_S0_rule_uncertain/seed17.overall",
+          "panels.ours_verify_S0_rule_uncertain/seed29.overall"
+        ]
+      },
+      {
+        "model": "ours",
+        "name": "TACO (task-trained V)",
+        "split": "Val",
+        "arm": "ours_verify_S0_learned_none",
+        "type": "V + Rank",
+        "track": false,
+        "rank": "learned",
+        "audit": "none",
+        "means": {
+          "question_solves": 0.8827519379844961,
+          "step_audit_checks": 0.0,
+          "missing_evidence_checks": 0.0,
+          "candidate_checks": 4.062984496124031,
+          "tool_calls": 4.945736434108527,
+          "rank_inputs_cold": 32.85174418604651
+        },
+        "repair_pct": 35.65891472868217,
+        "fa_pct": 15.116279069767442,
+        "seed_counts": {
+          "17": {
+            "n": 516,
+            "error_n": 258,
+            "repair_success": 101,
+            "false_accept": 80,
+            "question_solves": 456,
+            "step_audit_checks": 0,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 2049,
+            "tool_calls": 2505,
+            "rank_inputs_cold": 17072
+          },
+          "29": {
+            "n": 516,
+            "error_n": 258,
+            "repair_success": 83,
+            "false_accept": 76,
+            "question_solves": 455,
+            "step_audit_checks": 0,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 2144,
+            "tool_calls": 2599,
+            "rank_inputs_cold": 16831
+          }
+        },
+        "source": "historical_outputs/shepherd-math12-cloud-v1-full/SUMMARY.json",
+        "source_sha256": "36eceee2ee1a51dc2a5b504d60578cfc6c3cb03bf5994c4b4dc1e4803069c95e",
+        "source_json_paths": [
+          "panels.ours_verify_S0_learned_none/seed17.overall",
+          "panels.ours_verify_S0_learned_none/seed29.overall"
+        ]
+      },
+      {
+        "model": "ours",
+        "name": "TACO (task-trained V)",
+        "split": "Val",
+        "arm": "ours_verify_S0_learned_uncertain",
+        "type": "V + Rank",
+        "track": false,
+        "rank": "learned",
+        "audit": "uncertain",
+        "means": {
+          "question_solves": 1.0,
+          "step_audit_checks": 0.8168604651162791,
+          "missing_evidence_checks": 0.0,
+          "candidate_checks": 4.047480620155039,
+          "tool_calls": 5.864341085271318,
+          "rank_inputs_cold": 37.65406976744186
+        },
+        "repair_pct": 58.52713178294574,
+        "fa_pct": 0.4844961240310077,
+        "seed_counts": {
+          "17": {
+            "n": 516,
+            "error_n": 258,
+            "repair_success": 157,
+            "false_accept": 4,
+            "question_solves": 516,
+            "step_audit_checks": 420,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 2038,
+            "tool_calls": 2974,
+            "rank_inputs_cold": 19491
+          },
+          "29": {
+            "n": 516,
+            "error_n": 258,
+            "repair_success": 145,
+            "false_accept": 1,
+            "question_solves": 516,
+            "step_audit_checks": 423,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 2139,
+            "tool_calls": 3078,
+            "rank_inputs_cold": 19368
+          }
+        },
+        "source": "historical_outputs/shepherd-math12-cloud-v1-full/SUMMARY.json",
+        "source_sha256": "36eceee2ee1a51dc2a5b504d60578cfc6c3cb03bf5994c4b4dc1e4803069c95e",
+        "source_json_paths": [
+          "panels.ours_verify_S0_learned_uncertain/seed17.overall",
+          "panels.ours_verify_S0_learned_uncertain/seed29.overall"
+        ]
+      },
+      {
+        "model": "ours",
+        "name": "TACO (task-trained V)",
+        "split": "Val",
+        "arm": "ours_verify_S1_rule_none",
+        "type": "V + Track + Rule",
+        "track": true,
+        "rank": "rule",
+        "audit": "none",
+        "means": {
+          "question_solves": 0.7141472868217055,
+          "step_audit_checks": 0.0,
+          "missing_evidence_checks": 0.0,
+          "candidate_checks": 4.3934108527131785,
+          "tool_calls": 5.107558139534884,
+          "rank_inputs_cold": 0.0
+        },
+        "repair_pct": 22.868217054263567,
+        "fa_pct": 14.244186046511627,
+        "seed_counts": {
+          "17": {
+            "n": 516,
+            "error_n": 258,
+            "repair_success": 61,
+            "false_accept": 71,
+            "question_solves": 370,
+            "step_audit_checks": 0,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 2285,
+            "tool_calls": 2655,
+            "rank_inputs_cold": 0
+          },
+          "29": {
+            "n": 516,
+            "error_n": 258,
+            "repair_success": 57,
+            "false_accept": 76,
+            "question_solves": 367,
+            "step_audit_checks": 0,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 2249,
+            "tool_calls": 2616,
+            "rank_inputs_cold": 0
+          }
+        },
+        "source": "historical_outputs/shepherd-math12-cloud-v1-full/SUMMARY.json",
+        "source_sha256": "36eceee2ee1a51dc2a5b504d60578cfc6c3cb03bf5994c4b4dc1e4803069c95e",
+        "source_json_paths": [
+          "panels.ours_verify_S1_rule_none/seed17.overall",
+          "panels.ours_verify_S1_rule_none/seed29.overall"
+        ]
+      },
+      {
+        "model": "ours",
+        "name": "TACO (task-trained V)",
+        "split": "Val",
+        "arm": "ours_verify_S1_rule_uncertain",
+        "type": "V + Track + Rule",
+        "track": true,
+        "rank": "rule",
+        "audit": "uncertain",
+        "means": {
+          "question_solves": 1.0,
+          "step_audit_checks": 0.8168604651162791,
+          "missing_evidence_checks": 0.0,
+          "candidate_checks": 4.482558139534884,
+          "tool_calls": 6.299418604651163,
+          "rank_inputs_cold": 0.0
+        },
+        "repair_pct": 44.57364341085271,
+        "fa_pct": 0.29069767441860467,
+        "seed_counts": {
+          "17": {
+            "n": 516,
+            "error_n": 258,
+            "repair_success": 114,
+            "false_accept": 2,
+            "question_solves": 516,
+            "step_audit_checks": 420,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 2326,
+            "tool_calls": 3262,
+            "rank_inputs_cold": 0
+          },
+          "29": {
+            "n": 516,
+            "error_n": 258,
+            "repair_success": 116,
+            "false_accept": 1,
+            "question_solves": 516,
+            "step_audit_checks": 423,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 2300,
+            "tool_calls": 3239,
+            "rank_inputs_cold": 0
+          }
+        },
+        "source": "historical_outputs/shepherd-math12-cloud-v1-full/SUMMARY.json",
+        "source_sha256": "36eceee2ee1a51dc2a5b504d60578cfc6c3cb03bf5994c4b4dc1e4803069c95e",
+        "source_json_paths": [
+          "panels.ours_verify_S1_rule_uncertain/seed17.overall",
+          "panels.ours_verify_S1_rule_uncertain/seed29.overall"
+        ]
+      },
+      {
+        "model": "ours",
+        "name": "TACO (task-trained V)",
+        "split": "Val",
+        "arm": "ours_verify_S1_learned_none",
+        "type": "V + Track + Rank",
+        "track": true,
+        "rank": "learned",
+        "audit": "none",
+        "means": {
+          "question_solves": 0.7141472868217055,
+          "step_audit_checks": 0.0,
+          "missing_evidence_checks": 0.0,
+          "candidate_checks": 3.5232558139534884,
+          "tool_calls": 4.237403100775194,
+          "rank_inputs_cold": 26.88468992248062
+        },
+        "repair_pct": 35.65891472868217,
+        "fa_pct": 16.27906976744186,
+        "seed_counts": {
+          "17": {
+            "n": 516,
+            "error_n": 258,
+            "repair_success": 101,
+            "false_accept": 87,
+            "question_solves": 370,
+            "step_audit_checks": 0,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 1787,
+            "tool_calls": 2157,
+            "rank_inputs_cold": 14016
+          },
+          "29": {
+            "n": 516,
+            "error_n": 258,
+            "repair_success": 83,
+            "false_accept": 81,
+            "question_solves": 367,
+            "step_audit_checks": 0,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 1849,
+            "tool_calls": 2216,
+            "rank_inputs_cold": 13729
+          }
+        },
+        "source": "historical_outputs/shepherd-math12-cloud-v1-full/SUMMARY.json",
+        "source_sha256": "36eceee2ee1a51dc2a5b504d60578cfc6c3cb03bf5994c4b4dc1e4803069c95e",
+        "source_json_paths": [
+          "panels.ours_verify_S1_learned_none/seed17.overall",
+          "panels.ours_verify_S1_learned_none/seed29.overall"
+        ]
+      },
+      {
+        "model": "ours",
+        "name": "TACO (task-trained V)",
+        "split": "Val",
+        "arm": "ours_verify_S1_learned_uncertain",
+        "type": "V + Track + Rank",
+        "track": true,
+        "rank": "learned",
+        "audit": "uncertain",
+        "means": {
+          "question_solves": 1.0,
+          "step_audit_checks": 0.8168604651162791,
+          "missing_evidence_checks": 0.0,
+          "candidate_checks": 3.570736434108527,
+          "tool_calls": 5.387596899224806,
+          "rank_inputs_cold": 31.68701550387597
+        },
+        "repair_pct": 58.52713178294574,
+        "fa_pct": 1.1627906976744187,
+        "seed_counts": {
+          "17": {
+            "n": 516,
+            "error_n": 258,
+            "repair_success": 157,
+            "false_accept": 8,
+            "question_solves": 516,
+            "step_audit_checks": 420,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 1808,
+            "tool_calls": 2744,
+            "rank_inputs_cold": 16435
+          },
+          "29": {
+            "n": 516,
+            "error_n": 258,
+            "repair_success": 145,
+            "false_accept": 4,
+            "question_solves": 516,
+            "step_audit_checks": 423,
+            "missing_evidence_checks": 0,
+            "candidate_checks": 1877,
+            "tool_calls": 2816,
+            "rank_inputs_cold": 16266
+          }
+        },
+        "source": "historical_outputs/shepherd-math12-cloud-v1-full/SUMMARY.json",
+        "source_sha256": "36eceee2ee1a51dc2a5b504d60578cfc6c3cb03bf5994c4b4dc1e4803069c95e",
+        "source_json_paths": [
+          "panels.ours_verify_S1_learned_uncertain/seed17.overall",
+          "panels.ours_verify_S1_learned_uncertain/seed29.overall"
+        ]
+      }
+    ]
+  },
+  "paired": {
+    "Test": [
+      {
+        "model": "ours",
+        "rule": {
+          "model": "ours",
+          "name": "TACO (task-trained V)",
+          "split": "Test",
+          "arm": "ours_verify_S0_rule_uncertain",
+          "type": "V + Rule",
+          "track": false,
+          "rank": "rule",
+          "audit": "uncertain",
+          "means": {
+            "question_solves": 1.0,
+            "step_audit_checks": 0.8524590163934426,
+            "missing_evidence_checks": 0.0,
+            "candidate_checks": 5.453893442622951,
+            "tool_calls": 7.306352459016393,
+            "rank_inputs_cold": 0.0
+          },
+          "repair_pct": 43.23770491803279,
+          "fa_pct": 0.3073770491803279,
+          "seed_counts": {
+            "17": {
+              "n": 488,
+              "error_n": 244,
+              "repair_success": 105,
+              "false_accept": 2,
+              "question_solves": 488,
+              "step_audit_checks": 416,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 2658,
+              "tool_calls": 3562,
+              "rank_inputs_cold": 0
+            },
+            "29": {
+              "n": 488,
+              "error_n": 244,
+              "repair_success": 106,
+              "false_accept": 1,
+              "question_solves": 488,
+              "step_audit_checks": 416,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 2665,
+              "tool_calls": 3569,
+              "rank_inputs_cold": 0
+            }
+          },
+          "source": "historical_outputs/local-prm-test-suite-v1/skywork-test-v1/SUMMARY.json",
+          "source_sha256": "0b5606f4ac30ce196e2ced922d90ba492c11c257e6ca94328e7ce5bbb48c8184",
+          "source_json_paths": [
+            "panels.ours_verify_S0_rule_uncertain/seed17.overall",
+            "panels.ours_verify_S0_rule_uncertain/seed29.overall"
+          ]
+        },
+        "full": {
+          "model": "ours",
+          "name": "TACO (task-trained V)",
+          "split": "Test",
+          "arm": "ours_verify_S1_learned_uncertain",
+          "type": "V + Track + Rank",
+          "track": true,
+          "rank": "learned",
+          "audit": "uncertain",
+          "means": {
+            "question_solves": 1.0,
+            "step_audit_checks": 0.8524590163934426,
+            "missing_evidence_checks": 0.0,
+            "candidate_checks": 3.5317622950819674,
+            "tool_calls": 5.38422131147541,
+            "rank_inputs_cold": 30.262295081967213
+          },
+          "repair_pct": 56.35245901639344,
+          "fa_pct": 1.2295081967213115,
+          "seed_counts": {
+            "17": {
+              "n": 488,
+              "error_n": 244,
+              "repair_success": 139,
+              "false_accept": 7,
+              "question_solves": 488,
+              "step_audit_checks": 416,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 1698,
+              "tool_calls": 2602,
+              "rank_inputs_cold": 14847
+            },
+            "29": {
+              "n": 488,
+              "error_n": 244,
+              "repair_success": 136,
+              "false_accept": 5,
+              "question_solves": 488,
+              "step_audit_checks": 416,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 1749,
+              "tool_calls": 2653,
+              "rank_inputs_cold": 14689
+            }
+          },
+          "source": "historical_outputs/local-prm-test-suite-v1/skywork-test-v1/SUMMARY.json",
+          "source_sha256": "0b5606f4ac30ce196e2ced922d90ba492c11c257e6ca94328e7ce5bbb48c8184",
+          "source_json_paths": [
+            "panels.ours_verify_S1_learned_uncertain/seed17.overall",
+            "panels.ours_verify_S1_learned_uncertain/seed29.overall"
+          ]
+        }
+      },
+      {
+        "model": "shepherd",
+        "rule": {
+          "model": "shepherd",
+          "name": "Math-Shepherd",
+          "split": "Test",
+          "arm": "shepherd_verify_S0_rule_uncertain",
+          "type": "PRM + Rule",
+          "track": false,
+          "rank": "rule",
+          "audit": "uncertain",
+          "means": {
+            "question_solves": 1.0,
+            "step_audit_checks": 0.47950819672131145,
+            "missing_evidence_checks": 0.0,
+            "candidate_checks": 5.534836065573771,
+            "tool_calls": 7.014344262295082,
+            "rank_inputs_cold": 0.0
+          },
+          "repair_pct": 36.47540983606557,
+          "fa_pct": 2.6639344262295084,
+          "seed_counts": {
+            "17": {
+              "n": 488,
+              "error_n": 244,
+              "repair_success": 89,
+              "false_accept": 13,
+              "question_solves": 488,
+              "step_audit_checks": 234,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 2701,
+              "tool_calls": 3423,
+              "rank_inputs_cold": 0
+            },
+            "29": {
+              "n": 488,
+              "error_n": 244,
+              "repair_success": 89,
+              "false_accept": 13,
+              "question_solves": 488,
+              "step_audit_checks": 234,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 2701,
+              "tool_calls": 3423,
+              "rank_inputs_cold": 0
+            }
+          },
+          "source": "historical_outputs/math12-cloud-test-suite-v1/shepherd-test-v1/SUMMARY.json",
+          "source_sha256": "9e4af9c6c8cdd6c9854dc2294a1504fba57bb249acc3af39c2e0e3e9653c9d39",
+          "source_json_paths": [
+            "panels.shepherd_verify_S0_rule_uncertain/seed17.overall",
+            "panels.shepherd_verify_S0_rule_uncertain/seed29.overall"
+          ]
+        },
+        "full": {
+          "model": "shepherd",
+          "name": "Math-Shepherd",
+          "split": "Test",
+          "arm": "shepherd_verify_S1_learned_uncertain",
+          "type": "PRM + Track + Rank",
+          "track": true,
+          "rank": "learned",
+          "audit": "uncertain",
+          "means": {
+            "question_solves": 1.0,
+            "step_audit_checks": 0.47950819672131145,
+            "missing_evidence_checks": 0.0,
+            "candidate_checks": 4.869877049180328,
+            "tool_calls": 6.349385245901639,
+            "rank_inputs_cold": 71.51229508196721
+          },
+          "repair_pct": 50.614754098360656,
+          "fa_pct": 3.790983606557377,
+          "seed_counts": {
+            "17": {
+              "n": 488,
+              "error_n": 244,
+              "repair_success": 121,
+              "false_accept": 20,
+              "question_solves": 488,
+              "step_audit_checks": 234,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 2360,
+              "tool_calls": 3082,
+              "rank_inputs_cold": 34898
+            },
+            "29": {
+              "n": 488,
+              "error_n": 244,
+              "repair_success": 126,
+              "false_accept": 17,
+              "question_solves": 488,
+              "step_audit_checks": 234,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 2393,
+              "tool_calls": 3115,
+              "rank_inputs_cold": 34898
+            }
+          },
+          "source": "historical_outputs/math12-cloud-test-suite-v1/shepherd-test-v1/SUMMARY.json",
+          "source_sha256": "9e4af9c6c8cdd6c9854dc2294a1504fba57bb249acc3af39c2e0e3e9653c9d39",
+          "source_json_paths": [
+            "panels.shepherd_verify_S1_learned_uncertain/seed17.overall",
+            "panels.shepherd_verify_S1_learned_uncertain/seed29.overall"
+          ]
+        }
+      },
+      {
+        "model": "skywork",
+        "rule": {
+          "model": "skywork",
+          "name": "Skywork-PRM",
+          "split": "Test",
+          "arm": "skywork_verify_S0_rule_uncertain",
+          "type": "PRM + Rule",
+          "track": false,
+          "rank": "rule",
+          "audit": "uncertain",
+          "means": {
+            "question_solves": 1.0,
+            "step_audit_checks": 0.555327868852459,
+            "missing_evidence_checks": 0.0,
+            "candidate_checks": 6.008196721311475,
+            "tool_calls": 7.563524590163935,
+            "rank_inputs_cold": 0.0
+          },
+          "repair_pct": 41.39344262295082,
+          "fa_pct": 0.4098360655737705,
+          "seed_counts": {
+            "17": {
+              "n": 488,
+              "error_n": 244,
+              "repair_success": 101,
+              "false_accept": 2,
+              "question_solves": 488,
+              "step_audit_checks": 271,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 2932,
+              "tool_calls": 3691,
+              "rank_inputs_cold": 0
+            },
+            "29": {
+              "n": 488,
+              "error_n": 244,
+              "repair_success": 101,
+              "false_accept": 2,
+              "question_solves": 488,
+              "step_audit_checks": 271,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 2932,
+              "tool_calls": 3691,
+              "rank_inputs_cold": 0
+            }
+          },
+          "source": "historical_outputs/local-prm-test-suite-v1/skywork-test-v1/SUMMARY.json",
+          "source_sha256": "0b5606f4ac30ce196e2ced922d90ba492c11c257e6ca94328e7ce5bbb48c8184",
+          "source_json_paths": [
+            "panels.skywork_verify_S0_rule_uncertain/seed17.overall",
+            "panels.skywork_verify_S0_rule_uncertain/seed29.overall"
+          ]
+        },
+        "full": {
+          "model": "skywork",
+          "name": "Skywork-PRM",
+          "split": "Test",
+          "arm": "skywork_verify_S1_learned_uncertain",
+          "type": "PRM + Track + Rank",
+          "track": true,
+          "rank": "learned",
+          "audit": "uncertain",
+          "means": {
+            "question_solves": 1.0,
+            "step_audit_checks": 0.555327868852459,
+            "missing_evidence_checks": 0.0,
+            "candidate_checks": 5.273565573770492,
+            "tool_calls": 6.828893442622951,
+            "rank_inputs_cold": 67.75
+          },
+          "repair_pct": 56.967213114754095,
+          "fa_pct": 0.6147540983606558,
+          "seed_counts": {
+            "17": {
+              "n": 488,
+              "error_n": 244,
+              "repair_success": 137,
+              "false_accept": 3,
+              "question_solves": 488,
+              "step_audit_checks": 271,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 2557,
+              "tool_calls": 3316,
+              "rank_inputs_cold": 33062
+            },
+            "29": {
+              "n": 488,
+              "error_n": 244,
+              "repair_success": 141,
+              "false_accept": 3,
+              "question_solves": 488,
+              "step_audit_checks": 271,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 2590,
+              "tool_calls": 3349,
+              "rank_inputs_cold": 33062
+            }
+          },
+          "source": "historical_outputs/local-prm-test-suite-v1/skywork-test-v1/SUMMARY.json",
+          "source_sha256": "0b5606f4ac30ce196e2ced922d90ba492c11c257e6ca94328e7ce5bbb48c8184",
+          "source_json_paths": [
+            "panels.skywork_verify_S1_learned_uncertain/seed17.overall",
+            "panels.skywork_verify_S1_learned_uncertain/seed29.overall"
+          ]
+        }
+      },
+      {
+        "model": "qwen",
+        "rule": {
+          "model": "qwen",
+          "name": "Qwen-PRM",
+          "split": "Test",
+          "arm": "qwen09_verify_S0_rule_uncertain",
+          "type": "PRM + Rule",
+          "track": false,
+          "rank": "rule",
+          "audit": "uncertain",
+          "means": {
+            "question_solves": 1.0,
+            "step_audit_checks": 0.5307377049180327,
+            "missing_evidence_checks": 0.0,
+            "candidate_checks": 5.653688524590164,
+            "tool_calls": 7.184426229508197,
+            "rank_inputs_cold": 0.0
+          },
+          "repair_pct": 23.770491803278688,
+          "fa_pct": 5.532786885245901,
+          "seed_counts": {
+            "17": {
+              "n": 488,
+              "error_n": 244,
+              "repair_success": 58,
+              "false_accept": 27,
+              "question_solves": 488,
+              "step_audit_checks": 259,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 2759,
+              "tool_calls": 3506,
+              "rank_inputs_cold": 0
+            },
+            "29": {
+              "n": 488,
+              "error_n": 244,
+              "repair_success": 58,
+              "false_accept": 27,
+              "question_solves": 488,
+              "step_audit_checks": 259,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 2759,
+              "tool_calls": 3506,
+              "rank_inputs_cold": 0
+            }
+          },
+          "source": "historical_outputs/math12-cloud-test-suite-v1/qwen-test-v1/SUMMARY.json",
+          "source_sha256": "02d203c7ff7dd65b0ee28e1d6f5a695e134e1d9313fca171f3d7e0b12f20337e",
+          "source_json_paths": [
+            "panels.qwen09_verify_S0_rule_uncertain/seed17.overall",
+            "panels.qwen09_verify_S0_rule_uncertain/seed29.overall"
+          ]
+        },
+        "full": {
+          "model": "qwen",
+          "name": "Qwen-PRM",
+          "split": "Test",
+          "arm": "qwen09_verify_S1_learned_uncertain",
+          "type": "PRM + Track + Rank",
+          "track": true,
+          "rank": "learned",
+          "audit": "uncertain",
+          "means": {
+            "question_solves": 1.0,
+            "step_audit_checks": 0.5307377049180327,
+            "missing_evidence_checks": 0.0,
+            "candidate_checks": 3.2725409836065573,
+            "tool_calls": 4.80327868852459,
+            "rank_inputs_cold": 43.256147540983605
+          },
+          "repair_pct": 37.704918032786885,
+          "fa_pct": 12.5,
+          "seed_counts": {
+            "17": {
+              "n": 488,
+              "error_n": 244,
+              "repair_success": 91,
+              "false_accept": 62,
+              "question_solves": 488,
+              "step_audit_checks": 259,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 1570,
+              "tool_calls": 2317,
+              "rank_inputs_cold": 21109
+            },
+            "29": {
+              "n": 488,
+              "error_n": 244,
+              "repair_success": 93,
+              "false_accept": 60,
+              "question_solves": 488,
+              "step_audit_checks": 259,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 1624,
+              "tool_calls": 2371,
+              "rank_inputs_cold": 21109
+            }
+          },
+          "source": "historical_outputs/math12-cloud-test-suite-v1/qwen-test-v1/SUMMARY.json",
+          "source_sha256": "02d203c7ff7dd65b0ee28e1d6f5a695e134e1d9313fca171f3d7e0b12f20337e",
+          "source_json_paths": [
+            "panels.qwen09_verify_S1_learned_uncertain/seed17.overall",
+            "panels.qwen09_verify_S1_learned_uncertain/seed29.overall"
+          ]
+        }
+      },
+      {
+        "model": "spare",
+        "rule": {
+          "model": "spare",
+          "name": "SPARE",
+          "split": "Test",
+          "arm": "spare_verify_S0_rule_uncertain",
+          "type": "PRM + Rule",
+          "track": false,
+          "rank": "rule",
+          "audit": "uncertain",
+          "means": {
+            "question_solves": 1.0,
+            "step_audit_checks": 0.8954918032786885,
+            "missing_evidence_checks": 0.0,
+            "candidate_checks": 5.004098360655738,
+            "tool_calls": 6.899590163934426,
+            "rank_inputs_cold": 0.0
+          },
+          "repair_pct": 27.049180327868854,
+          "fa_pct": 9.836065573770492,
+          "seed_counts": {
+            "17": {
+              "n": 488,
+              "error_n": 244,
+              "repair_success": 66,
+              "false_accept": 48,
+              "question_solves": 488,
+              "step_audit_checks": 437,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 2442,
+              "tool_calls": 3367,
+              "rank_inputs_cold": 0
+            },
+            "29": {
+              "n": 488,
+              "error_n": 244,
+              "repair_success": 66,
+              "false_accept": 48,
+              "question_solves": 488,
+              "step_audit_checks": 437,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 2442,
+              "tool_calls": 3367,
+              "rank_inputs_cold": 0
+            }
+          },
+          "source": "historical_outputs/local-prm-test-suite-v1/spare-test-v1/SUMMARY.json",
+          "source_sha256": "c76d0cbbc7f5fbd7bca32db5db24fe91ebb33d6788de59e84cffe81adcb3cea8",
+          "source_json_paths": [
+            "panels.spare_verify_S0_rule_uncertain/seed17.overall",
+            "panels.spare_verify_S0_rule_uncertain/seed29.overall"
+          ]
+        },
+        "full": {
+          "model": "spare",
+          "name": "SPARE",
+          "split": "Test",
+          "arm": "spare_verify_S1_learned_uncertain",
+          "type": "PRM + Track + Rank",
+          "track": true,
+          "rank": "learned",
+          "audit": "uncertain",
+          "means": {
+            "question_solves": 1.0,
+            "step_audit_checks": 0.8954918032786885,
+            "missing_evidence_checks": 0.0,
+            "candidate_checks": 3.889344262295082,
+            "tool_calls": 5.784836065573771,
+            "rank_inputs_cold": 38.55122950819672
+          },
+          "repair_pct": 32.377049180327866,
+          "fa_pct": 15.061475409836065,
+          "seed_counts": {
+            "17": {
+              "n": 488,
+              "error_n": 244,
+              "repair_success": 77,
+              "false_accept": 76,
+              "question_solves": 488,
+              "step_audit_checks": 437,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 1876,
+              "tool_calls": 2801,
+              "rank_inputs_cold": 18813
+            },
+            "29": {
+              "n": 488,
+              "error_n": 244,
+              "repair_success": 81,
+              "false_accept": 71,
+              "question_solves": 488,
+              "step_audit_checks": 437,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 1920,
+              "tool_calls": 2845,
+              "rank_inputs_cold": 18813
+            }
+          },
+          "source": "historical_outputs/local-prm-test-suite-v1/spare-test-v1/SUMMARY.json",
+          "source_sha256": "c76d0cbbc7f5fbd7bca32db5db24fe91ebb33d6788de59e84cffe81adcb3cea8",
+          "source_json_paths": [
+            "panels.spare_verify_S1_learned_uncertain/seed17.overall",
+            "panels.spare_verify_S1_learned_uncertain/seed29.overall"
+          ]
+        }
+      },
+      {
+        "model": "pddl",
+        "rule": {
+          "model": "pddl",
+          "name": "PDDL2PRM",
+          "split": "Test",
+          "arm": "pddl09_verify_S0_rule_uncertain",
+          "type": "PRM + Rule",
+          "track": false,
+          "rank": "rule",
+          "audit": "uncertain",
+          "means": {
+            "question_solves": 1.0,
+            "step_audit_checks": 0.5655737704918032,
+            "missing_evidence_checks": 0.0,
+            "candidate_checks": 5.76844262295082,
+            "tool_calls": 7.334016393442623,
+            "rank_inputs_cold": 0.0
+          },
+          "repair_pct": 26.639344262295083,
+          "fa_pct": 4.918032786885246,
+          "seed_counts": {
+            "17": {
+              "n": 488,
+              "error_n": 244,
+              "repair_success": 65,
+              "false_accept": 24,
+              "question_solves": 488,
+              "step_audit_checks": 276,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 2815,
+              "tool_calls": 3579,
+              "rank_inputs_cold": 0
+            },
+            "29": {
+              "n": 488,
+              "error_n": 244,
+              "repair_success": 65,
+              "false_accept": 24,
+              "question_solves": 488,
+              "step_audit_checks": 276,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 2815,
+              "tool_calls": 3579,
+              "rank_inputs_cold": 0
+            }
+          },
+          "source": "historical_outputs/math12-cloud-test-suite-v1/pddl-test-v1/SUMMARY.json",
+          "source_sha256": "75600fe81ee194431ab905526743dba1c6ac2617857a34b1fea437bf93ac8b6f",
+          "source_json_paths": [
+            "panels.pddl09_verify_S0_rule_uncertain/seed17.overall",
+            "panels.pddl09_verify_S0_rule_uncertain/seed29.overall"
+          ]
+        },
+        "full": {
+          "model": "pddl",
+          "name": "PDDL2PRM",
+          "split": "Test",
+          "arm": "pddl09_verify_S1_learned_uncertain",
+          "type": "PRM + Track + Rank",
+          "track": true,
+          "rank": "learned",
+          "audit": "uncertain",
+          "means": {
+            "question_solves": 1.0,
+            "step_audit_checks": 0.5655737704918032,
+            "missing_evidence_checks": 0.0,
+            "candidate_checks": 3.194672131147541,
+            "tool_calls": 4.760245901639344,
+            "rank_inputs_cold": 41.44877049180328
+          },
+          "repair_pct": 39.959016393442624,
+          "fa_pct": 11.577868852459016,
+          "seed_counts": {
+            "17": {
+              "n": 488,
+              "error_n": 244,
+              "repair_success": 99,
+              "false_accept": 59,
+              "question_solves": 488,
+              "step_audit_checks": 276,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 1532,
+              "tool_calls": 2296,
+              "rank_inputs_cold": 20227
+            },
+            "29": {
+              "n": 488,
+              "error_n": 244,
+              "repair_success": 96,
+              "false_accept": 54,
+              "question_solves": 488,
+              "step_audit_checks": 276,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 1586,
+              "tool_calls": 2350,
+              "rank_inputs_cold": 20227
+            }
+          },
+          "source": "historical_outputs/math12-cloud-test-suite-v1/pddl-test-v1/SUMMARY.json",
+          "source_sha256": "75600fe81ee194431ab905526743dba1c6ac2617857a34b1fea437bf93ac8b6f",
+          "source_json_paths": [
+            "panels.pddl09_verify_S1_learned_uncertain/seed17.overall",
+            "panels.pddl09_verify_S1_learned_uncertain/seed29.overall"
+          ]
+        }
+      },
+      {
+        "model": "genprm",
+        "rule": {
+          "model": "genprm",
+          "name": "GenPRM",
+          "split": "Test",
+          "arm": "genprm_verify_S0_rule_uncertain",
+          "type": "PRM + Rule",
+          "track": false,
+          "rank": "rule",
+          "audit": "uncertain",
+          "means": {
+            "question_solves": 1.0,
+            "step_audit_checks": 0.5778688524590164,
+            "missing_evidence_checks": 0.02663934426229508,
+            "candidate_checks": 4.764344262295082,
+            "tool_calls": 6.368852459016393,
+            "rank_inputs_cold": 0.0
+          },
+          "repair_pct": 35.24590163934426,
+          "fa_pct": 4.508196721311475,
+          "seed_counts": {
+            "17": {
+              "n": 488,
+              "error_n": 244,
+              "repair_success": 86,
+              "false_accept": 22,
+              "question_solves": 488,
+              "step_audit_checks": 282,
+              "missing_evidence_checks": 13,
+              "candidate_checks": 2325,
+              "tool_calls": 3108,
+              "rank_inputs_cold": 0
+            },
+            "29": {
+              "n": 488,
+              "error_n": 244,
+              "repair_success": 86,
+              "false_accept": 22,
+              "question_solves": 488,
+              "step_audit_checks": 282,
+              "missing_evidence_checks": 13,
+              "candidate_checks": 2325,
+              "tool_calls": 3108,
+              "rank_inputs_cold": 0
+            }
+          },
+          "source": "historical_outputs/genprm-math12-test-v1-full/SUMMARY.json",
+          "source_sha256": "61d92b76e774f5e2f37f3c36d9f14c8430cad67fc3fec1bc9bdef02350553c8c",
+          "source_json_paths": [
+            "panels.genprm_verify_S0_rule_uncertain/seed17.overall",
+            "panels.genprm_verify_S0_rule_uncertain/seed29.overall"
+          ]
+        },
+        "full": {
+          "model": "genprm",
+          "name": "GenPRM",
+          "split": "Test",
+          "arm": "genprm_verify_S1_learned_uncertain",
+          "type": "PRM + Track + Rank",
+          "track": true,
+          "rank": "learned",
+          "audit": "uncertain",
+          "means": {
+            "question_solves": 1.0,
+            "step_audit_checks": 0.5778688524590164,
+            "missing_evidence_checks": 0.02663934426229508,
+            "candidate_checks": 4.19672131147541,
+            "tool_calls": 5.801229508196721,
+            "rank_inputs_cold": 59.59426229508197
+          },
+          "repair_pct": 45.69672131147541,
+          "fa_pct": 6.045081967213115,
+          "seed_counts": {
+            "17": {
+              "n": 488,
+              "error_n": 244,
+              "repair_success": 112,
+              "false_accept": 29,
+              "question_solves": 488,
+              "step_audit_checks": 282,
+              "missing_evidence_checks": 13,
+              "candidate_checks": 2039,
+              "tool_calls": 2822,
+              "rank_inputs_cold": 29082
+            },
+            "29": {
+              "n": 488,
+              "error_n": 244,
+              "repair_success": 111,
+              "false_accept": 30,
+              "question_solves": 488,
+              "step_audit_checks": 282,
+              "missing_evidence_checks": 13,
+              "candidate_checks": 2057,
+              "tool_calls": 2840,
+              "rank_inputs_cold": 29082
+            }
+          },
+          "source": "historical_outputs/genprm-math12-test-v1-full/SUMMARY.json",
+          "source_sha256": "61d92b76e774f5e2f37f3c36d9f14c8430cad67fc3fec1bc9bdef02350553c8c",
+          "source_json_paths": [
+            "panels.genprm_verify_S1_learned_uncertain/seed17.overall",
+            "panels.genprm_verify_S1_learned_uncertain/seed29.overall"
+          ]
+        }
+      },
+      {
+        "model": "thinkprm",
+        "rule": {
+          "model": "thinkprm",
+          "name": "ThinkPRM",
+          "split": "Test",
+          "arm": "thinkprm_verify_S0_rule_uncertain",
+          "type": "PRM + Rule",
+          "track": false,
+          "rank": "rule",
+          "audit": "uncertain",
+          "means": {
+            "question_solves": 1.0,
+            "step_audit_checks": 0.7254098360655737,
+            "missing_evidence_checks": 1.5081967213114753,
+            "candidate_checks": 3.596311475409836,
+            "tool_calls": 6.829918032786885,
+            "rank_inputs_cold": 0.0
+          },
+          "repair_pct": 36.885245901639344,
+          "fa_pct": 0.4098360655737705,
+          "seed_counts": {
+            "17": {
+              "n": 488,
+              "error_n": 244,
+              "repair_success": 90,
+              "false_accept": 2,
+              "question_solves": 488,
+              "step_audit_checks": 354,
+              "missing_evidence_checks": 736,
+              "candidate_checks": 1755,
+              "tool_calls": 3333,
+              "rank_inputs_cold": 0
+            },
+            "29": {
+              "n": 488,
+              "error_n": 244,
+              "repair_success": 90,
+              "false_accept": 2,
+              "question_solves": 488,
+              "step_audit_checks": 354,
+              "missing_evidence_checks": 736,
+              "candidate_checks": 1755,
+              "tool_calls": 3333,
+              "rank_inputs_cold": 0
+            }
+          },
+          "source": "historical_outputs/local-prm-test-suite-v1/thinkprm-test-v1/SUMMARY.json",
+          "source_sha256": "769d92d2e2e36007f5e7db9e388536585b9723eb6da396d8ed6096a858b903fd",
+          "source_json_paths": [
+            "panels.thinkprm_verify_S0_rule_uncertain/seed17.overall",
+            "panels.thinkprm_verify_S0_rule_uncertain/seed29.overall"
+          ]
+        },
+        "full": {
+          "model": "thinkprm",
+          "name": "ThinkPRM",
+          "split": "Test",
+          "arm": "thinkprm_verify_S1_learned_uncertain",
+          "type": "PRM + Track + Rank",
+          "track": true,
+          "rank": "learned",
+          "audit": "uncertain",
+          "means": {
+            "question_solves": 1.0,
+            "step_audit_checks": 0.7254098360655737,
+            "missing_evidence_checks": 1.5081967213114753,
+            "candidate_checks": 2.314549180327869,
+            "tool_calls": 5.548155737704918,
+            "rank_inputs_cold": 32.092213114754095
+          },
+          "repair_pct": 51.4344262295082,
+          "fa_pct": 0.819672131147541,
+          "seed_counts": {
+            "17": {
+              "n": 488,
+              "error_n": 244,
+              "repair_success": 127,
+              "false_accept": 4,
+              "question_solves": 488,
+              "step_audit_checks": 354,
+              "missing_evidence_checks": 736,
+              "candidate_checks": 1120,
+              "tool_calls": 2698,
+              "rank_inputs_cold": 15661
+            },
+            "29": {
+              "n": 488,
+              "error_n": 244,
+              "repair_success": 124,
+              "false_accept": 4,
+              "question_solves": 488,
+              "step_audit_checks": 354,
+              "missing_evidence_checks": 736,
+              "candidate_checks": 1139,
+              "tool_calls": 2717,
+              "rank_inputs_cold": 15661
+            }
+          },
+          "source": "historical_outputs/local-prm-test-suite-v1/thinkprm-test-v1/SUMMARY.json",
+          "source_sha256": "769d92d2e2e36007f5e7db9e388536585b9723eb6da396d8ed6096a858b903fd",
+          "source_json_paths": [
+            "panels.thinkprm_verify_S1_learned_uncertain/seed17.overall",
+            "panels.thinkprm_verify_S1_learned_uncertain/seed29.overall"
+          ]
+        }
+      }
+    ],
+    "Val": [
+      {
+        "model": "ours",
+        "rule": {
+          "model": "ours",
+          "name": "TACO (task-trained V)",
+          "split": "Val",
+          "arm": "ours_verify_S0_rule_uncertain",
+          "type": "V + Rule",
+          "track": false,
+          "rank": "rule",
+          "audit": "uncertain",
+          "means": {
+            "question_solves": 1.0,
+            "step_audit_checks": 0.8168604651162791,
+            "missing_evidence_checks": 0.0,
+            "candidate_checks": 5.653100775193798,
+            "tool_calls": 7.469961240310077,
+            "rank_inputs_cold": 0.0
+          },
+          "repair_pct": 44.57364341085271,
+          "fa_pct": 0.09689922480620156,
+          "seed_counts": {
+            "17": {
+              "n": 516,
+              "error_n": 258,
+              "repair_success": 114,
+              "false_accept": 1,
+              "question_solves": 516,
+              "step_audit_checks": 420,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 2923,
+              "tool_calls": 3859,
+              "rank_inputs_cold": 0
+            },
+            "29": {
+              "n": 516,
+              "error_n": 258,
+              "repair_success": 116,
+              "false_accept": 0,
+              "question_solves": 516,
+              "step_audit_checks": 423,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 2911,
+              "tool_calls": 3850,
+              "rank_inputs_cold": 0
+            }
+          },
+          "source": "historical_outputs/shepherd-math12-cloud-v1-full/SUMMARY.json",
+          "source_sha256": "36eceee2ee1a51dc2a5b504d60578cfc6c3cb03bf5994c4b4dc1e4803069c95e",
+          "source_json_paths": [
+            "panels.ours_verify_S0_rule_uncertain/seed17.overall",
+            "panels.ours_verify_S0_rule_uncertain/seed29.overall"
+          ]
+        },
+        "full": {
+          "model": "ours",
+          "name": "TACO (task-trained V)",
+          "split": "Val",
+          "arm": "ours_verify_S1_learned_uncertain",
+          "type": "V + Track + Rank",
+          "track": true,
+          "rank": "learned",
+          "audit": "uncertain",
+          "means": {
+            "question_solves": 1.0,
+            "step_audit_checks": 0.8168604651162791,
+            "missing_evidence_checks": 0.0,
+            "candidate_checks": 3.570736434108527,
+            "tool_calls": 5.387596899224806,
+            "rank_inputs_cold": 31.68701550387597
+          },
+          "repair_pct": 58.52713178294574,
+          "fa_pct": 1.1627906976744187,
+          "seed_counts": {
+            "17": {
+              "n": 516,
+              "error_n": 258,
+              "repair_success": 157,
+              "false_accept": 8,
+              "question_solves": 516,
+              "step_audit_checks": 420,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 1808,
+              "tool_calls": 2744,
+              "rank_inputs_cold": 16435
+            },
+            "29": {
+              "n": 516,
+              "error_n": 258,
+              "repair_success": 145,
+              "false_accept": 4,
+              "question_solves": 516,
+              "step_audit_checks": 423,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 1877,
+              "tool_calls": 2816,
+              "rank_inputs_cold": 16266
+            }
+          },
+          "source": "historical_outputs/shepherd-math12-cloud-v1-full/SUMMARY.json",
+          "source_sha256": "36eceee2ee1a51dc2a5b504d60578cfc6c3cb03bf5994c4b4dc1e4803069c95e",
+          "source_json_paths": [
+            "panels.ours_verify_S1_learned_uncertain/seed17.overall",
+            "panels.ours_verify_S1_learned_uncertain/seed29.overall"
+          ]
+        }
+      },
+      {
+        "model": "shepherd",
+        "rule": {
+          "model": "shepherd",
+          "name": "Math-Shepherd",
+          "split": "Val",
+          "arm": "shepherd_verify_S0_rule_uncertain",
+          "type": "PRM + Rule",
+          "track": false,
+          "rank": "rule",
+          "audit": "uncertain",
+          "means": {
+            "question_solves": 1.0,
+            "step_audit_checks": 0.49224806201550386,
+            "missing_evidence_checks": 0.0,
+            "candidate_checks": 5.484496124031008,
+            "tool_calls": 6.976744186046512,
+            "rank_inputs_cold": 0.0
+          },
+          "repair_pct": 37.98449612403101,
+          "fa_pct": 1.744186046511628,
+          "seed_counts": {
+            "17": {
+              "n": 516,
+              "error_n": 258,
+              "repair_success": 98,
+              "false_accept": 9,
+              "question_solves": 516,
+              "step_audit_checks": 254,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 2830,
+              "tool_calls": 3600,
+              "rank_inputs_cold": 0
+            },
+            "29": {
+              "n": 516,
+              "error_n": 258,
+              "repair_success": 98,
+              "false_accept": 9,
+              "question_solves": 516,
+              "step_audit_checks": 254,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 2830,
+              "tool_calls": 3600,
+              "rank_inputs_cold": 0
+            }
+          },
+          "source": "historical_outputs/shepherd-math12-cloud-v1-full/SUMMARY.json",
+          "source_sha256": "36eceee2ee1a51dc2a5b504d60578cfc6c3cb03bf5994c4b4dc1e4803069c95e",
+          "source_json_paths": [
+            "panels.shepherd_verify_S0_rule_uncertain/seed17.overall",
+            "panels.shepherd_verify_S0_rule_uncertain/seed29.overall"
+          ]
+        },
+        "full": {
+          "model": "shepherd",
+          "name": "Math-Shepherd",
+          "split": "Val",
+          "arm": "shepherd_verify_S1_learned_uncertain",
+          "type": "PRM + Track + Rank",
+          "track": true,
+          "rank": "learned",
+          "audit": "uncertain",
+          "means": {
+            "question_solves": 1.0,
+            "step_audit_checks": 0.49224806201550386,
+            "missing_evidence_checks": 0.0,
+            "candidate_checks": 4.751937984496124,
+            "tool_calls": 6.244186046511628,
+            "rank_inputs_cold": 66.54651162790698
+          },
+          "repair_pct": 54.263565891472865,
+          "fa_pct": 3.7790697674418605,
+          "seed_counts": {
+            "17": {
+              "n": 516,
+              "error_n": 258,
+              "repair_success": 141,
+              "false_accept": 19,
+              "question_solves": 516,
+              "step_audit_checks": 254,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 2397,
+              "tool_calls": 3167,
+              "rank_inputs_cold": 34338
+            },
+            "29": {
+              "n": 516,
+              "error_n": 258,
+              "repair_success": 139,
+              "false_accept": 20,
+              "question_solves": 516,
+              "step_audit_checks": 254,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 2507,
+              "tool_calls": 3277,
+              "rank_inputs_cold": 34338
+            }
+          },
+          "source": "historical_outputs/shepherd-math12-cloud-v1-full/SUMMARY.json",
+          "source_sha256": "36eceee2ee1a51dc2a5b504d60578cfc6c3cb03bf5994c4b4dc1e4803069c95e",
+          "source_json_paths": [
+            "panels.shepherd_verify_S1_learned_uncertain/seed17.overall",
+            "panels.shepherd_verify_S1_learned_uncertain/seed29.overall"
+          ]
+        }
+      },
+      {
+        "model": "skywork",
+        "rule": {
+          "model": "skywork",
+          "name": "Skywork-PRM",
+          "split": "Val",
+          "arm": "skywork_verify_S0_rule_uncertain",
+          "type": "PRM + Rule",
+          "track": false,
+          "rank": "rule",
+          "audit": "uncertain",
+          "means": {
+            "question_solves": 1.0,
+            "step_audit_checks": 0.5833333333333334,
+            "missing_evidence_checks": 0.0,
+            "candidate_checks": 5.926356589147287,
+            "tool_calls": 7.50968992248062,
+            "rank_inputs_cold": 0.0
+          },
+          "repair_pct": 43.41085271317829,
+          "fa_pct": 0.0,
+          "seed_counts": {
+            "17": {
+              "n": 516,
+              "error_n": 258,
+              "repair_success": 112,
+              "false_accept": 0,
+              "question_solves": 516,
+              "step_audit_checks": 301,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 3058,
+              "tool_calls": 3875,
+              "rank_inputs_cold": 0
+            },
+            "29": {
+              "n": 516,
+              "error_n": 258,
+              "repair_success": 112,
+              "false_accept": 0,
+              "question_solves": 516,
+              "step_audit_checks": 301,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 3058,
+              "tool_calls": 3875,
+              "rank_inputs_cold": 0
+            }
+          },
+          "source": "historical_outputs/shepherd-math12-cloud-v1-full/SUMMARY.json",
+          "source_sha256": "36eceee2ee1a51dc2a5b504d60578cfc6c3cb03bf5994c4b4dc1e4803069c95e",
+          "source_json_paths": [
+            "panels.skywork_verify_S0_rule_uncertain/seed17.overall",
+            "panels.skywork_verify_S0_rule_uncertain/seed29.overall"
+          ]
+        },
+        "full": {
+          "model": "skywork",
+          "name": "Skywork-PRM",
+          "split": "Val",
+          "arm": "skywork_verify_S1_learned_uncertain",
+          "type": "PRM + Track + Rank",
+          "track": true,
+          "rank": "learned",
+          "audit": "uncertain",
+          "means": {
+            "question_solves": 1.0,
+            "step_audit_checks": 0.5833333333333334,
+            "missing_evidence_checks": 0.0,
+            "candidate_checks": 5.138565891472868,
+            "tool_calls": 6.721899224806202,
+            "rank_inputs_cold": 65.15697674418605
+          },
+          "repair_pct": 59.10852713178294,
+          "fa_pct": 0.872093023255814,
+          "seed_counts": {
+            "17": {
+              "n": 516,
+              "error_n": 258,
+              "repair_success": 155,
+              "false_accept": 4,
+              "question_solves": 516,
+              "step_audit_checks": 301,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 2594,
+              "tool_calls": 3411,
+              "rank_inputs_cold": 33621
+            },
+            "29": {
+              "n": 516,
+              "error_n": 258,
+              "repair_success": 150,
+              "false_accept": 5,
+              "question_solves": 516,
+              "step_audit_checks": 301,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 2709,
+              "tool_calls": 3526,
+              "rank_inputs_cold": 33621
+            }
+          },
+          "source": "historical_outputs/shepherd-math12-cloud-v1-full/SUMMARY.json",
+          "source_sha256": "36eceee2ee1a51dc2a5b504d60578cfc6c3cb03bf5994c4b4dc1e4803069c95e",
+          "source_json_paths": [
+            "panels.skywork_verify_S1_learned_uncertain/seed17.overall",
+            "panels.skywork_verify_S1_learned_uncertain/seed29.overall"
+          ]
+        }
+      },
+      {
+        "model": "qwen",
+        "rule": null,
+        "full": {
+          "model": "qwen",
+          "name": "Qwen-PRM",
+          "split": "Val",
+          "arm": "qwen_threshold_both_0.9",
+          "type": "PRM + Track + Rank",
+          "track": true,
+          "rank": "learned",
+          "audit": "uncertain",
+          "means": {
+            "question_solves": 1.0,
+            "step_audit_checks": 0.5232558139534884,
+            "missing_evidence_checks": 0.0,
+            "candidate_checks": 3.183139534883721,
+            "tool_calls": 4.7063953488372094,
+            "rank_inputs_cold": 41.75581395348837
+          },
+          "repair_pct": 35.27131782945737,
+          "fa_pct": 15.60077519379845,
+          "seed_counts": {
+            "17": {
+              "n": 516,
+              "error_n": 258,
+              "repair_success": 86,
+              "false_accept": 84,
+              "question_solves": 516,
+              "step_audit_checks": 270,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 1605,
+              "tool_calls": 2391,
+              "rank_inputs_cold": 21546
+            },
+            "29": {
+              "n": 516,
+              "error_n": 258,
+              "repair_success": 96,
+              "false_accept": 77,
+              "question_solves": 516,
+              "step_audit_checks": 270,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 1680,
+              "tool_calls": 2466,
+              "rank_inputs_cold": 21546
+            }
+          },
+          "source": "historical_outputs/shepherd-math12-cloud-v1-full/SUMMARY.json",
+          "source_sha256": "36eceee2ee1a51dc2a5b504d60578cfc6c3cb03bf5994c4b4dc1e4803069c95e",
+          "source_json_paths": [
+            "panels.qwen_threshold_both_0.9/seed17.overall",
+            "panels.qwen_threshold_both_0.9/seed29.overall"
+          ]
+        }
+      },
+      {
+        "model": "spare",
+        "rule": {
+          "model": "spare",
+          "name": "SPARE",
+          "split": "Val",
+          "arm": "spare_verify_S0_rule_uncertain",
+          "type": "PRM + Rule",
+          "track": false,
+          "rank": "rule",
+          "audit": "uncertain",
+          "means": {
+            "question_solves": 1.0,
+            "step_audit_checks": 0.9147286821705426,
+            "missing_evidence_checks": 0.0,
+            "candidate_checks": 4.695736434108527,
+            "tool_calls": 6.6104651162790695,
+            "rank_inputs_cold": 0.0
+          },
+          "repair_pct": 25.1937984496124,
+          "fa_pct": 11.434108527131784,
+          "seed_counts": {
+            "17": {
+              "n": 516,
+              "error_n": 258,
+              "repair_success": 65,
+              "false_accept": 59,
+              "question_solves": 516,
+              "step_audit_checks": 472,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 2423,
+              "tool_calls": 3411,
+              "rank_inputs_cold": 0
+            },
+            "29": {
+              "n": 516,
+              "error_n": 258,
+              "repair_success": 65,
+              "false_accept": 59,
+              "question_solves": 516,
+              "step_audit_checks": 472,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 2423,
+              "tool_calls": 3411,
+              "rank_inputs_cold": 0
+            }
+          },
+          "source": "historical_outputs/shepherd-math12-cloud-v1-full/SUMMARY.json",
+          "source_sha256": "36eceee2ee1a51dc2a5b504d60578cfc6c3cb03bf5994c4b4dc1e4803069c95e",
+          "source_json_paths": [
+            "panels.spare_verify_S0_rule_uncertain/seed17.overall",
+            "panels.spare_verify_S0_rule_uncertain/seed29.overall"
+          ]
+        },
+        "full": {
+          "model": "spare",
+          "name": "SPARE",
+          "split": "Val",
+          "arm": "spare_verify_S1_learned_uncertain",
+          "type": "PRM + Track + Rank",
+          "track": true,
+          "rank": "learned",
+          "audit": "uncertain",
+          "means": {
+            "question_solves": 1.0,
+            "step_audit_checks": 0.9147286821705426,
+            "missing_evidence_checks": 0.0,
+            "candidate_checks": 3.6550387596899223,
+            "tool_calls": 5.569767441860465,
+            "rank_inputs_cold": 34.39341085271318
+          },
+          "repair_pct": 30.03875968992248,
+          "fa_pct": 18.7984496124031,
+          "seed_counts": {
+            "17": {
+              "n": 516,
+              "error_n": 258,
+              "repair_success": 79,
+              "false_accept": 98,
+              "question_solves": 516,
+              "step_audit_checks": 472,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 1843,
+              "tool_calls": 2831,
+              "rank_inputs_cold": 17747
+            },
+            "29": {
+              "n": 516,
+              "error_n": 258,
+              "repair_success": 76,
+              "false_accept": 96,
+              "question_solves": 516,
+              "step_audit_checks": 472,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 1929,
+              "tool_calls": 2917,
+              "rank_inputs_cold": 17747
+            }
+          },
+          "source": "historical_outputs/shepherd-math12-cloud-v1-full/SUMMARY.json",
+          "source_sha256": "36eceee2ee1a51dc2a5b504d60578cfc6c3cb03bf5994c4b4dc1e4803069c95e",
+          "source_json_paths": [
+            "panels.spare_verify_S1_learned_uncertain/seed17.overall",
+            "panels.spare_verify_S1_learned_uncertain/seed29.overall"
+          ]
+        }
+      },
+      {
+        "model": "pddl",
+        "rule": {
+          "model": "pddl",
+          "name": "PDDL2PRM",
+          "split": "Val",
+          "arm": "pddl09_verify_S0_rule_uncertain",
+          "type": "PRM + Rule",
+          "track": false,
+          "rank": "rule",
+          "audit": "uncertain",
+          "means": {
+            "question_solves": 1.0,
+            "step_audit_checks": 0.5387596899224806,
+            "missing_evidence_checks": 0.0,
+            "candidate_checks": 5.8062015503875966,
+            "tool_calls": 7.344961240310077,
+            "rank_inputs_cold": 0.0
+          },
+          "repair_pct": 24.031007751937985,
+          "fa_pct": 4.844961240310077,
+          "seed_counts": {
+            "17": {
+              "n": 516,
+              "error_n": 258,
+              "repair_success": 62,
+              "false_accept": 25,
+              "question_solves": 516,
+              "step_audit_checks": 278,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 2996,
+              "tool_calls": 3790,
+              "rank_inputs_cold": 0
+            },
+            "29": {
+              "n": 516,
+              "error_n": 258,
+              "repair_success": 62,
+              "false_accept": 25,
+              "question_solves": 516,
+              "step_audit_checks": 278,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 2996,
+              "tool_calls": 3790,
+              "rank_inputs_cold": 0
+            }
+          },
+          "source": "historical_outputs/shepherd-math12-cloud-v1-full/SUMMARY.json",
+          "source_sha256": "36eceee2ee1a51dc2a5b504d60578cfc6c3cb03bf5994c4b4dc1e4803069c95e",
+          "source_json_paths": [
+            "panels.pddl09_verify_S0_rule_uncertain/seed17.overall",
+            "panels.pddl09_verify_S0_rule_uncertain/seed29.overall"
+          ]
+        },
+        "full": {
+          "model": "pddl",
+          "name": "PDDL2PRM",
+          "split": "Val",
+          "arm": "pddl09_verify_S1_learned_uncertain",
+          "type": "PRM + Track + Rank",
+          "track": true,
+          "rank": "learned",
+          "audit": "uncertain",
+          "means": {
+            "question_solves": 1.0,
+            "step_audit_checks": 0.5387596899224806,
+            "missing_evidence_checks": 0.0,
+            "candidate_checks": 3.2286821705426356,
+            "tool_calls": 4.767441860465116,
+            "rank_inputs_cold": 41.815891472868216
+          },
+          "repair_pct": 38.565891472868216,
+          "fa_pct": 14.050387596899224,
+          "seed_counts": {
+            "17": {
+              "n": 516,
+              "error_n": 258,
+              "repair_success": 96,
+              "false_accept": 74,
+              "question_solves": 516,
+              "step_audit_checks": 278,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 1632,
+              "tool_calls": 2426,
+              "rank_inputs_cold": 21577
+            },
+            "29": {
+              "n": 516,
+              "error_n": 258,
+              "repair_success": 103,
+              "false_accept": 71,
+              "question_solves": 516,
+              "step_audit_checks": 278,
+              "missing_evidence_checks": 0,
+              "candidate_checks": 1700,
+              "tool_calls": 2494,
+              "rank_inputs_cold": 21577
+            }
+          },
+          "source": "historical_outputs/shepherd-math12-cloud-v1-full/SUMMARY.json",
+          "source_sha256": "36eceee2ee1a51dc2a5b504d60578cfc6c3cb03bf5994c4b4dc1e4803069c95e",
+          "source_json_paths": [
+            "panels.pddl09_verify_S1_learned_uncertain/seed17.overall",
+            "panels.pddl09_verify_S1_learned_uncertain/seed29.overall"
+          ]
+        }
+      },
+      {
+        "model": "genprm",
+        "rule": {
+          "model": "genprm",
+          "name": "GenPRM",
+          "split": "Val",
+          "arm": "genprm_verify_S0_rule_uncertain",
+          "type": "PRM + Rule",
+          "track": false,
+          "rank": "rule",
+          "audit": "uncertain",
+          "means": {
+            "question_solves": 1.0,
+            "step_audit_checks": 0.6027131782945736,
+            "missing_evidence_checks": 0.027131782945736434,
+            "candidate_checks": 4.843023255813954,
+            "tool_calls": 6.4728682170542635,
+            "rank_inputs_cold": 0.0
+          },
+          "repair_pct": 37.2093023255814,
+          "fa_pct": 3.294573643410853,
+          "seed_counts": {
+            "17": {
+              "n": 516,
+              "error_n": 258,
+              "repair_success": 96,
+              "false_accept": 17,
+              "question_solves": 516,
+              "step_audit_checks": 311,
+              "missing_evidence_checks": 14,
+              "candidate_checks": 2499,
+              "tool_calls": 3340,
+              "rank_inputs_cold": 0
+            },
+            "29": {
+              "n": 516,
+              "error_n": 258,
+              "repair_success": 96,
+              "false_accept": 17,
+              "question_solves": 516,
+              "step_audit_checks": 311,
+              "missing_evidence_checks": 14,
+              "candidate_checks": 2499,
+              "tool_calls": 3340,
+              "rank_inputs_cold": 0
+            }
+          },
+          "source": "historical_outputs/genprm-math12-repair-v2-full/SUMMARY.json",
+          "source_sha256": "311850e2bf876e9f8a50b49c03df59d3f1e71cdccd28df46479e59b6ea9fee8b",
+          "source_json_paths": [
+            "panels.genprm_verify_S0_rule_uncertain/seed17.overall",
+            "panels.genprm_verify_S0_rule_uncertain/seed29.overall"
+          ]
+        },
+        "full": {
+          "model": "genprm",
+          "name": "GenPRM",
+          "split": "Val",
+          "arm": "genprm_verify_S1_learned_uncertain",
+          "type": "PRM + Track + Rank",
+          "track": true,
+          "rank": "learned",
+          "audit": "uncertain",
+          "means": {
+            "question_solves": 1.0,
+            "step_audit_checks": 0.6027131782945736,
+            "missing_evidence_checks": 0.027131782945736434,
+            "candidate_checks": 4.153100775193798,
+            "tool_calls": 5.782945736434108,
+            "rank_inputs_cold": 55.116279069767444
+          },
+          "repair_pct": 50.0,
+          "fa_pct": 6.686046511627907,
+          "seed_counts": {
+            "17": {
+              "n": 516,
+              "error_n": 258,
+              "repair_success": 134,
+              "false_accept": 35,
+              "question_solves": 516,
+              "step_audit_checks": 311,
+              "missing_evidence_checks": 14,
+              "candidate_checks": 2082,
+              "tool_calls": 2923,
+              "rank_inputs_cold": 28440
+            },
+            "29": {
+              "n": 516,
+              "error_n": 258,
+              "repair_success": 124,
+              "false_accept": 34,
+              "question_solves": 516,
+              "step_audit_checks": 311,
+              "missing_evidence_checks": 14,
+              "candidate_checks": 2204,
+              "tool_calls": 3045,
+              "rank_inputs_cold": 28440
+            }
+          },
+          "source": "historical_outputs/genprm-math12-repair-v2-full/SUMMARY.json",
+          "source_sha256": "311850e2bf876e9f8a50b49c03df59d3f1e71cdccd28df46479e59b6ea9fee8b",
+          "source_json_paths": [
+            "panels.genprm_verify_S1_learned_uncertain/seed17.overall",
+            "panels.genprm_verify_S1_learned_uncertain/seed29.overall"
+          ]
+        }
+      },
+      {
+        "model": "thinkprm",
+        "rule": {
+          "model": "thinkprm",
+          "name": "ThinkPRM",
+          "split": "Val",
+          "arm": "thinkprm_verify_S0_rule_uncertain",
+          "type": "PRM + Rule",
+          "track": false,
+          "rank": "rule",
+          "audit": "uncertain",
+          "means": {
+            "question_solves": 1.0,
+            "step_audit_checks": 0.7422480620155039,
+            "missing_evidence_checks": 1.503875968992248,
+            "candidate_checks": 3.5910852713178296,
+            "tool_calls": 6.837209302325581,
+            "rank_inputs_cold": 0.0
+          },
+          "repair_pct": 34.883720930232556,
+          "fa_pct": 0.7751937984496124,
+          "seed_counts": {
+            "17": {
+              "n": 516,
+              "error_n": 258,
+              "repair_success": 90,
+              "false_accept": 4,
+              "question_solves": 516,
+              "step_audit_checks": 383,
+              "missing_evidence_checks": 776,
+              "candidate_checks": 1853,
+              "tool_calls": 3528,
+              "rank_inputs_cold": 0
+            },
+            "29": {
+              "n": 516,
+              "error_n": 258,
+              "repair_success": 90,
+              "false_accept": 4,
+              "question_solves": 516,
+              "step_audit_checks": 383,
+              "missing_evidence_checks": 776,
+              "candidate_checks": 1853,
+              "tool_calls": 3528,
+              "rank_inputs_cold": 0
+            }
+          },
+          "source": "historical_outputs/shepherd-math12-cloud-v1-full/SUMMARY.json",
+          "source_sha256": "36eceee2ee1a51dc2a5b504d60578cfc6c3cb03bf5994c4b4dc1e4803069c95e",
+          "source_json_paths": [
+            "panels.thinkprm_verify_S0_rule_uncertain/seed17.overall",
+            "panels.thinkprm_verify_S0_rule_uncertain/seed29.overall"
+          ]
+        },
+        "full": {
+          "model": "thinkprm",
+          "name": "ThinkPRM",
+          "split": "Val",
+          "arm": "thinkprm_verify_S1_learned_uncertain",
+          "type": "PRM + Track + Rank",
+          "track": true,
+          "rank": "learned",
+          "audit": "uncertain",
+          "means": {
+            "question_solves": 1.0,
+            "step_audit_checks": 0.7422480620155039,
+            "missing_evidence_checks": 1.503875968992248,
+            "candidate_checks": 2.239341085271318,
+            "tool_calls": 5.4854651162790695,
+            "rank_inputs_cold": 28.0968992248062
+          },
+          "repair_pct": 52.325581395348834,
+          "fa_pct": 1.2596899224806202,
+          "seed_counts": {
+            "17": {
+              "n": 516,
+              "error_n": 258,
+              "repair_success": 140,
+              "false_accept": 7,
+              "question_solves": 516,
+              "step_audit_checks": 383,
+              "missing_evidence_checks": 776,
+              "candidate_checks": 1118,
+              "tool_calls": 2793,
+              "rank_inputs_cold": 14498
+            },
+            "29": {
+              "n": 516,
+              "error_n": 258,
+              "repair_success": 130,
+              "false_accept": 6,
+              "question_solves": 516,
+              "step_audit_checks": 383,
+              "missing_evidence_checks": 776,
+              "candidate_checks": 1193,
+              "tool_calls": 2868,
+              "rank_inputs_cold": 14498
+            }
+          },
+          "source": "historical_outputs/shepherd-math12-cloud-v1-full/SUMMARY.json",
+          "source_sha256": "36eceee2ee1a51dc2a5b504d60578cfc6c3cb03bf5994c4b4dc1e4803069c95e",
+          "source_json_paths": [
+            "panels.thinkprm_verify_S1_learned_uncertain/seed17.overall",
+            "panels.thinkprm_verify_S1_learned_uncertain/seed29.overall"
+          ]
+        }
+      }
+    ]
+  },
+  "native": [
+    {
+      "model": "thinkprm",
+      "split": "Val/dev",
+      "cases": 516,
+      "hardware": "NVIDIA GeForce RTX 3070 Laptop GPU",
+      "sources": {
+        "cases": "historical_outputs/thinkprm-math12-endtoend-v2-full/SUMMARY.json#n",
+        "seconds": "historical_outputs/thinkprm-math12-endtoend-v2-full/SUMMARY.json#native_cost.seconds",
+        "forward_passes": null,
+        "input_tokens": null,
+        "generated_tokens": "historical_outputs/thinkprm-math12-endtoend-v2-full/SUMMARY.json#native_cost.tokens",
+        "code_calls": null,
+        "code_seconds": null,
+        "peak_allocated_GiB": "historical_outputs/thinkprm-math12-endtoend-v2-full/SUMMARY.json#native_cost.peak_allocated_GiB"
+      },
+      "seconds": 17550.020000000717,
+      "forward_passes": null,
+      "input_tokens": null,
+      "generated_tokens": 447024,
+      "code_calls": null,
+      "code_seconds": null,
+      "peak_allocated_GiB": 3.429521083831787,
+      "seconds_per_case": 34.011666666668056,
+      "note": "Historical generation cost, counted ONCE, reused across rank seeds/conditions; no new PRM generation.",
+      "raw_cost": {
+        "finish": {
+          "eos": 480,
+          "length": 36
+        },
+        "note": "Historical generation cost, counted ONCE, reused across rank seeds/conditions; no new PRM generation.",
+        "peak_allocated_GiB": 3.429521083831787,
+        "peak_reserved_GiB": 3.603515625,
+        "seconds": 17550.020000000717,
+        "tokens": 447024
+      },
+      "type": "Native PRM diagnosis only; reused for Rule and +TACO"
+    },
+    {
+      "model": "thinkprm",
+      "split": "Test",
+      "cases": 488,
+      "hardware": "NVIDIA GeForce RTX 3070 Laptop GPU",
+      "sources": {
+        "cases": "historical_outputs/local-prm-test-suite-v1/thinkprm-test-v1/SUMMARY.json#n",
+        "seconds": "historical_outputs/local-prm-test-suite-v1/thinkprm-test-v1/SUMMARY.json#native_cost.seconds",
+        "forward_passes": null,
+        "input_tokens": "historical_outputs/local-prm-test-suite-v1/thinkprm-test-v1/SUMMARY.json#native_cost.input_tokens",
+        "generated_tokens": "historical_outputs/local-prm-test-suite-v1/thinkprm-test-v1/SUMMARY.json#native_cost.generated_tokens",
+        "code_calls": null,
+        "code_seconds": null,
+        "peak_allocated_GiB": "historical_outputs/local-prm-test-suite-v1/thinkprm-test-v1/SUMMARY.json#native_cost.peak_allocated_GiB"
+      },
+      "seconds": 16102.478999999934,
+      "forward_passes": null,
+      "input_tokens": 107677,
+      "generated_tokens": 427454,
+      "code_calls": null,
+      "code_seconds": null,
+      "peak_allocated_GiB": 3.4528021812438965,
+      "seconds_per_case": 32.99688319672118,
+      "note": null,
+      "raw_cost": {
+        "cases": 488,
+        "fixture_cache": false,
+        "generated_tokens": 427454,
+        "input_tokens": 107677,
+        "loading_and_pause_time_excluded": true,
+        "peak_allocated_GiB": 3.4528021812438965,
+        "seconds": 16102.478999999934,
+        "shared_across_seeds": true,
+        "status": {
+          "eos": 455,
+          "length": 33
+        }
+      },
+      "type": "Native PRM diagnosis only; reused for Rule and +TACO"
+    },
+    {
+      "model": "skywork",
+      "split": "Val/dev",
+      "cases": 516,
+      "hardware": "NVIDIA GeForce RTX 3070 Laptop GPU",
+      "sources": {
+        "cases": "historical_outputs/skywork-math12-endtoend-v1-full/SUMMARY.json#n",
+        "seconds": "historical_outputs/skywork-math12-endtoend-v1-full/SUMMARY.json#skywork_native_cost.seconds",
+        "forward_passes": null,
+        "input_tokens": "historical_outputs/skywork-math12-endtoend-v1-full/SUMMARY.json#skywork_native_cost.input_tokens",
+        "generated_tokens": null,
+        "code_calls": null,
+        "code_seconds": null,
+        "peak_allocated_GiB": "historical_outputs/skywork-math12-endtoend-v1-full/SUMMARY.json#skywork_native_cost.peak_allocated_GiB"
+      },
+      "seconds": 20.06400000420399,
+      "forward_passes": null,
+      "input_tokens": 76761,
+      "generated_tokens": null,
+      "code_calls": null,
+      "code_seconds": null,
+      "peak_allocated_GiB": 2.9325947761535645,
+      "seconds_per_case": 0.03888372093837983,
+      "note": "One native inference per item, shared across seeds and conditions; download/load time excluded.",
+      "raw_cost": {
+        "input_tokens": 76761,
+        "note": "One native inference per item, shared across seeds and conditions; download/load time excluded.",
+        "peak_allocated_GiB": 2.9325947761535645,
+        "seconds": 20.06400000420399,
+        "status": {
+          "ok": 516
+        }
+      },
+      "type": "Native PRM diagnosis only; reused for Rule and +TACO"
+    },
+    {
+      "model": "skywork",
+      "split": "Test",
+      "cases": 488,
+      "hardware": "NVIDIA GeForce RTX 3070 Laptop GPU",
+      "sources": {
+        "cases": "historical_outputs/local-prm-test-suite-v1/skywork-test-v1/SUMMARY.json#n",
+        "seconds": "historical_outputs/local-prm-test-suite-v1/skywork-test-v1/SUMMARY.json#native_cost.seconds",
+        "forward_passes": null,
+        "input_tokens": "historical_outputs/local-prm-test-suite-v1/skywork-test-v1/SUMMARY.json#native_cost.input_tokens",
+        "generated_tokens": "historical_outputs/local-prm-test-suite-v1/skywork-test-v1/SUMMARY.json#native_cost.generated_tokens",
+        "code_calls": null,
+        "code_seconds": null,
+        "peak_allocated_GiB": "historical_outputs/local-prm-test-suite-v1/skywork-test-v1/SUMMARY.json#native_cost.peak_allocated_GiB"
+      },
+      "seconds": 18.38199999986682,
+      "forward_passes": null,
+      "input_tokens": 73107,
+      "generated_tokens": 0,
+      "code_calls": null,
+      "code_seconds": null,
+      "peak_allocated_GiB": 2.9322915077209473,
+      "seconds_per_case": 0.037668032786612335,
+      "note": null,
+      "raw_cost": {
+        "cases": 488,
+        "fixture_cache": false,
+        "generated_tokens": 0,
+        "input_tokens": 73107,
+        "loading_and_pause_time_excluded": true,
+        "peak_allocated_GiB": 2.9322915077209473,
+        "seconds": 18.38199999986682,
+        "shared_across_seeds": true,
+        "status": {
+          "ok": 488
+        }
+      },
+      "type": "Native PRM diagnosis only; reused for Rule and +TACO"
+    },
+    {
+      "model": "spare",
+      "split": "Val/dev",
+      "cases": 516,
+      "hardware": "NVIDIA GeForce RTX 3070 Laptop GPU",
+      "sources": {
+        "cases": "historical_outputs/spare-math12-endtoend-v1-full/SUMMARY.json#n",
+        "seconds": "historical_outputs/spare-math12-endtoend-v1-full/SUMMARY.json#spare_native_cost.seconds",
+        "forward_passes": null,
+        "input_tokens": "historical_outputs/spare-math12-endtoend-v1-full/SUMMARY.json#spare_native_cost.input_tokens",
+        "generated_tokens": null,
+        "code_calls": null,
+        "code_seconds": null,
+        "peak_allocated_GiB": "historical_outputs/spare-math12-endtoend-v1-full/SUMMARY.json#spare_native_cost.peak_allocated_GiB"
+      },
+      "seconds": 49.002999999793246,
+      "forward_passes": null,
+      "input_tokens": 141389,
+      "generated_tokens": null,
+      "code_calls": null,
+      "code_seconds": null,
+      "peak_allocated_GiB": 6.025928974151611,
+      "seconds_per_case": 0.09496705426316521,
+      "note": "One native inference per item, shared across seeds and conditions; download/load time excluded.",
+      "raw_cost": {
+        "input_tokens": 141389,
+        "note": "One native inference per item, shared across seeds and conditions; download/load time excluded.",
+        "peak_allocated_GiB": 6.025928974151611,
+        "seconds": 49.002999999793246,
+        "status": {
+          "ok": 516
+        }
+      },
+      "type": "Native PRM diagnosis only; reused for Rule and +TACO"
+    },
+    {
+      "model": "spare",
+      "split": "Test",
+      "cases": 488,
+      "hardware": "NVIDIA GeForce RTX 3070 Laptop GPU",
+      "sources": {
+        "cases": "historical_outputs/local-prm-test-suite-v1/spare-test-v1/SUMMARY.json#n",
+        "seconds": "historical_outputs/local-prm-test-suite-v1/spare-test-v1/SUMMARY.json#native_cost.seconds",
+        "forward_passes": null,
+        "input_tokens": "historical_outputs/local-prm-test-suite-v1/spare-test-v1/SUMMARY.json#native_cost.input_tokens",
+        "generated_tokens": "historical_outputs/local-prm-test-suite-v1/spare-test-v1/SUMMARY.json#native_cost.generated_tokens",
+        "code_calls": null,
+        "code_seconds": null,
+        "peak_allocated_GiB": "historical_outputs/local-prm-test-suite-v1/spare-test-v1/SUMMARY.json#native_cost.peak_allocated_GiB"
+      },
+      "seconds": 43.43600000004517,
+      "forward_passes": null,
+      "input_tokens": 134338,
+      "generated_tokens": 0,
+      "code_calls": null,
+      "code_seconds": null,
+      "peak_allocated_GiB": 6.0242533683776855,
+      "seconds_per_case": 0.08900819672140403,
+      "note": null,
+      "raw_cost": {
+        "cases": 488,
+        "fixture_cache": false,
+        "generated_tokens": 0,
+        "input_tokens": 134338,
+        "loading_and_pause_time_excluded": true,
+        "peak_allocated_GiB": 6.0242533683776855,
+        "seconds": 43.43600000004517,
+        "shared_across_seeds": true,
+        "status": {
+          "ok": 488
+        }
+      },
+      "type": "Native PRM diagnosis only; reused for Rule and +TACO"
+    },
+    {
+      "model": "genprm",
+      "split": "Val/dev",
+      "cases": 516,
+      "hardware": "NVIDIA GeForce RTX 3070 Laptop GPU",
+      "sources": {
+        "cases": "historical_outputs/genprm-math12-repair-v2-full/SUMMARY.json#n",
+        "seconds": "historical_outputs/genprm-math12-repair-v2-full/SUMMARY.json#genprm_native_cost.seconds",
+        "forward_passes": null,
+        "input_tokens": "historical_outputs/genprm-math12-repair-v2-full/SUMMARY.json#genprm_native_cost.input_tokens",
+        "generated_tokens": "historical_outputs/genprm-math12-repair-v2-full/SUMMARY.json#genprm_native_cost.generated_tokens",
+        "code_calls": "historical_outputs/genprm-math12-repair-v2-full/SUMMARY.json#genprm_native_cost.code_calls",
+        "code_seconds": "historical_outputs/genprm-math12-repair-v2-full/SUMMARY.json#genprm_native_cost.code_seconds",
+        "peak_allocated_GiB": "historical_outputs/genprm-math12-repair-v2-full/SUMMARY.json#genprm_native_cost.peak_allocated_GiB"
+      },
+      "seconds": 43541.513000006555,
+      "forward_passes": null,
+      "input_tokens": 7554612,
+      "generated_tokens": 955967,
+      "code_calls": 2469,
+      "code_seconds": 17.676999998744577,
+      "peak_allocated_GiB": 3.8148231506347656,
+      "seconds_per_case": 84.38277713179565,
+      "note": "One generated conversation per item shared across seeds/conditions; diagnostic code calls EXTRA to recovery budget8; loading/replay/download excluded; projection from pilot uncertain.",
+      "raw_cost": {
+        "code_calls": 2469,
+        "code_seconds": 17.676999998744577,
+        "code_status": {
+          "error": 131,
+          "format_error": 8,
+          "ok": 2323,
+          "unsupported": 7
+        },
+        "generated_tokens": 955967,
+        "input_tokens": 7554612,
+        "note": "One generated conversation per item shared across seeds/conditions; diagnostic code calls EXTRA to recovery budget8; loading/replay/download excluded; projection from pilot uncertain.",
+        "peak_allocated_GiB": 3.8148231506347656,
+        "projected_516_generation_hours": 12.094864722224044,
+        "seconds": 43541.513000006555,
+        "step_coverage": 0.9918032786885246,
+        "step_status": {
+          "judgement_token_mismatch": 1,
+          "missing_judgement": 1,
+          "ok": 2299,
+          "unterminated_output": 17
+        }
+      },
+      "type": "Native PRM diagnosis only; reused for Rule and +TACO"
+    },
+    {
+      "model": "genprm",
+      "split": "Test",
+      "cases": 488,
+      "hardware": "NVIDIA GeForce RTX 3070 Laptop GPU",
+      "sources": {
+        "cases": "historical_outputs/genprm-math12-test-v1-full/SUMMARY.json#n",
+        "seconds": "historical_outputs/genprm-math12-test-v1-full/SUMMARY.json#genprm_native_cost.seconds",
+        "forward_passes": null,
+        "input_tokens": "historical_outputs/genprm-math12-test-v1-full/SUMMARY.json#genprm_native_cost.input_tokens",
+        "generated_tokens": "historical_outputs/genprm-math12-test-v1-full/SUMMARY.json#genprm_native_cost.generated_tokens",
+        "code_calls": "historical_outputs/genprm-math12-test-v1-full/SUMMARY.json#genprm_native_cost.code_calls",
+        "code_seconds": "historical_outputs/genprm-math12-test-v1-full/SUMMARY.json#genprm_native_cost.code_seconds",
+        "peak_allocated_GiB": "historical_outputs/genprm-math12-test-v1-full/SUMMARY.json#genprm_native_cost.peak_allocated_GiB"
+      },
+      "seconds": 44702.8820000001,
+      "forward_passes": null,
+      "input_tokens": 7643239,
+      "generated_tokens": 985433,
+      "code_calls": 2300,
+      "code_seconds": 14.45599999956903,
+      "peak_allocated_GiB": 3.737468719482422,
+      "seconds_per_case": 91.60426639344283,
+      "note": "One generated conversation per item shared across seeds/conditions; diagnostic code calls EXTRA to recovery budget8; loading/replay/download excluded; projection from pilot uncertain.",
+      "raw_cost": {
+        "cache_fixture": false,
+        "cases": 488,
+        "code_calls": 2300,
+        "code_seconds": 14.45599999956903,
+        "code_status": {
+          "error": 101,
+          "format_error": 9,
+          "ok": 2176,
+          "unsupported": 14
+        },
+        "generated_tokens": 985433,
+        "input_tokens": 7643239,
+        "new_native_conversations_across_all_resumes": 488,
+        "note": "One generated conversation per item shared across seeds/conditions; diagnostic code calls EXTRA to recovery budget8; loading/replay/download excluded; projection from pilot uncertain.",
+        "peak_allocated_GiB": 3.737468719482422,
+        "seconds": 44702.8820000001,
+        "step_coverage": 0.992808988764045,
+        "step_status": {
+          "judgement_token_mismatch": 3,
+          "missing_judgement": 13,
+          "ok": 2209
+        }
+      },
+      "type": "Native PRM diagnosis only; reused for Rule and +TACO"
+    },
+    {
+      "model": "qwen",
+      "split": "Val/dev",
+      "cases": 516,
+      "hardware": "NVIDIA GeForce RTX 4090 D",
+      "sources": {
+        "cases": "historical_outputs/qwen-math12-cloud-v1-full/SUMMARY.json#n",
+        "seconds": "historical_outputs/qwen-math12-cloud-v1-full/SUMMARY.json#qwen_native_cost.seconds",
+        "forward_passes": "historical_outputs/qwen-math12-cloud-v1-full/SUMMARY.json#qwen_native_cost.forward_passes",
+        "input_tokens": "historical_outputs/qwen-math12-cloud-v1-full/SUMMARY.json#qwen_native_cost.input_tokens",
+        "generated_tokens": null,
+        "code_calls": null,
+        "code_seconds": null,
+        "peak_allocated_GiB": "historical_outputs/qwen-math12-cloud-v1-full/SUMMARY.json#qwen_native_cost.peak_allocated_GiB"
+      },
+      "seconds": 19.159929822664708,
+      "forward_passes": 516,
+      "input_tokens": 91345,
+      "generated_tokens": null,
+      "code_calls": null,
+      "code_seconds": null,
+      "peak_allocated_GiB": 13.336276531219482,
+      "seconds_per_case": 0.03713164694314866,
+      "note": null,
+      "raw_cost": {
+        "forward_passes": 516,
+        "input_tokens": 91345,
+        "official_pilot_excluded": true,
+        "peak_allocated_GiB": 13.336276531219482,
+        "seconds": 19.159929822664708,
+        "status": {
+          "ok": 516
+        }
+      },
+      "type": "Native PRM diagnosis only; reused for Rule and +TACO"
+    },
+    {
+      "model": "qwen",
+      "split": "Test",
+      "cases": 488,
+      "hardware": "NVIDIA GeForce RTX 4090 D",
+      "sources": {
+        "cases": "historical_outputs/math12-cloud-test-suite-v1/qwen-test-v1/SUMMARY.json#n",
+        "seconds": "historical_outputs/math12-cloud-test-suite-v1/qwen-test-v1/SUMMARY.json#native_cost.seconds",
+        "forward_passes": "historical_outputs/math12-cloud-test-suite-v1/qwen-test-v1/SUMMARY.json#native_cost.forward_passes",
+        "input_tokens": "historical_outputs/math12-cloud-test-suite-v1/qwen-test-v1/SUMMARY.json#native_cost.input_tokens",
+        "generated_tokens": null,
+        "code_calls": null,
+        "code_seconds": null,
+        "peak_allocated_GiB": "historical_outputs/math12-cloud-test-suite-v1/qwen-test-v1/SUMMARY.json#native_cost.peak_allocated_GiB"
+      },
+      "seconds": 18.466281262924895,
+      "forward_passes": 488,
+      "input_tokens": 86944,
+      "generated_tokens": null,
+      "code_calls": null,
+      "code_seconds": null,
+      "peak_allocated_GiB": 13.33358383178711,
+      "seconds_per_case": 0.037840740292878886,
+      "note": null,
+      "raw_cost": {
+        "fixture_cached_outputs": false,
+        "forward_passes": 488,
+        "input_tokens": 86944,
+        "peak_allocated_GiB": 13.33358383178711,
+        "seconds": 18.466281262924895
+      },
+      "type": "Native PRM diagnosis only; reused for Rule and +TACO"
+    },
+    {
+      "model": "pddl",
+      "split": "Val/dev",
+      "cases": 516,
+      "hardware": "NVIDIA GeForce RTX 4090 D",
+      "sources": {
+        "cases": "historical_outputs/pddl-math12-cloud-v1-full/SUMMARY.json#n",
+        "seconds": "historical_outputs/pddl-math12-cloud-v1-full/SUMMARY.json#pddl_native_cost.seconds",
+        "forward_passes": "historical_outputs/pddl-math12-cloud-v1-full/SUMMARY.json#pddl_native_cost.forward_passes",
+        "input_tokens": "historical_outputs/pddl-math12-cloud-v1-full/SUMMARY.json#pddl_native_cost.input_tokens",
+        "generated_tokens": null,
+        "code_calls": null,
+        "code_seconds": null,
+        "peak_allocated_GiB": "historical_outputs/pddl-math12-cloud-v1-full/SUMMARY.json#pddl_native_cost.peak_allocated_GiB"
+      },
+      "seconds": 18.571614149725065,
+      "forward_passes": 516,
+      "input_tokens": 91345,
+      "generated_tokens": null,
+      "code_calls": null,
+      "code_seconds": null,
+      "peak_allocated_GiB": 13.337744235992432,
+      "seconds_per_case": 0.03599150029016485,
+      "note": null,
+      "raw_cost": {
+        "forward_passes": 516,
+        "input_tokens": 91345,
+        "official_pilot_excluded": true,
+        "peak_allocated_GiB": 13.337744235992432,
+        "seconds": 18.571614149725065,
+        "status": {
+          "ok": 516
+        }
+      },
+      "type": "Native PRM diagnosis only; reused for Rule and +TACO"
+    },
+    {
+      "model": "pddl",
+      "split": "Test",
+      "cases": 488,
+      "hardware": "NVIDIA GeForce RTX 4090 D",
+      "sources": {
+        "cases": "historical_outputs/math12-cloud-test-suite-v1/pddl-test-v1/SUMMARY.json#n",
+        "seconds": "historical_outputs/math12-cloud-test-suite-v1/pddl-test-v1/SUMMARY.json#native_cost.seconds",
+        "forward_passes": "historical_outputs/math12-cloud-test-suite-v1/pddl-test-v1/SUMMARY.json#native_cost.forward_passes",
+        "input_tokens": "historical_outputs/math12-cloud-test-suite-v1/pddl-test-v1/SUMMARY.json#native_cost.input_tokens",
+        "generated_tokens": null,
+        "code_calls": null,
+        "code_seconds": null,
+        "peak_allocated_GiB": "historical_outputs/math12-cloud-test-suite-v1/pddl-test-v1/SUMMARY.json#native_cost.peak_allocated_GiB"
+      },
+      "seconds": 18.736521957674995,
+      "forward_passes": 488,
+      "input_tokens": 86944,
+      "generated_tokens": null,
+      "code_calls": null,
+      "code_seconds": null,
+      "peak_allocated_GiB": 13.335792064666748,
+      "seconds_per_case": 0.0383945122083504,
+      "note": null,
+      "raw_cost": {
+        "fixture_cached_outputs": false,
+        "forward_passes": 488,
+        "input_tokens": 86944,
+        "peak_allocated_GiB": 13.335792064666748,
+        "seconds": 18.736521957674995
+      },
+      "type": "Native PRM diagnosis only; reused for Rule and +TACO"
+    },
+    {
+      "model": "shepherd",
+      "split": "Val/dev",
+      "cases": 516,
+      "hardware": "NVIDIA GeForce RTX 4090 D",
+      "sources": {
+        "cases": "historical_outputs/shepherd-math12-cloud-v1-full/SUMMARY.json#n",
+        "seconds": "historical_outputs/shepherd-math12-cloud-v1-full/SUMMARY.json#shepherd_native_cost.seconds",
+        "forward_passes": "historical_outputs/shepherd-math12-cloud-v1-full/SUMMARY.json#shepherd_native_cost.forward_passes",
+        "input_tokens": "historical_outputs/shepherd-math12-cloud-v1-full/SUMMARY.json#shepherd_native_cost.input_tokens",
+        "generated_tokens": null,
+        "code_calls": null,
+        "code_seconds": null,
+        "peak_allocated_GiB": "historical_outputs/shepherd-math12-cloud-v1-full/SUMMARY.json#shepherd_native_cost.peak_allocated_GiB"
+      },
+      "seconds": 27.836851654807106,
+      "forward_passes": 516,
+      "input_tokens": 93519,
+      "generated_tokens": null,
+      "code_calls": null,
+      "code_seconds": null,
+      "peak_allocated_GiB": 13.594571113586426,
+      "seconds_per_case": 0.05394738692792075,
+      "note": null,
+      "raw_cost": {
+        "forward_passes": 516,
+        "input_tokens": 93519,
+        "official_pilot_excluded": true,
+        "peak_allocated_GiB": 13.594571113586426,
+        "seconds": 27.836851654807106,
+        "status": {
+          "ok": 516
+        }
+      },
+      "type": "Native PRM diagnosis only; reused for Rule and +TACO"
+    },
+    {
+      "model": "shepherd",
+      "split": "Test",
+      "cases": 488,
+      "hardware": "NVIDIA GeForce RTX 4090 D",
+      "sources": {
+        "cases": "historical_outputs/math12-cloud-test-suite-v1/shepherd-test-v1/SUMMARY.json#n",
+        "seconds": "historical_outputs/math12-cloud-test-suite-v1/shepherd-test-v1/SUMMARY.json#native_cost.seconds",
+        "forward_passes": "historical_outputs/math12-cloud-test-suite-v1/shepherd-test-v1/SUMMARY.json#native_cost.forward_passes",
+        "input_tokens": "historical_outputs/math12-cloud-test-suite-v1/shepherd-test-v1/SUMMARY.json#native_cost.input_tokens",
+        "generated_tokens": null,
+        "code_calls": null,
+        "code_seconds": null,
+        "peak_allocated_GiB": "historical_outputs/math12-cloud-test-suite-v1/shepherd-test-v1/SUMMARY.json#native_cost.peak_allocated_GiB"
+      },
+      "seconds": 30.844592013163492,
+      "forward_passes": 488,
+      "input_tokens": 89298,
+      "generated_tokens": null,
+      "code_calls": null,
+      "code_seconds": null,
+      "peak_allocated_GiB": 13.591932773590088,
+      "seconds_per_case": 0.06320613117451536,
+      "note": null,
+      "raw_cost": {
+        "fixture_cached_outputs": false,
+        "forward_passes": 488,
+        "input_tokens": 89298,
+        "peak_allocated_GiB": 13.591932773590088,
+        "seconds": 30.844592013163492
+      },
+      "type": "Native PRM diagnosis only; reused for Rule and +TACO"
+    },
+    {
+      "model": "ours",
+      "split": "Test",
+      "type": "Task-trained diagnostic",
+      "seconds": null,
+      "seconds_per_case": null,
+      "peak_allocated_GiB": null,
+      "generated_tokens": null,
+      "code_calls": null,
+      "note": "Not uniformly measured; not zero."
+    },
+    {
+      "model": "ours",
+      "split": "Val",
+      "type": "Task-trained diagnostic",
+      "seconds": null,
+      "seconds_per_case": null,
+      "peak_allocated_GiB": null,
+      "generated_tokens": null,
+      "code_calls": null,
+      "note": "Not uniformly measured; not zero."
+    }
+  ],
+  "native_notes": {
+    "scope": "Diagnostic inference/generation only; stored costs counted once across ranking seeds and recovery conditions. No new experiment.",
+    "missing_policy": "Missing source fields are null, never silently zero. A non-generative model's absent token/code fields can be shown as not applicable, with that convention stated explicitly.",
+    "time_note": "Elapsed sums exclude model load/download/pause and shared recovery. GPU differences prevent direct cross-hardware speedup claims. GenPRM seconds and code_seconds are separately recorded; do not add them without checking timing scope.",
+    "genprm_dev_note": "Use genprm_native_cost from repaired V2. original_v1_native_cost and repair_job_native_cost describe development work; do not add them to the corrected full-evaluation cost.",
+    "ours_note": "The lightweight diagnostic's historical complete inference latency was not measured in these cache-reuse runs; it is unreported, not zero."
+  },
+  "elapsed_seconds": 0.28100000001722947
+}

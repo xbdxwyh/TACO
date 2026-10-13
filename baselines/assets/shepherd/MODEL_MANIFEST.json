@@ -1,0 +1,46 @@
+{
+  "repository": "peiyi9979/math-shepherd-mistral-7b-prm",
+  "revision": "45dc0a3c9ec699b645085c098ed38dc99fba4617",
+  "files": [
+    {
+      "name": "README.md",
+      "size": 2934,
+      "sha256": "0f312a149efe42b3079e83e0041eb23e3659ea5c07ac53020101a4d6e8c2cb87"
+    },
+    {
+      "name": "config.json",
+      "size": 582,
+      "sha256": "c8508824e6661402ac28a2d727ef9b254acd287818d93110cc1edb54e75a8194"
+    },
+    {
+      "name": "pytorch_model-00001-of-000002.bin",
+      "size": 9492067331,
+      "sha256": "7942123dacfadc7bd7aeccdb19a521f69c326ab07e73376489e84c5abcbb3d75"
+    },
+    {
+      "name": "pytorch_model-00002-of-000002.bin",
+      "size": 6333666262,
+      "sha256": "dec791d4d9bcd8ba8fec1fe71951041c9aa7316a043e6db47f40368724313855"
+    },
+    {
+      "name": "pytorch_model.bin.index.json",
+      "size": 24240,
+      "sha256": "61095c830da2a273bcd2f0efba2fd2cd7bb55e0e20ce328309ac6813086025fe"
+    },
+    {
+      "name": "special_tokens_map.json",
+      "size": 411,
+      "sha256": "ff3b4a612c4e447acb02d40071bddd989fe0da87eb5b7fe0dbadfc4f74de7531"
+    },
+    {
+      "name": "tokenizer.model",
+      "size": 493443,
+      "sha256": "dadfd56d766715c61d2ef780a525ab43b8e6da4de6865bda3d95fdef5e134055"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "size": 824,
+      "sha256": "1925d511c509861135f23ac36557ac42304ecfc44776eb2ba4184dc877adfb01"
+    }
+  ]
+}

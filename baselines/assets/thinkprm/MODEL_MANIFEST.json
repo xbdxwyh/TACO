@@ -1,0 +1,54 @@
+{
+  "repo_id": "launch/ThinkPRM-1.5B",
+  "revision": "fcf2c6f6ca28ac2b901206609d8714845290f72e",
+  "upstream_revision": "045b1aed5d72301690a8fc08e846c90b757672c8",
+  "files": {
+    "README.md": {
+      "rfilename": "README.md",
+      "blobId": "e276a07048421b58524de7ed804bbd47d7d47f2e",
+      "size": 5850
+    },
+    "config.json": {
+      "rfilename": "config.json",
+      "blobId": "994f604687f57656196995792a5e48e63b4aa7f9",
+      "size": 783
+    },
+    "generation_config.json": {
+      "rfilename": "generation_config.json",
+      "blobId": "aa81b12b0b3398dda2f0b9f0cbd130c0d28d9bdf",
+      "size": 181
+    },
+    "model.safetensors": {
+      "rfilename": "model.safetensors",
+      "blobId": "4148d50d9195409668659f92249a43efcd81c008",
+      "size": 3554214752,
+      "lfs": {
+        "sha256": "2e3ba4a20f2807dcce8c6299ade0b4dc39c1e6e411a99912e8476d5f34913303",
+        "size": 3554214752,
+        "pointerSize": 135
+      }
+    },
+    "special_tokens_map.json": {
+      "rfilename": "special_tokens_map.json",
+      "blobId": "1d385d62cf08bca35254547902b792c243656ec1",
+      "size": 485
+    },
+    "tokenizer.json": {
+      "rfilename": "tokenizer.json",
+      "blobId": "1a2db243e47cbc113f6b2ddcc388aeeb8fe1a94c",
+      "size": 11422778,
+      "lfs": {
+        "sha256": "e20ddafc659ba90242154b55275402edeca0715e5dbb30f56815a4ce081f4893",
+        "size": 11422778,
+        "pointerSize": 133
+      }
+    },
+    "tokenizer_config.json": {
+      "rfilename": "tokenizer_config.json",
+      "blobId": "3f645a4b9f2d0045e77360df2e44863054378c6c",
+      "size": 6763
+    }
+  },
+  "source": "https://huggingface.co/api/models/launch/ThinkPRM-1.5B",
+  "upstream": "https://github.com/mukhal/ThinkPRM"
+}

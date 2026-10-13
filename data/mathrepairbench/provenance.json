@@ -1,0 +1,66 @@
+{
+  "counts": {
+    "test": {
+      "by_variant": {
+        "correct": 122,
+        "execution_slip": 122,
+        "logical_error": 122,
+        "self_corrected": 122
+      },
+      "families": 122,
+      "traces": 488
+    },
+    "train": {
+      "by_variant": {
+        "correct": 613,
+        "execution_slip": 613,
+        "logical_error": 613,
+        "self_corrected": 613
+      },
+      "families": 613,
+      "traces": 2452
+    },
+    "validation": {
+      "by_variant": {
+        "correct": 129,
+        "execution_slip": 129,
+        "logical_error": 129,
+        "self_corrected": 129
+      },
+      "families": 129,
+      "traces": 516
+    }
+  },
+  "dataset": "MathRepairBench",
+  "families": 864,
+  "families_per_skill": 72,
+  "frozen_dataset_facts_sha256": "1623744c01a8291485ae2bac933b0df5bfbcca0ef660770a1029cc860e684778",
+  "generated_trace_uses_diffusion": false,
+  "generated_trace_uses_llm": false,
+  "generation_seed": 20260827,
+  "payload_hash_encoding": "SHA256(UTF-8 JSON with sort_keys=True, ensure_ascii=False, separators=(comma,colon))",
+  "release_scope": "Frozen text-and-LaTeX benchmark used in the TACO paper",
+  "release_transformation": [
+    "Select exactly the 3456 frozen item IDs (exclude the separate complex-proof branch).",
+    "Copy original public payloads, administrative fields and labels without changing values.",
+    "Sort records by item_id and write split-specific UTF-8 JSONL files.",
+    "Add original-case/family ID mapping and content hashes.",
+    "Exclude rendered images, asset paths, simulated learner trajectories and unrelated experiments."
+  ],
+  "rights_status": "Public-release preparation; license to be selected by the authors.",
+  "skills": 12,
+  "source_dataset_schema": "controlled-logic-state-v2",
+  "source_export_schema": "written-observation-v1",
+  "source_snapshot_sha256": {
+    "admin_export": "12892fab17aa61da87fb4fb234e97c8f908d59471d16683732979a90eab36a5e",
+    "labels_export": "33c18304a2f71bb83abf997bb8474bbd2f272522c51788bcc5ea18ba6afcd5d2",
+    "public_export": "9e28e3702117b1393e60e12ecf6e4362f40871ea82ffbd3cfb4e5cd6b43f954d",
+    "raw_cases": "e678da01b258ff73d6cd613a5bb795dca472a93bee7e4963b677935288663f95",
+    "skills": "e28142cf3f289ffee790bc2944b12b94bc729d57d81482810534f6597f0dde05"
+  },
+  "source_type": "deterministic_programmatic",
+  "split_assignment_original": "stable_seed(seed, original_family_id, family_split) % 100: train <70; validation <85; test otherwise",
+  "split_policy": "Use the supplied frozen ID lists; never repartition individual traces or recompute splits from renamed IDs.",
+  "traces": 3456,
+  "written_nodes": 12056
+}

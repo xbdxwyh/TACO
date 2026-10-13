@@ -1,0 +1,5 @@
+# Environment used for the original local experiments and release smoke checks.
+# Choose the appropriate PyTorch CPU/CUDA wheel for your machine separately.
+numpy==2.1.2
+sympy==1.13.3
+torch==2.7.1

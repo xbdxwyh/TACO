@@ -1,0 +1,226 @@
+[
+  {
+    "source": "skywork_math12_model_v1.py",
+    "source_sha256": "45305121b27fb0e64dfd506d42f5eda8350b7746d83a4b6707554fb55f6ae22f",
+    "release": "baselines/native/skywork.py",
+    "changes": "Package imports and assets moved; absolute model path and automatic downloader removed. Prediction and validation algorithms retained.",
+    "release_sha256": "54d0a69fb173b371b32d161fdfeb8a44e152113b13241f11da3dd608110fdd05"
+  },
+  {
+    "source": "assets/skywork-prm-v1/MODEL_MANIFEST.json",
+    "source_sha256": "1aae0a408107cae405bd35d642efccc1a5c3ac8b38e65e1893d2c671292cdab7",
+    "release": "baselines/assets/skywork/MODEL_MANIFEST.json",
+    "changes": "None; verbatim copy",
+    "release_sha256": "1aae0a408107cae405bd35d642efccc1a5c3ac8b38e65e1893d2c671292cdab7"
+  },
+  {
+    "source": "assets/skywork-prm-v1/LICENSE",
+    "source_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "release": "baselines/assets/skywork/LICENSE",
+    "changes": "None; verbatim copy",
+    "release_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+  },
+  {
+    "source": "spare_math12_model_v1.py",
+    "source_sha256": "935ff8059d2845a37b5426d6ffaef15880039adfaf22463a72b02544e7e07170",
+    "release": "baselines/native/spare.py",
+    "changes": "Package imports and assets moved; absolute model path and automatic downloader removed. Prediction and validation algorithms retained.",
+    "release_sha256": "f605291fc1962859ceb432f88d3342544d3a1edc7dc8936d418552b27a7c5f7d"
+  },
+  {
+    "source": "assets/spare-prm-v1/MODEL_MANIFEST.json",
+    "source_sha256": "e33c096b9679e01844826a724ad157af0d7de01cba3208c43c6bd4550006ed7a",
+    "release": "baselines/assets/spare/MODEL_MANIFEST.json",
+    "changes": "None; verbatim copy",
+    "release_sha256": "e33c096b9679e01844826a724ad157af0d7de01cba3208c43c6bd4550006ed7a"
+  },
+  {
+    "source": "assets/spare-prm-v1/LICENSE",
+    "source_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "release": "baselines/assets/spare/LICENSE",
+    "changes": "None; verbatim copy",
+    "release_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+  },
+  {
+    "source": "assets/spare-prm-v1/NOTICE.txt",
+    "source_sha256": "dc026ee33a10fc98f341449ff7ba684c90d7ea95f2dfac3b492342f9cc1b13fa",
+    "release": "baselines/assets/spare/NOTICE.txt",
+    "changes": "None; verbatim copy",
+    "release_sha256": "dc026ee33a10fc98f341449ff7ba684c90d7ea95f2dfac3b492342f9cc1b13fa"
+  },
+  {
+    "source": "assets/spare-prm-v1/instruction.json",
+    "source_sha256": "9b0bb5d12dcd29dd5335c91a93a520d5e5e649eeae3839a8dacd7daf45974b06",
+    "release": "baselines/assets/spare/instruction.json",
+    "changes": "None; verbatim copy",
+    "release_sha256": "9b0bb5d12dcd29dd5335c91a93a520d5e5e649eeae3839a8dacd7daf45974b06"
+  },
+  {
+    "source": "genprm_math12_model_v2.py",
+    "source_sha256": "cc29a668be0f5122699ffb7c33a53499bcb3d277c07b0dbdfe6bb100dd5535d1",
+    "release": "baselines/native/genprm.py",
+    "changes": "Package imports and assets moved; absolute model path and automatic downloader removed. Prediction and validation algorithms retained.",
+    "release_sha256": "100e2643bca6b434df48538d56955800b909052a5ddf19af6ba78e0b32456ed1"
+  },
+  {
+    "source": "assets/genprm-v1/MODEL_MANIFEST.json",
+    "source_sha256": "f1194457a26e894d3f81f1c0e3a4f22260fefb89529891dc0532cd7e82abc789",
+    "release": "baselines/assets/genprm/MODEL_MANIFEST.json",
+    "changes": "None; verbatim copy",
+    "release_sha256": "f1194457a26e894d3f81f1c0e3a4f22260fefb89529891dc0532cd7e82abc789"
+  },
+  {
+    "source": "assets/genprm-v1/LICENSE",
+    "source_sha256": "50291b4f85f83582e47156a6052602d9a9bc3ed1f8553d9b9d64dee8b1a546cc",
+    "release": "baselines/assets/genprm/LICENSE",
+    "changes": "None; verbatim copy",
+    "release_sha256": "50291b4f85f83582e47156a6052602d9a9bc3ed1f8553d9b9d64dee8b1a546cc"
+  },
+  {
+    "source": "genprm_math12_executor_v2.py",
+    "source_sha256": "afd4fc56e1c51ff078a90b8778b56c877b124fb55fa6cab82382fb6109d9b6d1",
+    "release": "baselines/native/genprm_math12_executor_v2.py",
+    "changes": "None; verbatim copy",
+    "release_sha256": "afd4fc56e1c51ff078a90b8778b56c877b124fb55fa6cab82382fb6109d9b6d1"
+  },
+  {
+    "source": "genprm_math_sandbox_v1.py",
+    "source_sha256": "f27b124dd58a233e0f24db6771331142ac60000bbeb94dd4116a7e46a42f2b45",
+    "release": "baselines/native/genprm_math_sandbox_v1.py",
+    "changes": "None; verbatim copy",
+    "release_sha256": "f27b124dd58a233e0f24db6771331142ac60000bbeb94dd4116a7e46a42f2b45"
+  },
+  {
+    "source": "genprm_math_sandbox_v2.py",
+    "source_sha256": "cf2a2cc0e30b55b8829e055fdb058739695ce320f6d100a4c03682e8ac1acfa0",
+    "release": "baselines/native/genprm_math_sandbox_v2.py",
+    "changes": "None; verbatim copy",
+    "release_sha256": "cf2a2cc0e30b55b8829e055fdb058739695ce320f6d100a4c03682e8ac1acfa0"
+  },
+  {
+    "source": "thinkprm_math12_adapter_v3.py",
+    "source_sha256": "f6f22795a40b5bed2fbef2ea09f18f5c22d213f982ae4149b5636c59dbbbd814",
+    "release": "baselines/native/thinkprm_parser.py",
+    "changes": "None; verbatim copy",
+    "release_sha256": "f6f22795a40b5bed2fbef2ea09f18f5c22d213f982ae4149b5636c59dbbbd814"
+  },
+  {
+    "source": "thinkprm_model_manifest_v1.json",
+    "source_sha256": "154098f2fb6c5431c60c2116c02875efeb9e7e6d6b1fb11a7879c03e6fbf8306",
+    "release": "baselines/assets/thinkprm/MODEL_MANIFEST.json",
+    "changes": "None; verbatim copy",
+    "release_sha256": "154098f2fb6c5431c60c2116c02875efeb9e7e6d6b1fb11a7879c03e6fbf8306"
+  },
+  {
+    "source": "THINKPRM_UPSTREAM_LICENSE.txt",
+    "source_sha256": "b5895000335fe4b593d88510a4f0e12e0b0db4d24f1f18ba9c3075b24aa01b8f",
+    "release": "baselines/assets/thinkprm/UPSTREAM_LICENSE.txt",
+    "changes": "None; verbatim copy",
+    "release_sha256": "b5895000335fe4b593d88510a4f0e12e0b0db4d24f1f18ba9c3075b24aa01b8f"
+  },
+  {
+    "source": "run_thinkprm_math12_pilot_v1.py",
+    "source_sha256": "eac4463fb90103208a6b9e5cbd214f9d5d8a956f20d57642b65deb00dabcea7e",
+    "release": "baselines/native/thinkprm.py",
+    "changes": "Extracted prompt_content, format_prompt, load_model, generate_one; replaced legacy parse_output with corrected scoped_public_judgments_v3; removed orchestration and local paths.",
+    "release_sha256": "247950efc466965910fb715d2ce439a1c93817db1451e0964888198cb7f348bd"
+  },
+  {
+    "source": "cloud_math12_test_v1/vendor/qwen/qwen_native.py",
+    "source_sha256": "efced52158ffbbdafcedd3adc6f4a4c90eea2b5741657e22453f31fea612d362",
+    "release": "baselines/native/qwen.py",
+    "changes": "Package imports; explicit local model directory; removed deployment verification and model-card smoke wrappers. Native encoding, load checks and probabilities retained.",
+    "release_sha256": "005caaee3d193a2dec006cf9e970b314767ee89ad04d22225cd1be8adec59f5b"
+  },
+  {
+    "source": "cloud_math12_test_v1/vendor/qwen/model_assets/MODEL_MANIFEST.json",
+    "source_sha256": "96b49bb3fd988afa563ceb15a3f7753b12f438fbdf958d651c12f0402666d4ad",
+    "release": "baselines/assets/qwen/MODEL_MANIFEST.json",
+    "changes": "None; verbatim copy",
+    "release_sha256": "96b49bb3fd988afa563ceb15a3f7753b12f438fbdf958d651c12f0402666d4ad"
+  },
+  {
+    "source": "cloud_math12_test_v1/vendor/qwen/model_assets/LICENSE",
+    "source_sha256": "8aff84e2629edb092f195c1d91bc368d8bb40eeb5fcedce2df19e405ee2cc876",
+    "release": "baselines/assets/qwen/LICENSE",
+    "changes": "None; verbatim copy",
+    "release_sha256": "8aff84e2629edb092f195c1d91bc368d8bb40eeb5fcedce2df19e405ee2cc876"
+  },
+  {
+    "source": "cloud_math12_test_v1/vendor/qwen/model_assets/README.md",
+    "source_sha256": "ae8f09edf1a928646bcf79086d2a5f5f83f719d18f47e1046f6863713ba1880b",
+    "release": "baselines/assets/qwen/README.md",
+    "changes": "None; verbatim copy",
+    "release_sha256": "ae8f09edf1a928646bcf79086d2a5f5f83f719d18f47e1046f6863713ba1880b"
+  },
+  {
+    "source": "cloud_math12_test_v1/vendor/pddl/pddl_native.py",
+    "source_sha256": "589354f1c164e9c1f7a07b1d142bd985e79359af79990da7a046778cbe29641e",
+    "release": "baselines/native/pddl.py",
+    "changes": "Package imports; explicit local model directory; removed deployment verification and model-card smoke wrappers. Native encoding, load checks and probabilities retained.",
+    "release_sha256": "5b0bbc797dfc2fb8fc4b265a22c19c7a83027019970dd914f0d752621d3ff557"
+  },
+  {
+    "source": "cloud_math12_test_v1/vendor/pddl/model_assets/MODEL_MANIFEST.json",
+    "source_sha256": "71bd9ec4676610a252045a814f2e8e3d438c7b56723d895c1295eec15a012c87",
+    "release": "baselines/assets/pddl/MODEL_MANIFEST.json",
+    "changes": "None; verbatim copy",
+    "release_sha256": "71bd9ec4676610a252045a814f2e8e3d438c7b56723d895c1295eec15a012c87"
+  },
+  {
+    "source": "cloud_math12_test_v1/vendor/pddl/model_assets/README.md",
+    "source_sha256": "1bf8ce1d625b03f3aea14a88ab1163a74969ef8eb3044a4708d30db6dd47c161",
+    "release": "baselines/assets/pddl/README.md",
+    "changes": "None; verbatim copy",
+    "release_sha256": "1bf8ce1d625b03f3aea14a88ab1163a74969ef8eb3044a4708d30db6dd47c161"
+  },
+  {
+    "source": "cloud_math12_test_v1/vendor/shepherd/shepherd_native.py",
+    "source_sha256": "8fa3811e6f408a6b9ea85ef3154fb1016bbf953d5800b0517ee5c95bf27683f8",
+    "release": "baselines/native/shepherd.py",
+    "changes": "Package imports; explicit local model directory; removed deployment verification and model-card smoke wrappers. Native encoding, load checks and probabilities retained.",
+    "release_sha256": "ae97d05075a7f794342269cee2280e67b3e8e77a1e25b6db45882aa2b3fae788"
+  },
+  {
+    "source": "cloud_math12_test_v1/vendor/shepherd/model_assets/MODEL_MANIFEST.json",
+    "source_sha256": "9a4b956d73a45c902d87429d1abf6ccab115b4d2528597d43100f5b11976645b",
+    "release": "baselines/assets/shepherd/MODEL_MANIFEST.json",
+    "changes": "None; verbatim copy",
+    "release_sha256": "9a4b956d73a45c902d87429d1abf6ccab115b4d2528597d43100f5b11976645b"
+  },
+  {
+    "source": "cloud_math12_test_v1/vendor/shepherd/model_assets/README.md",
+    "source_sha256": "0f312a149efe42b3079e83e0041eb23e3659ea5c07ac53020101a4d6e8c2cb87",
+    "release": "baselines/assets/shepherd/README.md",
+    "changes": "None; verbatim copy",
+    "release_sha256": "0f312a149efe42b3079e83e0041eb23e3659ea5c07ac53020101a4d6e8c2cb87"
+  },
+  {
+    "source": "cloud_math12_test_v1/vendor/qwen/model_assets/configuration_qwen2_rm.py",
+    "source_sha256": "c50ec249c0ab452765dd6acc9825448dd11a268ff62ddc9b2dbdeab25a1008e2",
+    "release": "baselines/assets/qwen/configuration_qwen2_rm.py",
+    "changes": "None; verbatim copy",
+    "release_sha256": "c50ec249c0ab452765dd6acc9825448dd11a268ff62ddc9b2dbdeab25a1008e2"
+  },
+  {
+    "source": "cloud_math12_test_v1/vendor/qwen/model_assets/modeling_qwen2_rm.py",
+    "source_sha256": "2cb5fa464fa15b3e5ebcb9dc5e9136f09354113f5095adb9dd8384ac64ef4eb0",
+    "release": "baselines/assets/qwen/modeling_qwen2_rm.py",
+    "changes": "None; verbatim copy",
+    "release_sha256": "2cb5fa464fa15b3e5ebcb9dc5e9136f09354113f5095adb9dd8384ac64ef4eb0"
+  },
+  {
+    "source": "thinkprm_math12_recovery_v1.py",
+    "source_sha256": "eb2576554951d5d5f3800f47a7e1116f9c01669c00d78eb558ca5e4cb212e8d6",
+    "release": "baselines/recovery.py",
+    "changes": "Package imports only. Missing evidence, budget reservation, state updates and repair decisions unchanged.",
+    "release_sha256": "6833a1e4eb4f15d0c444fd635a39d5e9f11173c67debdd5312f3ed867e8c5bd5"
+  },
+  {
+    "source": "run_thinkprm_math12_pilot_v1.py",
+    "source_sha256": "eac4463fb90103208a6b9e5cbd214f9d5d8a956f20d57642b65deb00dabcea7e",
+    "release": "baselines/public.py",
+    "changes": "Exact public_case function extraction; no gold, split or variant fields are used.",
+    "release_sha256": "4537f3621edc89e29ca7b47947dba41ff8c48ffc10942f325fbc1eeb6d5783be"
+  }
+]

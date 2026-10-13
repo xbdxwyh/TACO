@@ -1,0 +1,90 @@
+{
+  "canonical_payload_set_sha256": "235545d36d7aae288ba5bb2aa5e121cb3896bfe826455555d23ba6035be75834",
+  "counts": {
+    "test": {
+      "by_variant": {
+        "correct": 122,
+        "execution_slip": 122,
+        "logical_error": 122,
+        "self_corrected": 122
+      },
+      "families": 122,
+      "traces": 488
+    },
+    "train": {
+      "by_variant": {
+        "correct": 613,
+        "execution_slip": 613,
+        "logical_error": 613,
+        "self_corrected": 613
+      },
+      "families": 613,
+      "traces": 2452
+    },
+    "validation": {
+      "by_variant": {
+        "correct": 129,
+        "execution_slip": 129,
+        "logical_error": 129,
+        "self_corrected": 129
+      },
+      "families": 129,
+      "traces": 516
+    }
+  },
+  "files": {
+    "admin/case_groups.jsonl": {
+      "bytes": 1195268,
+      "sha256": "57f3d6608ec54c54ae4f490a65222ad3d48244d47168aa3c69233e8b0ffd145a"
+    },
+    "admin/id_mapping.jsonl": {
+      "bytes": 869548,
+      "sha256": "401a1e590657061c971882f7cfc701691e46823dc8f93d7c310f4868eeca4026"
+    },
+    "labels/test.jsonl": {
+      "bytes": 462905,
+      "sha256": "5161fd0fbf0080b01fe86a4590193982480994c6d8518a4dfe08c1f052ce8344"
+    },
+    "labels/train.jsonl": {
+      "bytes": 2299136,
+      "sha256": "9f919e7eefc078f9c4cec52dcdbc106639f51bba52c43a6b31037ee3bd0ab9a7"
+    },
+    "labels/validation.jsonl": {
+      "bytes": 484803,
+      "sha256": "5b003da5ce86fb1b37a0842515acac48682601d6eb3b5a5d35a8257cb2f7b432"
+    },
+    "provenance.json": {
+      "bytes": 2706,
+      "sha256": "26d42858e50ea49b15d4f0aedae674a5075b8ce93c86d88248dc63570fae671c"
+    },
+    "public/test.jsonl": {
+      "bytes": 513323,
+      "sha256": "65a5e191fb29f7ff35d0605d8fe9623397c2877695f5a0ddcd2a76be30454ce4"
+    },
+    "public/train.jsonl": {
+      "bytes": 2533644,
+      "sha256": "7367d71140d0b9501244c0232a9a6bf8e2a3ce47df1ef7c2c09abe886800a8fc"
+    },
+    "public/validation.jsonl": {
+      "bytes": 534202,
+      "sha256": "b4f83c2ab634390b089daba564756e6c266872e6a5aa886bbc9ce4d9d5ed6de4"
+    },
+    "skills.json": {
+      "bytes": 8321,
+      "sha256": "46deb5db4644ae769abb1c227889024022863cb6261736cc12850bbda623635d"
+    },
+    "splits/test.json": {
+      "bytes": 22544,
+      "sha256": "c4a5232ae01af46cb3dd25f1d81e548d354be555839b8cfa87c441fbcb486254"
+    },
+    "splits/train.json": {
+      "bytes": 112889,
+      "sha256": "a5c265b615455f68750d9cd6f669e8edcf2f92779a27c66128a3e87cdcfba822"
+    },
+    "splits/validation.json": {
+      "bytes": 23838,
+      "sha256": "3d43ed38554463b62bb7ff0b1ced05ae20751cfcc271784504cf9489de7f8c7a"
+    }
+  },
+  "schema": "mathrepairbench-release-manifest-v1"
+}

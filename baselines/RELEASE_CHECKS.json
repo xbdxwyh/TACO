@@ -1,0 +1,42 @@
+{
+  "scope": "bounded CPU checks only; no native LLM inference/download/training",
+  "python": "3.11.13",
+  "native_module_imports": 7,
+  "parser_checks": [
+    "numbered labels",
+    "global No remains unknown",
+    "truncation remains unknown"
+  ],
+  "threshold_checks": [
+    "None preserved",
+    "0.9 mapped to 0.5 boundary",
+    "0.5 identity"
+  ],
+  "recovery_ast_equal_except_imports": true,
+  "cached_recovery_cases": 4,
+  "cached_recovery_arms": [
+    "shepherd_verify_S0_rule_uncertain",
+    "shepherd_verify_S1_learned_uncertain"
+  ],
+  "frozen_execution_fields_compared": [
+    "final_payload",
+    "accepted",
+    "attempts",
+    "initial_targets",
+    "remaining_targets",
+    "declared_complete",
+    "tool_cost",
+    "candidate_budget",
+    "audited_target",
+    "audit_valid",
+    "online_judgments",
+    "remaining_unknown",
+    "effective_evidence"
+  ],
+  "frozen_match": true,
+  "independent_scorer_accepted": true,
+  "elapsed_seconds": 9.53,
+  "test_quality_claim": "Engineering equivalence only; this small subset is not a new accuracy estimate.",
+  "source_binding_files": 51,
+  "protected_output_checks": 5
+}

@@ -1,0 +1,66 @@
+{
+  "repo": "UKPLab/Qwen2.5-3b-spare-prm-math",
+  "revision": "a4f77040cadc6a0f5f7758ec42d3f999376aef4a",
+  "upstream_commit": "d1076e02de3a326bca2a2c3dc92c8821c078175b",
+  "files": {
+    "added_tokens.json": {
+      "size": 605,
+      "git_blob_sha1": "482ced4679301bf287ebb310bdd1790eb4514232",
+      "sha256": null
+    },
+    "config.json": {
+      "size": 775,
+      "git_blob_sha1": "1d2a9586688ed056d0c306ad9009129518417de7",
+      "sha256": null
+    },
+    "generation_config.json": {
+      "size": 243,
+      "git_blob_sha1": "42b0c0ee452577d00d18fa243d2ea9cfe36626b9",
+      "sha256": null
+    },
+    "merges.txt": {
+      "size": 1671853,
+      "git_blob_sha1": "31349551d90c7606f325fe0f11bbb8bd5fa0d7c7",
+      "sha256": null
+    },
+    "model-00001-of-00002.safetensors": {
+      "size": 4957560304,
+      "git_blob_sha1": "7afe45fb8d13dafe104da833c904e3d1013b0ed3",
+      "sha256": "89f40016f50cb93af87c72cefc782061fd109d28e8035d41eccfe46cdb2acc3c"
+    },
+    "model-00002-of-00002.safetensors": {
+      "size": 1214366696,
+      "git_blob_sha1": "4e9b563be3270034a22e1cc2900e59d06dafa81c",
+      "sha256": "eb5532ecc08ea747c697e2e9f01c43dc196a1d4f7d8f87cc2510bba51e61003a"
+    },
+    "model.safetensors.index.json": {
+      "size": 35581,
+      "git_blob_sha1": "f19a6485b4ed2c95c2e34021106b8a80ea1cdaf9",
+      "sha256": null
+    },
+    "special_tokens_map.json": {
+      "size": 613,
+      "git_blob_sha1": "ac23c0aaa2434523c494330aeb79c58395378103",
+      "sha256": null
+    },
+    "tokenizer.json": {
+      "size": 11421896,
+      "git_blob_sha1": "51ebb3ba93988c73bbd83a3c163a14343fbc5b06",
+      "sha256": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa"
+    },
+    "tokenizer_config.json": {
+      "size": 7333,
+      "git_blob_sha1": "3b82aeea2a43d55249286cece6e831559950123f",
+      "sha256": null
+    },
+    "vocab.json": {
+      "size": 2776833,
+      "git_blob_sha1": "4783fe10ac3adce15ac8f358ef5462739852c569",
+      "sha256": null
+    }
+  },
+  "paper": "https://ojs.aaai.org/index.php/AAAI/article/view/40560",
+  "publication": "AAAI 2026",
+  "first_preprint": "2025-06",
+  "upstream": "https://github.com/UKPLab/aaai2026-spare-prm"
+}

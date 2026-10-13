@@ -1,0 +1,378 @@
+{
+  "scope": "saved counts only; no new inference, scoring, tuning or experiments",
+  "sources": {
+    "Val": {
+      "path": "historical_outputs/shepherd-math12-cloud-v1-full/SUMMARY.json",
+      "sha256": "36eceee2ee1a51dc2a5b504d60578cfc6c3cb03bf5994c4b4dc1e4803069c95e"
+    },
+    "Test": {
+      "path": "historical_outputs/local-prm-test-suite-v1/skywork-test-v1/SUMMARY.json",
+      "sha256": "0b5606f4ac30ce196e2ced922d90ba492c11c257e6ca94328e7ce5bbb48c8184"
+    }
+  },
+  "error_type_rows": [
+    {
+      "label": "Track + Rule + Audit",
+      "arm": "ours_verify_S1_rule_uncertain",
+      "Val": {
+        "logical_error": {
+          "repair_rate": 3.875968992248062,
+          "n_per_seed": 129,
+          "success_counts": [
+            5,
+            5
+          ]
+        },
+        "execution_slip": {
+          "repair_rate": 85.27131782945736,
+          "n_per_seed": 129,
+          "success_counts": [
+            109,
+            111
+          ]
+        }
+      },
+      "Test": {
+        "logical_error": {
+          "repair_rate": 3.278688524590164,
+          "n_per_seed": 122,
+          "success_counts": [
+            4,
+            4
+          ]
+        },
+        "execution_slip": {
+          "repair_rate": 83.19672131147541,
+          "n_per_seed": 122,
+          "success_counts": [
+            101,
+            102
+          ]
+        }
+      }
+    },
+    {
+      "label": "Track + Rank, no Audit",
+      "arm": "ours_verify_S1_learned_none",
+      "Val": {
+        "logical_error": {
+          "repair_rate": 36.04651162790697,
+          "n_per_seed": 129,
+          "success_counts": [
+            53,
+            40
+          ]
+        },
+        "execution_slip": {
+          "repair_rate": 35.27131782945737,
+          "n_per_seed": 129,
+          "success_counts": [
+            48,
+            43
+          ]
+        }
+      },
+      "Test": {
+        "logical_error": {
+          "repair_rate": 33.19672131147541,
+          "n_per_seed": 122,
+          "success_counts": [
+            42,
+            39
+          ]
+        },
+        "execution_slip": {
+          "repair_rate": 37.704918032786885,
+          "n_per_seed": 122,
+          "success_counts": [
+            51,
+            41
+          ]
+        }
+      }
+    },
+    {
+      "label": "TACO",
+      "arm": "ours_verify_S1_learned_uncertain",
+      "Val": {
+        "logical_error": {
+          "repair_rate": 36.82170542635659,
+          "n_per_seed": 129,
+          "success_counts": [
+            55,
+            40
+          ]
+        },
+        "execution_slip": {
+          "repair_rate": 80.23255813953489,
+          "n_per_seed": 129,
+          "success_counts": [
+            102,
+            105
+          ]
+        }
+      },
+      "Test": {
+        "logical_error": {
+          "repair_rate": 35.65573770491803,
+          "n_per_seed": 122,
+          "success_counts": [
+            44,
+            43
+          ]
+        },
+        "execution_slip": {
+          "repair_rate": 77.04918032786885,
+          "n_per_seed": 122,
+          "success_counts": [
+            95,
+            93
+          ]
+        }
+      }
+    }
+  ],
+  "skills": [
+    {
+      "skill": "linear_shift",
+      "label": "Linear equations",
+      "Val": {
+        "n_per_seed": 30,
+        "repair_rate": 56.666666666666664,
+        "success_counts": [
+          21,
+          13
+        ]
+      },
+      "Test": {
+        "n_per_seed": 18,
+        "repair_rate": 47.22222222222222,
+        "success_counts": [
+          10,
+          7
+        ]
+      }
+    },
+    {
+      "skill": "negative_distribution",
+      "label": "Brackets",
+      "Val": {
+        "n_per_seed": 20,
+        "repair_rate": 62.5,
+        "success_counts": [
+          12,
+          13
+        ]
+      },
+      "Test": {
+        "n_per_seed": 24,
+        "repair_rate": 39.583333333333336,
+        "success_counts": [
+          9,
+          10
+        ]
+      }
+    },
+    {
+      "skill": "fraction_denominator",
+      "label": "Fractional equations",
+      "Val": {
+        "n_per_seed": 24,
+        "repair_rate": 45.833333333333336,
+        "success_counts": [
+          11,
+          11
+        ]
+      },
+      "Test": {
+        "n_per_seed": 24,
+        "repair_rate": 45.833333333333336,
+        "success_counts": [
+          11,
+          11
+        ]
+      }
+    },
+    {
+      "skill": "proportion_cross_product",
+      "label": "Proportions",
+      "Val": {
+        "n_per_seed": 18,
+        "repair_rate": 66.66666666666667,
+        "success_counts": [
+          11,
+          13
+        ]
+      },
+      "Test": {
+        "n_per_seed": 28,
+        "repair_rate": 66.07142857142857,
+        "success_counts": [
+          17,
+          20
+        ]
+      }
+    },
+    {
+      "skill": "exponent_product",
+      "label": "Multiplying powers",
+      "Val": {
+        "n_per_seed": 22,
+        "repair_rate": 97.72727272727273,
+        "success_counts": [
+          22,
+          21
+        ]
+      },
+      "Test": {
+        "n_per_seed": 12,
+        "repair_rate": 95.83333333333333,
+        "success_counts": [
+          12,
+          11
+        ]
+      }
+    },
+    {
+      "skill": "power_of_power",
+      "label": "Power of a power",
+      "Val": {
+        "n_per_seed": 18,
+        "repair_rate": 94.44444444444444,
+        "success_counts": [
+          18,
+          16
+        ]
+      },
+      "Test": {
+        "n_per_seed": 24,
+        "repair_rate": 91.66666666666667,
+        "success_counts": [
+          22,
+          22
+        ]
+      }
+    },
+    {
+      "skill": "difference_of_squares",
+      "label": "Difference of squares",
+      "Val": {
+        "n_per_seed": 26,
+        "repair_rate": 69.23076923076923,
+        "success_counts": [
+          19,
+          17
+        ]
+      },
+      "Test": {
+        "n_per_seed": 18,
+        "repair_rate": 91.66666666666667,
+        "success_counts": [
+          16,
+          17
+        ]
+      }
+    },
+    {
+      "skill": "inequality_negative_scale",
+      "label": "Inequalities",
+      "Val": {
+        "n_per_seed": 16,
+        "repair_rate": 100.0,
+        "success_counts": [
+          16,
+          16
+        ]
+      },
+      "Test": {
+        "n_per_seed": 14,
+        "repair_rate": 100.0,
+        "success_counts": [
+          14,
+          14
+        ]
+      }
+    },
+    {
+      "skill": "absolute_value_branching",
+      "label": "Absolute value",
+      "Val": {
+        "n_per_seed": 22,
+        "repair_rate": 77.27272727272727,
+        "success_counts": [
+          20,
+          14
+        ]
+      },
+      "Test": {
+        "n_per_seed": 14,
+        "repair_rate": 82.14285714285714,
+        "success_counts": [
+          14,
+          9
+        ]
+      }
+    },
+    {
+      "skill": "function_composition",
+      "label": "Function composition",
+      "Val": {
+        "n_per_seed": 18,
+        "repair_rate": 38.888888888888886,
+        "success_counts": [
+          6,
+          8
+        ]
+      },
+      "Test": {
+        "n_per_seed": 16,
+        "repair_rate": 59.375,
+        "success_counts": [
+          9,
+          10
+        ]
+      }
+    },
+    {
+      "skill": "weighted_average",
+      "label": "Weighted means",
+      "Val": {
+        "n_per_seed": 22,
+        "repair_rate": 2.272727272727273,
+        "success_counts": [
+          0,
+          1
+        ]
+      },
+      "Test": {
+        "n_per_seed": 22,
+        "repair_rate": 6.818181818181818,
+        "success_counts": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "skill": "linear_system_elimination",
+      "label": "Linear systems",
+      "Val": {
+        "n_per_seed": 22,
+        "repair_rate": 6.818181818181818,
+        "success_counts": [
+          1,
+          2
+        ]
+      },
+      "Test": {
+        "n_per_seed": 30,
+        "repair_rate": 11.666666666666666,
+        "success_counts": [
+          4,
+          3
+        ]
+      }
+    }
+  ],
+  "seconds": 0.10899999999674037
+}

@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "taco-mathrepairbench"
+version = "0.1.0"
+description = "Track And COrrect: state-aware mathematical solution repair and MathRepairBench"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+  {name = "Yihao Wang"},
+  {name = "Jie Ren"},
+  {name = "Rui Cao"},
+  {name = "Ruoxia Yao"}
+]
+dependencies = ["numpy>=1.26,<3", "sympy>=1.13,<1.14", "torch>=2.5,<3"]
+
+[project.optional-dependencies]
+baselines = ["transformers==4.53.2", "safetensors==0.5.3", "huggingface-hub==0.33.4", "accelerate==1.10.1", "sentencepiece==0.2.1"]
+
+[project.scripts]
+taco = "taco.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src", "."]
+include = ["taco", "taco.*", "baselines", "baselines.*"]
+namespaces = false
+
+[tool.setuptools.package-data]
+baselines = ["assets/**/*", "*.json", "NOTICE*"]

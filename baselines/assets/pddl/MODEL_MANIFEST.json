@@ -1,0 +1,114 @@
+{
+  "repository": "Babelscape/Qwen2.5-Math-PRM-7B-PDDL-r",
+  "revision": "3b7e2ee21427cff8c678fb46b608ece78aa83b49",
+  "files": [
+    {
+      "name": "README.md",
+      "size": 4027,
+      "git_sha1": "d52e12fe329dfdf0223f65b43802d30ff4da9ba0",
+      "sha256": "1bf8ce1d625b03f3aea14a88ab1163a74969ef8eb3044a4708d30db6dd47c161"
+    },
+    {
+      "name": "adapter_config.json",
+      "size": 903,
+      "git_sha1": "087b7137068adf2e50df1e2088740dde8743706c",
+      "sha256": "d4dfff697690a22b59b1637b6f93318a3380724f6b79d1f3046be26fb223d7aa"
+    },
+    {
+      "name": "adapter_model.safetensors",
+      "size": 161533192,
+      "git_sha1": "6c462da4639f398f0ca8c6bfb1577155e84e1474",
+      "sha256": "3152a879b7624758305127b0d5e142b1c9d476ca725c9106b374e43c53fabc34"
+    },
+    {
+      "name": "added_tokens.json",
+      "size": 193,
+      "git_sha1": "163c878b1683484f38082a2e51ddb3814fa6a7da",
+      "sha256": "a96539b4549d34998b3d5cec6e1a66a8d233e61c64d9cadae899a911ad0d475c"
+    },
+    {
+      "name": "config.json",
+      "size": 858,
+      "git_sha1": "51adbdaa67296a75e4e079d82dfbbb0caff21a85",
+      "sha256": "921ebaeb3777dffc960733db0fc0bda38ad3ba141c687ba57d9ffcf2fc8afbf4"
+    },
+    {
+      "name": "configuration_qwen2_rm.py",
+      "size": 6685,
+      "git_sha1": "b522dee5ab1fc1c64e726f7bbbe3ca9dbbae58d8",
+      "sha256": "c50ec249c0ab452765dd6acc9825448dd11a268ff62ddc9b2dbdeab25a1008e2"
+    },
+    {
+      "name": "merges.txt",
+      "size": 1671853,
+      "git_sha1": "31349551d90c7606f325fe0f11bbb8bd5fa0d7c7",
+      "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+    },
+    {
+      "name": "model-00001-of-00006.safetensors",
+      "size": 4976687216,
+      "git_sha1": "c03c2ac6ad0df2a8c97eb5662c06766e571f2136",
+      "sha256": "13712f9069ff4cad54308e5a1dd2bd2221ca3507087feded19f36ba7f6a6b783"
+    },
+    {
+      "name": "model-00002-of-00006.safetensors",
+      "size": 4778622352,
+      "git_sha1": "bcf935b586abb0e744ec81246a7fb98360ce5421",
+      "sha256": "60c61f9e3546b8e862bd01b238352c4c52afaa54d92e26610149abd94d2aacde"
+    },
+    {
+      "name": "model-00003-of-00006.safetensors",
+      "size": 4932743960,
+      "git_sha1": "aa08e00139b7afec405cb74fe350022f893c8741",
+      "sha256": "1d18ac03289067c8f5a296f5a20c8ed56b042f68865e1b4edee1e1ae879f5c20"
+    },
+    {
+      "name": "model-00004-of-00006.safetensors",
+      "size": 4932743992,
+      "git_sha1": "a66bc2783b63348ec0c357b45d2ae7bc7ebb9d51",
+      "sha256": "51fbec5b1048e5c3e73ea8b064203cdc6b4d7d7f99508d5b6b84e564562459e3"
+    },
+    {
+      "name": "model-00005-of-00006.safetensors",
+      "size": 4998852296,
+      "git_sha1": "72bbb59f82ee005ec746b9886b61c7afd0f410fe",
+      "sha256": "64cf3fa852022d2c3812a9ced139ee85ace58d7455179ac879affefef1ba4bc8"
+    },
+    {
+      "name": "model-00006-of-00006.safetensors",
+      "size": 3714288776,
+      "git_sha1": "3b6b2bc0c41c696c791db02a6e84ad32c181f539",
+      "sha256": "6ba5ad2897e2881a4f05fda0a2d030ee4ef1e34ff37958628ea16e48832fca34"
+    },
+    {
+      "name": "model.safetensors.index.json",
+      "size": 27922,
+      "git_sha1": "d548f685d7d10aa634d86bfa5d8a0a342d565b65",
+      "sha256": "d9396b92b48e70dcce9c14f82c728d964d18d80cb069d93253764807c8f9ea26"
+    },
+    {
+      "name": "special_tokens_map.json",
+      "size": 444,
+      "git_sha1": "3d5be909bcb9ebeb4dc39d8b999c638ce4f30270",
+      "sha256": "907ce25214edda0867c88bcf34344b654758741327d5568d6b95c185c22415a5"
+    },
+    {
+      "name": "tokenizer.json",
+      "size": 11419357,
+      "git_sha1": "ec02d468f0f4d0a1e3d31596c97eb8c813bead8c",
+      "sha256": "2f87f84cd744477c28ec88506449627f5caff7040f3cd320bc0f4f2b8de36279"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "size": 2505,
+      "git_sha1": "fffefe7769d297557e5dac3a447c7e58eb11797a",
+      "sha256": "7961ef9d512c801964e86292a2abec5dfeab2e0d8469dc9d15c55f8e36fea002"
+    },
+    {
+      "name": "vocab.json",
+      "size": 2776833,
+      "git_sha1": "4783fe10ac3adce15ac8f358ef5462739852c569",
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    }
+  ]
+}

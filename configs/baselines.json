@@ -1,0 +1,152 @@
+{
+  "schema": "taco-frozen-baselines-v1",
+  "seeds": [
+    17,
+    29
+  ],
+  "online_budget": 8,
+  "missing_policy": "verify",
+  "audit": "uncertain",
+  "conditions": {
+    "rule": {
+      "stateful": false,
+      "rank": "rule",
+      "audit": "uncertain",
+      "missing": "verify",
+      "budget": 8
+    },
+    "taco": {
+      "stateful": true,
+      "rank": "learned",
+      "audit": "uncertain",
+      "missing": "verify",
+      "budget": 8
+    }
+  },
+  "models": {
+    "thinkprm": {
+      "repository": "launch/ThinkPRM-1.5B",
+      "revision": "fcf2c6f6ca28ac2b901206609d8714845290f72e",
+      "threshold": 0.5,
+      "precision": "bfloat16",
+      "batch_size": 1,
+      "input_token_limit": 2048,
+      "manifest": "baselines/assets/thinkprm/MODEL_MANIFEST.json",
+      "attention": "sdpa",
+      "prefix": "thinkprm",
+      "parser": "scoped_public_judgments_v3",
+      "max_new_tokens": 2048,
+      "case_seconds": 180,
+      "decoding": "greedy"
+    },
+    "skywork": {
+      "repository": "Skywork/Skywork-o1-Open-PRM-Qwen-2.5-1.5B",
+      "revision": "98d69606595eedbdbbbf0a7d28efdcd462ba6a67",
+      "threshold": 0.5,
+      "precision": "bfloat16",
+      "batch_size": 1,
+      "input_token_limit": 4096,
+      "manifest": "baselines/assets/skywork/MODEL_MANIFEST.json",
+      "attention": "sdpa",
+      "prefix": "skywork",
+      "value_head_precision": "float32"
+    },
+    "spare": {
+      "repository": "UKPLab/Qwen2.5-3b-spare-prm-math",
+      "revision": "a4f77040cadc6a0f5f7758ec42d3f999376aef4a",
+      "threshold": 0.5,
+      "precision": "bfloat16",
+      "batch_size": 1,
+      "input_token_limit": 1024,
+      "manifest": "baselines/assets/spare/MODEL_MANIFEST.json",
+      "attention": "sdpa",
+      "prefix": "spare"
+    },
+    "genprm": {
+      "repository": "GenPRM/GenPRM-1.5B",
+      "revision": "a0fa69768f4524257e1730fec639aa7781c7fa82",
+      "threshold": 0.5,
+      "precision": "bfloat16",
+      "batch_size": 1,
+      "input_token_limit": 32768,
+      "manifest": "baselines/assets/genprm/MODEL_MANIFEST.json",
+      "attention": "sdpa",
+      "prefix": "genprm",
+      "settings": {
+        "analyze": true,
+        "verify": true,
+        "execute": true,
+        "majority_num": 1,
+        "max_new_tokens": 2048,
+        "verify_rounds": 3,
+        "final_fallback_tokens": 20,
+        "temperature": 0.6,
+        "top_p": 0.95,
+        "top_k": 20,
+        "repetition_penalty": 1.0,
+        "sampling_seed": 20261001,
+        "context_limit": 32768,
+        "executor": "restricted_math_ast_v2",
+        "code_wall_seconds": 5,
+        "code_memory_MiB": 1024,
+        "missing": "unknown; never zero or neutral",
+        "reward": "official raw top20 logprobs + sampled token; min fallback"
+      }
+    },
+    "qwen": {
+      "repository": "Qwen/Qwen2.5-Math-PRM-7B",
+      "revision": "0610740060112df12585d00a1c5f4624d2f59051",
+      "threshold": 0.9,
+      "precision": "bfloat16",
+      "batch_size": 1,
+      "input_token_limit": 4096,
+      "manifest": "baselines/assets/qwen/MODEL_MANIFEST.json",
+      "attention": "eager",
+      "prefix": "qwen09",
+      "validation_rule_baseline": "unavailable at threshold 0.9; do not substitute threshold 0.5"
+    },
+    "pddl": {
+      "repository": "Babelscape/Qwen2.5-Math-PRM-7B-PDDL-r",
+      "revision": "3b7e2ee21427cff8c678fb46b608ece78aa83b49",
+      "threshold": 0.9,
+      "precision": "bfloat16",
+      "batch_size": 1,
+      "input_token_limit": 4096,
+      "manifest": "baselines/assets/pddl/MODEL_MANIFEST.json",
+      "attention": "eager",
+      "prefix": "pddl09"
+    },
+    "shepherd": {
+      "repository": "peiyi9979/math-shepherd-mistral-7b-prm",
+      "revision": "45dc0a3c9ec699b645085c098ed38dc99fba4617",
+      "threshold": 0.5,
+      "precision": "bfloat16",
+      "batch_size": 1,
+      "input_token_limit": 4096,
+      "manifest": "baselines/assets/shepherd/MODEL_MANIFEST.json",
+      "attention": "eager",
+      "prefix": "shepherd"
+    }
+  },
+  "runtime_reference": {
+    "local": {
+      "python": "3.11.13",
+      "torch": "2.7.1+cu126",
+      "transformers": "4.53.2",
+      "sympy": "1.13.3",
+      "numpy": "2.1.2",
+      "safetensors": "0.5.3",
+      "huggingface-hub": "0.33.4"
+    },
+    "notes": "Pinned model files and source/runtime identities are recorded; exact cross-platform numerical identity is not promised.",
+    "cloud": {
+      "python": "3.12.3",
+      "torch": "2.12.1+cu130",
+      "transformers": "4.53.2",
+      "accelerate": "1.10.1",
+      "safetensors": "0.6.2",
+      "huggingface-hub": "0.34.4",
+      "tokenizers": "0.21.4"
+    }
+  }
+}
